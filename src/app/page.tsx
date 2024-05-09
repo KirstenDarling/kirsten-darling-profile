@@ -91,7 +91,7 @@ export default function Home() {
         additionalLinks={additionalLinks}
         backgroundEdges="bg-black"
         backgroundColor="bg-white"
-        textColor=""
+        textColor="text-black"
         font=""
       />
       <CombinedHero
@@ -102,7 +102,7 @@ export default function Home() {
         backgroundStyle="bg-black"
         textStyle="text-neutral-100 text-7xl font-normal font-['Fugaz One'] leading-[77.76px]"
         subTextStyle="text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px] mt-[3%]"
-        buttonStyle="bg-purple-500 max-h-[60px] max-w-[360px] mt-[10%] text-white text-lg font-normal font-['Open Sans'] leading-[27px]"
+        buttonStyle="bg-purple-500 max-h-[60px] max-w-[360px] mt-[10%] text-white font-normal font-['Open Sans'] leading-[27px]"
       />
       <TextBanner
         heading="From Dream to Deployment"
