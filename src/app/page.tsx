@@ -10,6 +10,13 @@ import NovaPerson2 from "../../public/NovaPerson2.png";
 import HeartIcon from "../../public/heartIcon.svg";
 import HeroGen1 from "../../public/heroGen1.jpg";
 import Purple8 from "../../public/purple8.jpg";
+import * as React from "react";
+import Box from "@mui/material/Box";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import RestoreIcon from "@mui/icons-material/Restore";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 export default function Home() {
   const featuredCards = [
@@ -91,7 +98,7 @@ export default function Home() {
         additionalLinks={additionalLinks}
         backgroundEdges="bg-black"
         backgroundColor="bg-white"
-        textColor=""
+        textColor="text-black"
         font=""
       />
       <CombinedHero
@@ -102,7 +109,7 @@ export default function Home() {
         backgroundStyle="bg-black"
         textStyle="text-neutral-100 text-7xl font-normal font-['Fugaz One'] leading-[77.76px]"
         subTextStyle="text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px] mt-[3%]"
-        buttonStyle="bg-purple-500 max-h-[60px] max-w-[360px] mt-[10%] text-white text-lg font-normal font-['Open Sans'] leading-[27px]"
+        buttonStyle="bg-purple-500 max-h-[60px] max-w-[360px] mt-[10%] text-white font-normal font-['Open Sans'] leading-[27px]"
       />
       <TextBanner
         heading="From Dream to Deployment"
@@ -132,6 +139,13 @@ export default function Home() {
         backgroundColor="bg-black"
         additionalSection={true}
       />
+      <Box sx={{ width: 500 }}>
+        <BottomNavigation>
+          <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
+          <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
+          <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+        </BottomNavigation>
+      </Box>
     </div>
   );
 }
