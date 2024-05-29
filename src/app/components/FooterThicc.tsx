@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import FooterColumn from "./FooterColumn";
 
 const FooterThicc = ({
+  className,
   icon,
   pageTitle,
   subtitle,
@@ -10,6 +11,7 @@ const FooterThicc = ({
   backgroundColor,
   additionalSection = false,
 }: {
+  className?: string;
   icon: StaticImageData;
   pageTitle?: string;
   subtitle?: string;
@@ -19,7 +21,9 @@ const FooterThicc = ({
   additionalSection?: boolean;
 }) => {
   return (
-    <div className="self-stretch h-[303px] p-2 flex-col justify-start items-start gap-2 flex">
+    <div
+      className={` ${className} self-stretch h-[303px] p-2 flex-col justify-start items-start gap-2 flex`}
+    >
       <div
         className={`self-stretch h-[287px] px-10 py-8 ${backgroundColor} rounded-3xl flex-col justify-start items-start gap-8 flex`}
       >
@@ -55,7 +59,7 @@ const FooterThicc = ({
         {additionalSection && (
           <div className="self-stretch justify-between items-center inline-flex">
             <div className="text-zinc-300 text-xs font-normal font-['Open Sans'] leading-tight">
-              Last Updated: May 8, 2024
+              Last Updated: May 29, 2024
             </div>
             <div className="h-[22px] justify-end items-center gap-4 flex">
               <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
