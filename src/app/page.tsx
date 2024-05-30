@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 import CardsSquare3 from "./components/CardsSquare3";
 import CombinedHero from "./components/CombinedHero";
 import CombinedNavBar from "./components/CombinedNavBar";
@@ -5,7 +9,10 @@ import FooterThicc from "./components/FooterThicc";
 import ProjectLargeImageAccordion3 from "./components/ProjectLargeImageAccordion3";
 import QuoteWithImage from "./components/QuoteWithImage";
 import TextBanner from "./components/TextBanner";
-import { FaDatabase } from "react-icons/fa";
+import { FaAddressCard, FaDatabase } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
+import { FaHouseLaptop } from "react-icons/fa6";
+import { FaLaptopCode } from "react-icons/fa";
 import NovaPerson2 from "../../public/NovaPerson2.png";
 import HeartIcon from "../../public/heartIcon.svg";
 import HeroGen1 from "../../public/heroGen1.jpg";
@@ -14,9 +21,10 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import RestoreIcon from "@mui/icons-material/Restore";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import { GitHub, LinkedIn } from "@mui/icons-material";
 
 export default function Home() {
   const featuredCards = [
@@ -89,6 +97,8 @@ export default function Home() {
     },
   ];
 
+  const [value, setValue] = useState(0);
+
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
       <CombinedNavBar
@@ -138,12 +148,33 @@ export default function Home() {
         textColor="text-neutral-100"
         backgroundColor="bg-black"
         additionalSection={true}
+        className="hidden sm:block"
       />
-      <Box sx={{ width: 500 }}>
-        <BottomNavigation>
-          <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-          <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-          <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+      {/* Move this to it's own component */}
+      <Box sx={{ width: "100%" }} className="block sm:hidden">
+        <BottomNavigation
+          showLabels
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+          sx={{ width: "100%", backgroundColor: "black" }}
+        >
+          <BottomNavigationAction
+            label="Study Room"
+            icon={<FaLaptopCode size={25} />}
+            sx={{ color: "darkgrey" }}
+          />
+          <BottomNavigationAction
+            label="Home"
+            icon={<FaHeart size={25} />}
+            sx={{ color: "darkgrey" }}
+          />
+          <BottomNavigationAction
+            label="About Kirsten"
+            icon={<FaAddressCard size={25} />}
+            sx={{ color: "darkgrey" }}
+          />
         </BottomNavigation>
       </Box>
     </div>
