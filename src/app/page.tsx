@@ -18,6 +18,7 @@ import HeartIcon from "../../public/heartIcon.svg";
 import HeroGen1 from "../../public/heroGen1.jpg";
 import Purple8 from "../../public/purple8.jpg";
 import * as React from "react";
+import Image from "next/image";
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
@@ -25,6 +26,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { GitHub, LinkedIn } from "@mui/icons-material";
+import BuildingSVG from "../../public/building.svg";
 
 export default function Home() {
   const featuredCards = [
@@ -101,7 +103,7 @@ export default function Home() {
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <CombinedNavBar
+      {/* <CombinedNavBar
         FAIcon={FaDatabase}
         pageTitle="Kirsten Darling"
         links={links}
@@ -110,8 +112,8 @@ export default function Home() {
         backgroundColor="bg-white"
         textColor="text-black"
         font=""
-      />
-      <CombinedHero
+      /> */}
+      {/* <CombinedHero
         heading="I'm Kirsten, Software Engineer and Data Explorer."
         subheading="Explore my coding journey and the resources that fueled it. "
         buttonText="Study Room"
@@ -120,27 +122,27 @@ export default function Home() {
         textStyle="text-neutral-100 text-7xl font-normal font-['Fugaz One'] leading-[77.76px]"
         subTextStyle="text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px] mt-[3%]"
         buttonStyle="bg-purple-500 max-h-[60px] max-w-[360px] mt-[10%] text-white font-normal font-['Open Sans'] leading-[27px]"
-      />
-      <TextBanner
+      /> */}
+      {/* <TextBanner
         heading="From Dream to Deployment"
         subheading="Let's transform your Figma designs into reality"
         image={Purple8}
-      />
+      /> */}
 
-      <CardsSquare3
+      {/* <CardsSquare3
         heading="Neon Dreams Unveiled"
         subheading="Immersive Reality Awaits"
         shortCards={featuredCards}
         longCard={featuredLongCard}
       />
-      <ProjectLargeImageAccordion3 />
-      <QuoteWithImage
+      <ProjectLargeImageAccordion3 /> */}
+      {/* <QuoteWithImage
         quote="“Their vision for the cyber world transformed my reality.”"
         author="Maverick T., Cyberpunk Enthusiast"
         image={NovaPerson2}
         bgColor="black"
-      />
-      <FooterThicc
+      /> */}
+      {/* <FooterThicc
         icon={HeartIcon}
         pageTitle="Kirsten Darling"
         subtitle="Study. Code. Deploy. Repeat."
@@ -149,9 +151,9 @@ export default function Home() {
         backgroundColor="bg-black"
         additionalSection={true}
         className="hidden sm:block"
-      />
+      /> */}
       {/* Move this to it's own component */}
-      <Box sx={{ width: "100%" }} className="block sm:hidden">
+      {/* <Box sx={{ width: "100%" }} className="block sm:hidden">
         <BottomNavigation
           showLabels
           value={value}
@@ -176,7 +178,8 @@ export default function Home() {
             sx={{ color: "darkgrey" }}
           />
         </BottomNavigation>
-      </Box>
+      </Box> */}
+      <Image alt="" src={BuildingSVG} />
     </div>
   );
 }
