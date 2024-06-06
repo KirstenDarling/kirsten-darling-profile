@@ -19,8 +19,8 @@ This is a sample changelog post that will be used as a template for future chang
 
 ### Added
 
-- [KIRSTEN_DARLING_PORTFOLIO-0001](asana.com) MINOR Added Changelog
+- [SHORTCUT_TICKET-124](https://app.shortcut.com/personal-growth/story/124/added-changelog) MINOR Added Changelog
 
 ### Fixed
 
-- [KIRSTEN_DARLING_PORTFOLIO-0002](asana.com) MINOR Updated Metadata
+- [SHORTCUT_TICKET-125](https://app.shortcut.com/personal-growth/story/125/update-metadata) MINOR Updated Metadata
