@@ -1,10 +1,11 @@
-import Image, { StaticImageData } from 'next/image';
-import Link from 'next/link';
-import { IconType } from 'react-icons';
-import { NavBarLinkSection } from './NavBarLinkSection';
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
+import { IconType } from "react-icons";
+import { NavBarLinkSection } from "./NavBarLinkSection";
 
 const CombinedNavBar = ({
   FAIcon,
+  className,
   icon,
   pageTitle,
   textColor,
@@ -19,6 +20,7 @@ const CombinedNavBar = ({
   backgroundEdges,
 }: {
   icon?: StaticImageData;
+  className?: string;
   FAIcon?: IconType;
   pageTitle?: string;
   textColor?: string;
@@ -34,7 +36,7 @@ const CombinedNavBar = ({
 }) => {
   return (
     <div
-      className={`z-[2] w-full ${backgroundEdges} ${textColor} h-[67px] p-2 justify-between items-center inline-flex`}
+      className={`z-[2] w-full ${className} ${backgroundEdges} ${textColor} h-[67px] p-2 justify-between items-center inline-flex`}
     >
       <div
         className={`grow shrink basis-0 h-[51px] px-2 py-4 ${backgroundColor} rounded-[64px] justify-between items-center flex`}
@@ -48,11 +50,13 @@ const CombinedNavBar = ({
           />
         )}
         {pageTitleSection && (
-          <Link href='/'>
-            <div className='justify-center items-center gap-2 flex'>
-              <div className='w-6 h-6 relative'>
-                {icon && <Image alt='' src={icon} />}
-                {FAIcon && <FAIcon className='text-purple-500 h-[22px] w-[22px] mr-[20px]' />}
+          <Link href="/">
+            <div className="justify-center items-center gap-2 flex">
+              <div className="w-6 h-6 relative">
+                {icon && <Image alt="" src={icon} />}
+                {FAIcon && (
+                  <FAIcon className="text-purple-500 h-[22px] w-[22px] mr-[20px]" />
+                )}
                 {/* {!icon && <Image alt='' src={SunIcon} />}{' '} */}
                 {/* Fallback to SunIcon if no icon provided */}
               </div>
