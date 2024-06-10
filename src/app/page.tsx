@@ -103,7 +103,7 @@ export default function Home() {
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      {/* <CombinedNavBar
+      <CombinedNavBar
         FAIcon={FaDatabase}
         pageTitle="Kirsten Darling"
         links={links}
@@ -112,7 +112,8 @@ export default function Home() {
         backgroundColor="bg-white"
         textColor="text-black"
         font=""
-      /> */}
+        className="hidden sm:block"
+      />
       {/* <CombinedHero
         heading="I'm Kirsten, Software Engineer and Data Explorer."
         subheading="Explore my coding journey and the resources that fueled it. "
