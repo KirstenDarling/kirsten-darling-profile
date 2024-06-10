@@ -7,7 +7,7 @@ import GoogleAnalytics from "../app/components/GoogleAnalytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kirsten Darling - Software Engineer & Data Explorer",
+  title: "Kirsten Darling - Data Explorer",
   description:
     "Website, portfolio, and Study Room for Kirsten Darling - a software engineer and data explorer based in Denver, Colorado.",
 };

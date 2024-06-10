@@ -24,3 +24,11 @@ This is a sample changelog post that will be used as a template for future chang
 ### Fixed
 
 - [SHORTCUT_TICKET-125](https://app.shortcut.com/personal-growth/story/125/update-metadata) MINOR Updated Metadata
+
+## [0.0.0] - 2023-06-09
+
+Updated the project metadata title.
+
+### Changed
+
+- [SHORTCUT_TICKET-128](https://app.shortcut.com/personal-growth/story/128/update-shorten-metadata-title) MINOR Updated/Shortened metadata title
