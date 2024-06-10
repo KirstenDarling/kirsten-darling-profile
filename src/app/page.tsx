@@ -120,25 +120,6 @@ export default function Home() {
         font=""
         className="hidden sm:block"
       />
-      <Box className="block sm:hidden" sx={{ flexGrow: 1, width: "100%" }}>
-        <AppBar position="static">
-          <Toolbar>
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Kirsten Darling
-            </Typography>
-            <Button color="inherit">Login</Button>
-          </Toolbar>
-        </AppBar>
-      </Box>
       <div>
         <h1 className="text-[25px] sm:text-[48px] text-center">
           KIRSTEN DARLING&apos;s site is currently undergoing renovations. Check
@@ -185,32 +166,35 @@ export default function Home() {
         className="hidden sm:block"
       /> */}
       {/* Move this to it's own component */}
-      {/* <Box sx={{ width: "100%" }} className="block sm:hidden">
+      <Box sx={{ width: "100%", bottom: "0" }} className="fixed sm:hidden">
         <BottomNavigation
           showLabels
           value={value}
           onChange={(event, newValue) => {
             setValue(newValue);
           }}
-          sx={{ width: "100%", backgroundColor: "black" }}
+          sx={{ width: "100%", backgroundColor: "white" }}
         >
           <BottomNavigationAction
-            label="Study Room"
+            label="Study Portal"
+            href="/study-portal"
             icon={<FaLaptopCode size={25} />}
             sx={{ color: "darkgrey" }}
           />
           <BottomNavigationAction
             label="Home"
+            href="/"
             icon={<FaHeart size={25} />}
             sx={{ color: "darkgrey" }}
           />
           <BottomNavigationAction
             label="About Kirsten"
+            href="/about"
             icon={<FaAddressCard size={25} />}
             sx={{ color: "darkgrey" }}
           />
         </BottomNavigation>
-      </Box> */}
+      </Box>
       <Image alt="" src={BuildingSVG} />
     </div>
   );
