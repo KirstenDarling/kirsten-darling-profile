@@ -27,6 +27,12 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { GitHub, LinkedIn } from "@mui/icons-material";
 import BuildingSVG from "../../public/building.svg";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Home() {
   const featuredCards = [
@@ -160,32 +166,35 @@ export default function Home() {
         className="hidden sm:block"
       /> */}
       {/* Move this to it's own component */}
-      {/* <Box sx={{ width: "100%" }} className="block sm:hidden">
+      <Box sx={{ width: "100%", bottom: "0" }} className="fixed sm:hidden">
         <BottomNavigation
           showLabels
           value={value}
           onChange={(event, newValue) => {
             setValue(newValue);
           }}
-          sx={{ width: "100%", backgroundColor: "black" }}
+          sx={{ width: "100%", backgroundColor: "white" }}
         >
           <BottomNavigationAction
-            label="Study Room"
+            label="Study Portal"
+            href="/study-portal"
             icon={<FaLaptopCode size={25} />}
             sx={{ color: "darkgrey" }}
           />
           <BottomNavigationAction
             label="Home"
+            href="/"
             icon={<FaHeart size={25} />}
             sx={{ color: "darkgrey" }}
           />
           <BottomNavigationAction
             label="About Kirsten"
+            href="/about"
             icon={<FaAddressCard size={25} />}
             sx={{ color: "darkgrey" }}
           />
         </BottomNavigation>
-      </Box> */}
+      </Box>
       <Image alt="" src={BuildingSVG} />
     </div>
   );
