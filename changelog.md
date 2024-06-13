@@ -35,3 +35,5 @@ Updated the project metadata title. Created desktop nav bar; hidden on mobile. C
 - - [SHORTCUT_TICKET-130](https://app.shortcut.com/personal-growth/story/130/create-desktop-nav-bar) MAJOR Created desktop nav bar
 
 - - [SHORTCUT_TICKET-132](https://app.shortcut.com/personal-growth/story/132/add-mobile-nav-bar) MAJOR Added mobile nav bar to the bottom of the page.
+
+- - [SHORTCUT_TICKET-149](https://app.shortcut.com/personal-growth/story/149/added-mobile-footer-to-each-page) MAJOR Added mobile footer to the bottom of each page.
