@@ -25,21 +25,23 @@ This is a sample changelog post that will be used as a template for future chang
 
 - [SHORTCUT_TICKET-125](https://app.shortcut.com/personal-growth/story/125/update-metadata) MINOR Updated Metadata
 
-## [0.0.0] - 2023-06-09
+## [0.1.1] - 2023-06-09
 
 Updated the project metadata title. Created desktop nav bar; hidden on mobile. Created pages for each corresponding navbar link and added a description H1 to each page. Added mobile nav bar to the bottom of the page.
 
 ### Changed
 
 - [SHORTCUT_TICKET-128](https://app.shortcut.com/personal-growth/story/128/update-shorten-metadata-title) MINOR Updated/Shortened metadata title
-- - [SHORTCUT_TICKET-130](https://app.shortcut.com/personal-growth/story/130/create-desktop-nav-bar) MAJOR Created desktop nav bar
+- [SHORTCUT_TICKET-130](https://app.shortcut.com/personal-growth/story/130/create-desktop-nav-bar) MAJOR Created desktop nav bar
 
-- - [SHORTCUT_TICKET-132](https://app.shortcut.com/personal-growth/story/132/add-mobile-nav-bar) MAJOR Added mobile nav bar to the bottom of the page.
+- [SHORTCUT_TICKET-132](https://app.shortcut.com/personal-growth/story/132/add-mobile-nav-bar) MAJOR Added mobile nav bar to the bottom of the page.
 
-## [0.0.0] - 2023-06-13
+## [0.1.2] - 2023-06-13
 
 Moved the mobile footer from the home page into it's own component. Then, added the mobile footer to the bottom of each page.
 
 ### Fixed, Added
 
 - [SHORTCUT_TICKET-132](https://app.shortcut.com/personal-growth/story/132/moved-mobile-footer-to-it-s-own-component) MINOR Moved mobile footer to it's own component
+- [SHORTCUT_TICKET-149](https://app.shortcut.com/personal-growth/story/149/added-mobile-footer-to-each-page) MAJOR Added mobile footer to the bottom of each page.
+
