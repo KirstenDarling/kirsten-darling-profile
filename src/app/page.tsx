@@ -33,6 +33,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import FooterMobile from "./components/FooterMobile";
 
 export default function Home() {
   const featuredCards = [
@@ -105,8 +106,6 @@ export default function Home() {
     },
   ];
 
-  const [value, setValue] = useState(0);
-
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
       <CombinedNavBar
@@ -166,35 +165,7 @@ export default function Home() {
         className="hidden sm:block"
       /> */}
       {/* Move this to it's own component */}
-      <Box sx={{ width: "100%", bottom: "0" }} className="fixed sm:hidden">
-        <BottomNavigation
-          showLabels
-          value={value}
-          onChange={(event, newValue) => {
-            setValue(newValue);
-          }}
-          sx={{ width: "100%", backgroundColor: "white" }}
-        >
-          <BottomNavigationAction
-            label="Study Portal"
-            href="/study-portal"
-            icon={<FaLaptopCode size={25} />}
-            sx={{ color: "darkgrey" }}
-          />
-          <BottomNavigationAction
-            label="Home"
-            href="/"
-            icon={<FaHeart size={25} />}
-            sx={{ color: "darkgrey" }}
-          />
-          <BottomNavigationAction
-            label="About Kirsten"
-            href="/about"
-            icon={<FaAddressCard size={25} />}
-            sx={{ color: "darkgrey" }}
-          />
-        </BottomNavigation>
-      </Box>
+      <FooterMobile />
       <Image alt="" src={BuildingSVG} />
     </div>
   );
