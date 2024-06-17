@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import GoogleAnalytics from "../app/components/GoogleAnalytics";
+import FooterMobile from "./components/FooterMobile";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +19,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [value, setValue] = useState(0);
+
   return (
     <html lang="en">
       <Head>
@@ -24,6 +28,9 @@ export default function RootLayout({
       </Head>
       <GoogleAnalytics />
       <body className={inter.className}>{children}</body>
+      <footer>
+        <FooterMobile />
+      </footer>
     </html>
   );
 }
