@@ -21,7 +21,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { GitHub, LinkedIn } from "@mui/icons-material";
 import BuildingSVG from "../../../public/building.svg";
-import FooterMobile from "../components/FooterMobile";
 
 export default function Home() {
   const featuredCards = [
@@ -114,7 +113,6 @@ export default function Home() {
           CONNECT page coming soon!
         </h1>
       </div>
-      <FooterMobile />
       <Image alt="" src={BuildingSVG} />
     </div>
   );
