@@ -33,7 +33,6 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import FooterMobile from "./components/FooterMobile";
 
 export default function Home() {
   const featuredCards = [
@@ -165,7 +164,6 @@ export default function Home() {
         className="hidden sm:block"
       /> */}
       {/* Move this to it's own component */}
-      <FooterMobile />
       <Image alt="" src={BuildingSVG} />
     </div>
   );

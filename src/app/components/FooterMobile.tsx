@@ -1,3 +1,4 @@
+"use client";
 import Image, { StaticImageData } from "next/image";
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
@@ -6,18 +7,20 @@ import { useState } from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import { FaAddressCard, FaDatabase } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
+import { useRecoilState } from "recoil";
+import { activeNavItemPersistState } from "../recoil/navigationAtom.ts";
 
 const FooterMobile = () => {
-  const [value, setValue] = useState(0);
+  const [activeNavItem, setActiveNavItem] = useRecoilState(
+    activeNavItemPersistState
+  ); // Use the selector  console.log(activeNavItem);
 
   return (
     <Box sx={{ width: "100%", bottom: "0" }} className="fixed sm:hidden">
       <BottomNavigation
         showLabels
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
+        value={activeNavItem}
+        onChange={(_, newValue) => setActiveNavItem(newValue)}
         sx={{ width: "100%", backgroundColor: "white" }}
       >
         <BottomNavigationAction
@@ -28,6 +31,7 @@ const FooterMobile = () => {
         />
         <BottomNavigationAction
           label="Home"
+          href="/"
           icon={<FaHeart size={25} />}
           sx={{ color: "darkgrey" }}
         />
