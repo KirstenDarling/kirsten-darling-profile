@@ -1,10 +1,3 @@
-// "use client";
-// import { atom } from "recoil";
-
-// export const activeNavItemState = atom({
-//   key: "activeNavItem", // Unique key
-//   default: 1, // Default to the first item
-// });
 import { atom, selector } from "recoil";
 
 const LOCAL_STORAGE_KEY = "activeNavItem"; // Key for local storage

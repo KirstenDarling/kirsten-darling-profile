@@ -28,9 +28,9 @@ export default function RootLayout({
         </Head>
         <GoogleAnalytics />
         <body className={inter.className}>{children}</body>
-        <footer>
-          <FooterMobile />
-        </footer>
+        {/* <footer> */}
+        <FooterMobile />
+        {/* </footer> */}
       </RecoilRoot>
     </html>
   );
