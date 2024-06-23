@@ -19,8 +19,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [value, setValue] = useState(0);
-
   return (
     <html lang="en">
       <Head>
