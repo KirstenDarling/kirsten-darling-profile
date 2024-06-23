@@ -27,19 +27,28 @@ const FooterMobile = () => {
           label="Study Portal"
           href="/study-portal"
           icon={<FaLaptopCode size={25} />}
-          sx={{ color: "darkgrey" }}
+          sx={{
+            "&.Mui-selected": { color: "#A855F7" }, // Apply purple when selected
+            color: "darkgrey",
+          }}
         />
         <BottomNavigationAction
           label="Home"
           href="/"
           icon={<FaHeart size={25} />}
-          sx={{ color: "darkgrey" }}
+          sx={{
+            "&.Mui-selected": { color: "#A855F7" }, // Apply purple when selected
+            color: "darkgrey",
+          }}
         />
         <BottomNavigationAction
           label="About Kirsten"
           href="/about"
           icon={<FaAddressCard size={25} />}
-          sx={{ color: "darkgrey" }}
+          sx={{
+            "&.Mui-selected": { color: "#A855F7" }, // Apply purple when selected
+            color: "darkgrey",
+          }}
         />
       </BottomNavigation>
     </Box>
