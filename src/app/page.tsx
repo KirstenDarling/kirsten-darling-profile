@@ -118,22 +118,23 @@ export default function Home() {
         font=""
         className="hidden sm:block"
       />
+
+      <CombinedHero
+        heading="I'm Kirsten, Software Engineer and Data Explorer."
+        subheading="Explore my coding journey and the resources that fueled it. "
+        buttonText="Study Room"
+        image={HeroGen1}
+        backgroundStyle="bg-black"
+        textStyle="text-neutral-100 text-3xl md:text-7xl font-normal font-['Fugaz One'] leading-[40px] md:leading-[77.76px]"
+        subTextStyle="text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px] mt-[3%]"
+        buttonStyle="bg-purple-500 max-h-[60px] max-w-[250px] md:max-w-[360px] mt-[10%] text-white font-normal font-['Open Sans'] leading-[27px]"
+      />
       <div>
         <h1 className="text-[25px] sm:text-[48px] text-center">
           KIRSTEN DARLING&apos;s site is currently undergoing renovations. Check
           back soon for updates!
         </h1>
       </div>
-      {/* <CombinedHero
-        heading="I'm Kirsten, Software Engineer and Data Explorer."
-        subheading="Explore my coding journey and the resources that fueled it. "
-        buttonText="Study Room"
-        image={HeroGen1}
-        backgroundStyle="bg-black"
-        textStyle="text-neutral-100 text-7xl font-normal font-['Fugaz One'] leading-[77.76px]"
-        subTextStyle="text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px] mt-[3%]"
-        buttonStyle="bg-purple-500 max-h-[60px] max-w-[360px] mt-[10%] text-white font-normal font-['Open Sans'] leading-[27px]"
-      /> */}
       {/* <TextBanner
         heading="From Dream to Deployment"
         subheading="Let's transform your Figma designs into reality"
