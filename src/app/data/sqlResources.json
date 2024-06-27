@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Mode",
+    "description": "...",
+    "link": "https://mode.com/sql-tutorial",
+    "credit": "Found through Roadmap.sh"
+  },
+  {
+    "name": "2024 SQL Roadmap",
+    "description": "...",
+    "link": "https://roadmap.sh/sql",
+    "credit": "Unknown"
+  },
+  {
+    "name": "Visual JOIN",
+    "description": "...",
+    "link": "https://joins.spathon.com/",
+    "credit": "Found on Mode"
+  },
+  {
+    "name": "Visual JOIN",
+    "description": "...",
+    "link": "https://www.udemy.com/course/sql-and-postgresql/?start=0&couponCode=ST18MT62524",
+    "credit": "Recommended by Kevin and Schwindt"
+  },
+  {
+    "name": "SQL Codewars",
+    "description": "...",
+    "link": "https://www.codewars.com/dashboard",
+    "credit": "Recommended by Jordan"
+  }
+]
