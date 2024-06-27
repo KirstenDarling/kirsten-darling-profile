@@ -154,7 +154,8 @@ export default function Home() {
         image={NovaPerson2}
         bgColor="black"
       /> */}
-      {/* <FooterThicc
+      <Image alt="" src={BuildingSVG} />
+      <FooterThicc
         icon={HeartIcon}
         pageTitle="Kirsten Darling"
         subtitle="Study. Code. Deploy. Repeat."
@@ -163,9 +164,7 @@ export default function Home() {
         backgroundColor="bg-black"
         additionalSection={true}
         className="hidden sm:block"
-      /> */}
-      {/* Move this to it's own component */}
-      <Image alt="" src={BuildingSVG} />
+      />
     </div>
   );
 }
