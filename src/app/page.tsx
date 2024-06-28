@@ -95,6 +95,7 @@ export default function Home() {
         textStyle="text-neutral-100 text-3xl md:text-7xl font-normal font-['Fugaz One'] leading-[40px] md:leading-[77.76px]"
         subTextStyle="text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px] mt-[3%]"
         buttonStyle="bg-purple-500 max-h-[60px] max-w-[250px] md:max-w-[360px] mt-[10%] text-white font-normal font-['Open Sans'] leading-[27px]"
+        buttonTextStyle="text-neutral-100 text-3xl md:text-4xl font-normal font-['Fugaz One'] leading-[40px] md:leading-[77.76px]"
       />
       <div>
         <h1 className="text-[25px] sm:text-[48px] text-center">
