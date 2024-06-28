@@ -9,6 +9,7 @@ const CombinedHero = ({
   subTextStyle,
   textStyle,
   buttonStyle,
+  buttonTextStyle,
 }: {
   heading?: string;
   subheading?: string;
@@ -18,6 +19,7 @@ const CombinedHero = ({
   textStyle: string;
   subTextStyle?: string;
   buttonStyle: string;
+  buttonTextStyle?: string;
 }) => {
   return (
     <div
@@ -35,11 +37,11 @@ const CombinedHero = ({
               className={`self-stretch px-6 md:px-12 py-2 md:py-4 ${buttonStyle} justify-center items-center gap-1 inline-flex`}
             >
               <div className="px-1 justify-center items-center gap-2 flex">
-                <div
-                  className={`text-center text-white text-lg font-normal leading-[27px] ${textStyle}`}
+                <h1
+                  className={`text-center text-white font-normal leading-[27px] ${buttonTextStyle}`}
                 >
                   {buttonText}
-                </div>
+                </h1>
               </div>
             </div>
           )}
