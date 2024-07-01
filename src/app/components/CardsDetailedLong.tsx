@@ -7,10 +7,10 @@ const CardsDetailedLong = ({
   subheading,
   CTAText,
 }: {
-  eyebrowText: string;
-  heading: string;
-  subheading: string;
-  CTAText: string;
+  eyebrowText?: string;
+  heading?: string;
+  subheading?: string;
+  CTAText?: string;
 }) => {
   return (
     <div className="self-stretch border border-gray-600 justify-start items-start inline-flex">

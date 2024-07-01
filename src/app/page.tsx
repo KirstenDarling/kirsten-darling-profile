@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import CardsSquare3 from "./components/CardsSquare3";
+import ArticleCards from "./components/ArticleCards";
 import CombinedHero from "./components/CombinedHero";
 import CombinedNavBar from "./components/CombinedNavBar";
 import FooterThicc from "./components/FooterThicc";
@@ -33,6 +33,8 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import CardsDetailed from "./components/CardsDetailed";
+import CardsDetailedLong from "./components/CardsDetailedLong";
 
 export default function Home() {
   const featuredCards = [
@@ -108,14 +110,13 @@ export default function Home() {
         subheading="Let's transform your Figma designs into reality"
         image={Purple8}
       /> */}
-
-      {/* <CardsSquare3
+      {/* <ArticleCards
         heading="Neon Dreams Unveiled"
         subheading="Immersive Reality Awaits"
         shortCards={featuredCards}
         longCard={featuredLongCard}
-      />
-      <ProjectLargeImageAccordion3 /> */}
+      /> */}
+      {/* <ProjectLargeImageAccordion3 /> */}
       {/* <QuoteWithImage
         quote="“Their vision for the cyber world transformed my reality.”"
         author="Maverick T., Cyberpunk Enthusiast"
