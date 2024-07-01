@@ -35,8 +35,9 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import CardsDetailed from "./components/CardsDetailed";
 import CardsDetailedLong from "./components/CardsDetailedLong";
-import Image4 from "../../../public/fourCard4.png";
-import Image6 from "../../../public/fourCard6.png";
+import Image3 from "../../public/fourCard3.png";
+import Image6 from "../../public/fourCard6.png";
+import CertificationCards from "./components/CertificationCards";
 
 export default function Home() {
   const featuredLongCards = [
@@ -80,7 +81,7 @@ export default function Home() {
     {
       heading: "24/7 Access",
       subheading: "Study at any hour, day or night.",
-      image: Image4,
+      image: Image3,
     },
     {
       heading: "Expert Support",
@@ -90,12 +91,12 @@ export default function Home() {
     {
       heading: "Global Community",
       subheading: "Connect with learners worldwide.",
-      image: Image4,
+      image: Image3,
     },
     {
       heading: "Customizable Spaces",
       subheading: "Create the perfect study environment.",
-      image: Image4,
+      image: Image3,
     },
     {
       heading: "Tech-Enabled",
@@ -140,7 +141,7 @@ export default function Home() {
           back soon for updates!
         </h1>
       </div>
-
+      <CertificationCards cards={featuredCards} />
       {/* <TextBanner
         heading="From Dream to Deployment"
         subheading="Let's transform your Figma designs into reality"
