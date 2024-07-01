@@ -8,6 +8,7 @@ import FooterMobile from "./components/FooterMobile";
 import { RecoilRoot } from "recoil";
 import FooterThicc from "./components/FooterThicc";
 import HeartIcon from "../../public/heartIcon.svg";
+import GirlIcon from "../app/favicon.ico";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -59,6 +60,7 @@ export default function RootLayout({
       <RecoilRoot>
         <Head>
           <meta name="viewport" content="initial-scale=1, width=device-width" />
+          <link rel="icon" href="/favicon.io" sizes="any" />
         </Head>
         <GoogleAnalytics />
         <body className={inter.className}>{children}</body>
