@@ -1,7 +1,7 @@
-import CardsDetailed from './CardsDetailed';
-import LongCard from './CardsDetailedLong';
+import CardsDetailed from "./CardsDetailed";
+import LongCard from "./CardsDetailedLong";
 
-const CardsSquare3 = ({
+const ArticleCards = ({
   heading,
   subheading,
   shortCards,
@@ -9,13 +9,23 @@ const CardsSquare3 = ({
 }: {
   heading?: string;
   subheading?: string;
-  shortCards: { eyebrowText?: string; heading?: string; subheading?: string; CTAText?: string }[];
-  longCard: { eyebrowText: string; heading: string; subheading: string; CTAText: string };
+  shortCards: {
+    eyebrowText?: string;
+    heading?: string;
+    subheading?: string;
+    CTAText?: string;
+  }[];
+  longCard: {
+    eyebrowText: string;
+    heading: string;
+    subheading: string;
+    CTAText: string;
+  };
 }) => {
   return (
-    <div className='self-stretch h-[1110px] px-8 py-[120px] bg-black flex-col justify-center items-center gap-10 flex'>
-      <div className='self-stretch h-[870px] flex-col justify-start items-start gap-4 flex'>
-        <div className='self-stretch h-[102px] flex-col justify-start items-start gap-2 flex'>
+    <div className="self-stretch h-[1110px] px-8 py-[120px] bg-black flex-col justify-center items-center gap-10 flex">
+      <div className="self-stretch h-[870px] flex-col justify-start items-start gap-4 flex">
+        <div className="self-stretch h-[102px] flex-col justify-start items-start gap-2 flex">
           <div className="self-stretch text-neutral-100 text-[56px] font-normal font-['Fugaz One'] leading-[67.20px]">
             {heading}
           </div>
@@ -23,8 +33,8 @@ const CardsSquare3 = ({
             {subheading}
           </div>
         </div>
-        <div className='self-stretch h-[752px] flex-col justify-start items-center gap-6 flex'>
-          <div className='self-stretch justify-center items-start gap-6 inline-flex'>
+        <div className="self-stretch h-[752px] flex-col justify-start items-center gap-6 flex">
+          <div className="self-stretch justify-center items-start gap-6 inline-flex">
             {shortCards.map((card, index) => (
               <CardsDetailed
                 key={index}
@@ -47,4 +57,4 @@ const CardsSquare3 = ({
   );
 };
 
-export default CardsSquare3;
+export default ArticleCards;
