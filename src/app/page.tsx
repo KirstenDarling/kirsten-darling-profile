@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import CardsSquare3 from "./components/CardsSquare3";
+import ArticleCards from "./components/ArticleCards";
 import CombinedHero from "./components/CombinedHero";
 import CombinedNavBar from "./components/CombinedNavBar";
 import FooterThicc from "./components/FooterThicc";
@@ -33,9 +33,14 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import CardsDetailed from "./components/CardsDetailed";
+import CardsDetailedLong from "./components/CardsDetailedLong";
+import Image3 from "../../public/fourCard3.png";
+import Image6 from "../../public/fourCard6.png";
+import CertificationCards from "./components/CertificationCards";
 
 export default function Home() {
-  const featuredCards = [
+  const featuredLongCards = [
     {
       eyebrowText: "Transcend Reality",
       heading: "Reshape the Metropolis Skyline",
@@ -72,6 +77,39 @@ export default function Home() {
     { title: "Connect", URL: "/connect" },
   ];
 
+  const featuredCards = [
+    {
+      heading: "24/7 Access",
+      subheading: "Study at any hour, day or night.",
+      image: Image3,
+    },
+    {
+      heading: "Expert Support",
+      subheading: "Guidance from online study experts.",
+      image: Image6,
+    },
+    {
+      heading: "Global Community",
+      subheading: "Connect with learners worldwide.",
+      image: Image3,
+    },
+    {
+      heading: "Customizable Spaces",
+      subheading: "Create the perfect study environment.",
+      image: Image3,
+    },
+    {
+      heading: "Tech-Enabled",
+      subheading: "Advanced tools at your fingertips.",
+      image: Image6,
+    },
+    {
+      heading: "Interactive Sessions",
+      subheading: "Engage in live knowledge exchanges.",
+      image: Image6,
+    },
+  ];
+
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
       <CombinedNavBar
@@ -103,19 +141,19 @@ export default function Home() {
           back soon for updates!
         </h1>
       </div>
+      <CertificationCards cards={featuredCards} />
       {/* <TextBanner
         heading="From Dream to Deployment"
         subheading="Let's transform your Figma designs into reality"
         image={Purple8}
       /> */}
-
-      {/* <CardsSquare3
+      {/* <ArticleCards
         heading="Neon Dreams Unveiled"
         subheading="Immersive Reality Awaits"
         shortCards={featuredCards}
         longCard={featuredLongCard}
-      />
-      <ProjectLargeImageAccordion3 /> */}
+      /> */}
+      {/* <ProjectLargeImageAccordion3 /> */}
       {/* <QuoteWithImage
         quote="“Their vision for the cyber world transformed my reality.”"
         author="Maverick T., Cyberpunk Enthusiast"
