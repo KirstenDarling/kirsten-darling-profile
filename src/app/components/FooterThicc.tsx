@@ -108,7 +108,7 @@ const FooterThicc = ({
           {additionalSection && (
             <div className="self-stretch justify-between items-center inline-flex">
               <div className="text-zinc-300 text-xs font-normal font-['Open Sans'] leading-tight">
-                Last Updated: July 26, 2024
+                Last Updated: July 27, 2024
               </div>
               <div className="h-[22px] justify-end items-center gap-4 flex">
                 <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
@@ -139,7 +139,7 @@ const FooterThicc = ({
                 />
               ))}
             </div>
-            <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
+            <div className="w-[100%] grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
               <div className="mt-[50px] justify-center items-center gap-2 inline-flex">
                 <div className="w-8 h-8 relative">
                   <Image alt="" src={icon} />
@@ -155,6 +155,47 @@ const FooterThicc = ({
               >
                 {subtitle}
               </div>
+              <div className="flex w-[100%] justify-center space-x-6">
+                <p className={`${styles.glow} ${styles.socialIcons}`}>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/kirstendarling/"
+                  >
+                    <LinkedInIcon
+                      sx={{
+                        fontSize: 40,
+                        color: "#A855F7",
+                        borderRadius: "50%",
+                      }}
+                    />
+                  </a>
+                </p>
+                <p className={`${styles.glow} ${styles.socialIcons}`}>
+                  <a target="_blank" href="https://github.com/KirstenDarling/">
+                    <GitHubIcon
+                      sx={{
+                        fontSize: 40,
+                        color: "#A855F7",
+                        borderRadius: "50%",
+                      }}
+                    />
+                  </a>
+                </p>
+                <p className={`${styles.glow} ${styles.socialIcons}`}>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/darling_kirsten/"
+                  >
+                    <InstagramIcon
+                      sx={{
+                        fontSize: 40,
+                        color: "#A855F7",
+                        borderRadius: "50%",
+                      }}
+                    />
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
           {additionalSection && (
@@ -163,7 +204,7 @@ const FooterThicc = ({
           {additionalSection && (
             <div className="flex-col self-stretch items-baseline inline-flex">
               <div className="self-center text-zinc-300 text-xs font-normal font-['Open Sans'] leading-tight">
-                Last Updated: July 26, 2024
+                Last Updated: July 27, 2024
               </div>
               <div className="self-center h-[22px] justify-end items-center gap-4 flex">
                 <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
