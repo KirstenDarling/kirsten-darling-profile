@@ -38,6 +38,9 @@ import CardsDetailedLong from "./components/CardsDetailedLong";
 import Image3 from "../../public/fourCard3.png";
 import Image6 from "../../public/fourCard6.png";
 import CertificationCards from "./components/CertificationCards";
+import dataCertCover from "../../public/dataCertCover.png";
+import backendCertCover from "../../public/backendCertCover.png";
+import frontendCertCover from "../../public/frontendCertCover.png";
 
 export default function Home() {
   const featuredLongCards = [
@@ -79,34 +82,22 @@ export default function Home() {
 
   const featuredCards = [
     {
-      heading: "24/7 Access",
-      subheading: "Study at any hour, day or night.",
-      image: Image3,
+      heading: "Front End Certifications",
+      image: frontendCertCover,
+      // come back to this and add a jump # to the specific section id once certifications page is up
+      link: "/certifications",
     },
     {
-      heading: "Expert Support",
-      subheading: "Guidance from online study experts.",
-      image: Image6,
+      heading: "Data Certifications",
+      image: dataCertCover,
+      // come back to this and add a jump # to the specific section id once certifications page is up
+      link: "/certifications",
     },
     {
-      heading: "Global Community",
-      subheading: "Connect with learners worldwide.",
-      image: Image3,
-    },
-    {
-      heading: "Customizable Spaces",
-      subheading: "Create the perfect study environment.",
-      image: Image3,
-    },
-    {
-      heading: "Tech-Enabled",
-      subheading: "Advanced tools at your fingertips.",
-      image: Image6,
-    },
-    {
-      heading: "Interactive Sessions",
-      subheading: "Engage in live knowledge exchanges.",
-      image: Image6,
+      heading: "Back End Certifications",
+      image: backendCertCover,
+      // come back to this and add a jump # to the specific section id once certifications page is up
+      link: "/certifications",
     },
   ];
 
@@ -141,7 +132,11 @@ export default function Home() {
           back soon for updates!
         </h1>
       </div>
-      <CertificationCards cards={featuredCards} />
+      <CertificationCards
+        cards={featuredCards}
+        heading="Certifications"
+        subheading="Click below to view certifications that Kirsten has earned from web dev and software development courses over the years."
+      />
       {/* <TextBanner
         heading="From Dream to Deployment"
         subheading="Let's transform your Figma designs into reality"

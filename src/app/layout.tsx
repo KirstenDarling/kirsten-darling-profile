@@ -65,7 +65,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         <body className={inter.className}>{children}</body>
         {/* <footer> */}
-        <FooterMobile />
+        {/* <FooterMobile /> */}
         <FooterThicc
           icon={HeartIcon}
           pageTitle="Kirsten Darling"
@@ -74,7 +74,7 @@ export default function RootLayout({
           textColor="text-neutral-100"
           backgroundColor="bg-black"
           additionalSection={true}
-          className="hidden sm:block"
+          className="block"
         />
         {/* </footer> */}
       </RecoilRoot>
