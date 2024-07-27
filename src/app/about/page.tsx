@@ -21,8 +21,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { GitHub, LinkedIn } from "@mui/icons-material";
 import BuildingSVG from "../../../public/building.svg";
+import Timeline from "../components/Timeline";
+import ProfessionalJourneyImage from "../../../public/professionalJourneyImage.png";
 
 export default function Home() {
+  // move below variables to Contenful
   const featuredCards = [
     {
       eyebrowText: "Transcend Reality",
@@ -93,6 +96,33 @@ export default function Home() {
     },
   ];
 
+  const featuredEvents = [
+    {
+      date: "2018",
+      text: "Developed an award-winning data warehouse for a leading e-commerce platform.",
+    },
+    {
+      date: "2019",
+      text: "Engineered a real-time analytics system for a national healthcare provider.",
+    },
+    {
+      date: "2020",
+      text: "Led the data migration for a merger of two Fortune 500 companies.",
+    },
+    {
+      date: "2021",
+      text: "Optimized machine learning pipelines for a tech startup's recommendation system.",
+    },
+    {
+      date: "2022",
+      text: "Implemented GDPR-compliant data practices for a European client.",
+    },
+    {
+      date: "2023",
+      text: "Architected a scalable data lake for a multinational media conglomerate.",
+    },
+  ];
+
   const [value, setValue] = useState(0);
 
   return (
@@ -114,6 +144,14 @@ export default function Home() {
         </h1>
       </div>
       <Image alt="" src={BuildingSVG} />
+      <Timeline
+        mainImage={ProfessionalJourneyImage}
+        title="Professional Journey"
+        subtitle="With a decade in data engineering, I've sculpted data solutions that drive
+        business growth."
+        CTAButtonText="Contact Lucas"
+        events={featuredEvents}
+      />
     </div>
   );
 }
