@@ -8,11 +8,16 @@ const CertificationCards = ({
 }: {
   heading?: string;
   subheading?: string;
-  cards: { heading?: string; subheading?: string; image: StaticImageData }[];
+  cards: {
+    heading?: string;
+    subheading?: string;
+    image: StaticImageData;
+    link?: string;
+  }[];
 }) => {
   return (
     <div className="self-stretch h-[100%] px-4 py-40 bg-black flex flex-col justify-center items-center">
-      <div className="self-stretch h-[101px] flex flex-col justify-start items-center gap-3">
+      <div className="mb-[15%] lg:mb-[5%] self-stretch h-[101px] flex flex-col justify-start items-center gap-3">
         <div className="self-stretch text-center text-neutral-100 text-[56px] font-normal font-['Fugaz One'] leading-[67.20px]">
           {heading}
         </div>
@@ -28,6 +33,7 @@ const CertificationCards = ({
             heading={card.heading}
             subheading={card.subheading}
             image={card.image}
+            link={card.link}
           />
         ))}
       </div>
