@@ -21,58 +21,117 @@ const FooterThicc = ({
   additionalSection?: boolean;
 }) => {
   return (
-    <div
-      className={` ${className} self-stretch h-[303px] p-2 flex-col justify-start items-start gap-2 flex`}
-    >
+    <>
       <div
-        className={`self-stretch h-[287px] px-10 py-8 ${backgroundColor} rounded-3xl flex-col justify-start items-start gap-8 flex`}
+        className={`hidden sm:block ${className} self-stretch h-[303px] p-2 flex-col justify-start items-start gap-2 flex`}
       >
-        <div className="self-stretch justify-between items-start inline-flex">
-          <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
-            <div className="justify-center items-center gap-2 inline-flex">
-              <div className="w-8 h-8 relative">
-                <Image alt="" src={icon} />
+        <div
+          className={`self-stretch h-[287px] px-10 py-8 ${backgroundColor} rounded-3xl flex-col justify-start items-start gap-8 flex`}
+        >
+          <div className="self-stretch justify-between items-start inline-flex">
+            <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
+              <div className="justify-center items-center gap-2 inline-flex">
+                <div className="w-8 h-8 relative">
+                  <Image alt="" src={icon} />
+                </div>
+                <div
+                  className={`${textColor} text-sm font-normal font-['Open Sans'] leading-snug`}
+                >
+                  {pageTitle}
+                </div>
               </div>
               <div
-                className={`${textColor} text-sm font-normal font-['Open Sans'] leading-snug`}
+                className={`${textColor} text-lg font-normal font-['Open Sans'] leading-[27px]`}
               >
-                {pageTitle}
+                {subtitle}
               </div>
             </div>
-            <div
-              className={`${textColor} text-lg font-normal font-['Open Sans'] leading-[27px]`}
-            >
-              {subtitle}
+            <div className="grow shrink basis-0 h-[136px] justify-end items-start gap-10 flex">
+              {columns.map((column, index) => (
+                <FooterColumn
+                  key={index}
+                  links={column.links}
+                  textColor={textColor}
+                />
+              ))}
             </div>
           </div>
-          <div className="grow shrink basis-0 h-[136px] justify-end items-start gap-10 flex">
-            {columns.map((column, index) => (
-              <FooterColumn
-                key={index}
-                links={column.links}
-                textColor={textColor}
-              />
-            ))}
-          </div>
+          {additionalSection && (
+            <div className="self-stretch h-px bg-zinc-800" />
+          )}
+          {additionalSection && (
+            <div className="self-stretch justify-between items-center inline-flex">
+              <div className="text-zinc-300 text-xs font-normal font-['Open Sans'] leading-tight">
+                Last Updated: July 26, 2024
+              </div>
+              <div className="h-[22px] justify-end items-center gap-4 flex">
+                <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
+                  Legal Info
+                </div>
+                <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
+                  Privacy Policy
+                </div>
+              </div>
+            </div>
+          )}
         </div>
-        {additionalSection && <div className="self-stretch h-px bg-zinc-800" />}
-        {additionalSection && (
-          <div className="self-stretch justify-between items-center inline-flex">
-            <div className="text-zinc-300 text-xs font-normal font-['Open Sans'] leading-tight">
-              Last Updated: July 26, 2024
+      </div>
+      {/* // MOBILE VERSION BELOW */}
+      <div
+        className={`block sm:hidden ${className} self-stretch h-[303px] p-2 flex-col justify-start items-start gap-2 flex`}
+      >
+        <div
+          className={`self-stretch h-[500px] sm:h-[287px] px-10 py-8 ${backgroundColor} rounded-3xl flex-col justify-start items-start gap-8 flex`}
+        >
+          <div className="flex-col self-stretch justify-between items-start inline-flex">
+            <div className="grow shrink basis-0 h-[136px] justify-end items-start gap-10 flex">
+              {columns.map((column, index) => (
+                <FooterColumn
+                  key={index}
+                  links={column.links}
+                  textColor={textColor}
+                />
+              ))}
             </div>
-            <div className="h-[22px] justify-end items-center gap-4 flex">
-              <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
-                Legal Info
+            <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
+              <div className="mt-[50px] justify-center items-center gap-2 inline-flex">
+                <div className="w-8 h-8 relative">
+                  <Image alt="" src={icon} />
+                </div>
+                <div
+                  className={`${textColor} text-sm font-normal font-['Open Sans'] leading-snug`}
+                >
+                  {pageTitle}
+                </div>
               </div>
-              <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
-                Privacy Policy
+              <div
+                className={`${textColor} text-lg font-normal font-['Open Sans'] leading-[27px]`}
+              >
+                {subtitle}
               </div>
             </div>
           </div>
-        )}
+          {additionalSection && (
+            <div className="self-stretch h-px bg-zinc-800" />
+          )}
+          {additionalSection && (
+            <div className="flex-col self-stretch items-baseline inline-flex">
+              <div className="self-center text-zinc-300 text-xs font-normal font-['Open Sans'] leading-tight">
+                Last Updated: July 26, 2024
+              </div>
+              <div className="self-center h-[22px] justify-end items-center gap-4 flex">
+                <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
+                  Legal Info
+                </div>
+                <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
+                  Privacy Policy
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
