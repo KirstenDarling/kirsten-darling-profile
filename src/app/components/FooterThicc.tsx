@@ -139,7 +139,7 @@ const FooterThicc = ({
                 />
               ))}
             </div>
-            <div className="w-[100%] grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
+            <div className="mt-[10%] sm:mt-[0%] w-[100%] grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
               <div className="mt-[50px] justify-center items-center gap-2 inline-flex">
                 <div className="w-8 h-8 relative">
                   <Image alt="" src={icon} />
