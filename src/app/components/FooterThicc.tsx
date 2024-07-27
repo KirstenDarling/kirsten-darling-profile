@@ -1,5 +1,10 @@
 import Image, { StaticImageData } from "next/image";
 import FooterColumn from "./FooterColumn";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../styles/footerThicc.module.css";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const FooterThicc = ({
   className,
@@ -44,6 +49,47 @@ const FooterThicc = ({
                 className={`${textColor} text-lg font-normal font-['Open Sans'] leading-[27px]`}
               >
                 {subtitle}
+              </div>
+              <div className="flex space-x-6">
+                <p className={`${styles.glow} ${styles.socialIcons}`}>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/kirstendarling/"
+                  >
+                    <LinkedInIcon
+                      sx={{
+                        fontSize: 40,
+                        color: "#A855F7",
+                        borderRadius: "50%",
+                      }}
+                    />
+                  </a>
+                </p>
+                <p className={`${styles.glow} ${styles.socialIcons}`}>
+                  <a target="_blank" href="https://github.com/KirstenDarling/">
+                    <GitHubIcon
+                      sx={{
+                        fontSize: 40,
+                        color: "#A855F7",
+                        borderRadius: "50%",
+                      }}
+                    />
+                  </a>
+                </p>
+                <p className={`${styles.glow} ${styles.socialIcons}`}>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/darling_kirsten/"
+                  >
+                    <InstagramIcon
+                      sx={{
+                        fontSize: 40,
+                        color: "#A855F7",
+                        borderRadius: "50%",
+                      }}
+                    />
+                  </a>
+                </p>
               </div>
             </div>
             <div className="grow shrink basis-0 h-[136px] justify-end items-start gap-10 flex">
