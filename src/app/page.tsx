@@ -38,6 +38,12 @@ import CardsDetailedLong from "./components/CardsDetailedLong";
 import Image3 from "../../public/fourCard3.png";
 import Image6 from "../../public/fourCard6.png";
 import CertificationCards from "./components/CertificationCards";
+import cCert from "../../public/cCert.png";
+import dataCert from "../../public/dataCert.png";
+import javascriptCert from "../../public/javascriptCert.png";
+import sqlCert from "../../public/sqlCert.jpg";
+import tableauCert from "../../public/tableauCert.jpeg";
+import webDevCert from "../../public/webDevCert.png";
 
 export default function Home() {
   const featuredLongCards = [
@@ -81,32 +87,32 @@ export default function Home() {
     {
       heading: "24/7 Access",
       subheading: "Study at any hour, day or night.",
-      image: Image3,
+      image: cCert,
     },
     {
       heading: "Expert Support",
       subheading: "Guidance from online study experts.",
-      image: Image6,
+      image: dataCert,
     },
     {
       heading: "Global Community",
       subheading: "Connect with learners worldwide.",
-      image: Image3,
+      image: javascriptCert,
     },
     {
       heading: "Customizable Spaces",
       subheading: "Create the perfect study environment.",
-      image: Image3,
+      image: sqlCert,
     },
     {
       heading: "Tech-Enabled",
       subheading: "Advanced tools at your fingertips.",
-      image: Image6,
+      image: tableauCert,
     },
     {
       heading: "Interactive Sessions",
       subheading: "Engage in live knowledge exchanges.",
-      image: Image6,
+      image: webDevCert,
     },
   ];
 
