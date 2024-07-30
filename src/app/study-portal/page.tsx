@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-import CombinedNavBar from "../components/CombinedNavBar";
 import { FaAddressCard, FaDatabase } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaHouseLaptop } from "react-icons/fa6";
@@ -53,30 +52,10 @@ export default function Home() {
     { title: "Certifications", URL: "/certifications" },
   ];
 
-  const additionalLinks = [
-    { title: "About Me", URL: "/about" },
-    {
-      title: "@kirstendarling",
-      URL: "https://www.linkedin.com/in/kirstendarling/",
-    },
-    { title: "Connect", URL: "/connect" },
-  ];
-
   const [value, setValue] = useState(0);
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <CombinedNavBar
-        FAIcon={FaDatabase}
-        pageTitle="Kirsten Darling"
-        links={links}
-        additionalLinks={additionalLinks}
-        backgroundEdges="bg-black"
-        backgroundColor="bg-white"
-        textColor="text-black"
-        font=""
-        className="hidden sm:block"
-      />
       <ComingSoonSection />
     </div>
   );

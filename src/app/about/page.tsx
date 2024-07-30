@@ -57,15 +57,6 @@ export default function Home() {
     { title: "Certifications", URL: "/certifications" },
   ];
 
-  const additionalLinks = [
-    { title: "About Me", URL: "/about" },
-    {
-      title: "@kirstendarling",
-      URL: "https://www.linkedin.com/in/kirstendarling/",
-    },
-    { title: "Connect", URL: "/connect" },
-  ];
-
   const featuredEvents = [
     {
       startDate: "2006",
@@ -160,17 +151,6 @@ export default function Home() {
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <CombinedNavBar
-        FAIcon={FaDatabase}
-        pageTitle="Kirsten Darling"
-        links={links}
-        additionalLinks={additionalLinks}
-        backgroundEdges="bg-black"
-        backgroundColor="bg-white"
-        textColor="text-black"
-        font=""
-        className="hidden sm:block"
-      />
       <Timeline
         helpingImage={HelpingImage}
         profileImage={ProfileImage}
