@@ -62,54 +62,8 @@ export default function Home() {
     { title: "Connect", URL: "/connect" },
   ];
 
-  const footerColumns = [
-    {
-      links: [
-        { link: "Study Portal", URL: "/study-portal" },
-        { link: "Coding Resources", URL: "/coding-resources" },
-        { link: "Flash Cards", URL: "/flash-cards" },
-        { link: "Virtual Bulletin", URL: "/bulletin" },
-      ],
-    },
-    {
-      links: [
-        { link: "Portfolio", URL: "/portfolio" },
-        { link: "Certifications", URL: "/certifications" },
-        { link: "About Me", URL: "/about" },
-        { link: "Connect", URL: "/connect" },
-      ],
-    },
-    {
-      links: [
-        {
-          link: "LinkedIn",
-          URL: "https://www.linkedin.com/in/kirstendarling/",
-        },
-        { link: "GitHub", URL: "https://github.com/KirstenDarling" },
-        {
-          link: "Google Dev",
-          URL: "https://developers.google.com/profile/u/kirsten_darling",
-        },
-        { link: "Dev.to", URL: "https://dev.to/kdarling93" },
-      ],
-    },
-  ];
-
-  const [value, setValue] = useState(0);
-
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <CombinedNavBar
-        FAIcon={FaDatabase}
-        pageTitle="Kirsten Darling"
-        links={links}
-        additionalLinks={additionalLinks}
-        backgroundEdges="bg-black"
-        backgroundColor="bg-white"
-        textColor="text-black"
-        font=""
-        className="hidden sm:block"
-      />
       <ComingSoonSection />
     </div>
   );

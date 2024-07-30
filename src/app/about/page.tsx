@@ -66,39 +66,6 @@ export default function Home() {
     { title: "Connect", URL: "/connect" },
   ];
 
-  const footerColumns = [
-    {
-      links: [
-        { link: "Study Portal", URL: "/study-portal" },
-        { link: "Coding Resources", URL: "/coding-resources" },
-        { link: "Flash Cards", URL: "/flash-cards" },
-        { link: "Virtual Bulletin", URL: "/bulletin" },
-      ],
-    },
-    {
-      links: [
-        { link: "Portfolio", URL: "/portfolio" },
-        { link: "Certifications", URL: "/certifications" },
-        { link: "About Me", URL: "/about" },
-        { link: "Connect", URL: "/connect" },
-      ],
-    },
-    {
-      links: [
-        {
-          link: "LinkedIn",
-          URL: "https://www.linkedin.com/in/kirstendarling/",
-        },
-        { link: "GitHub", URL: "https://github.com/KirstenDarling" },
-        {
-          link: "Google Dev",
-          URL: "https://developers.google.com/profile/u/kirsten_darling",
-        },
-        { link: "Dev.to", URL: "https://dev.to/kdarling93" },
-      ],
-    },
-  ];
-
   const featuredEvents = [
     {
       startDate: "2006",
