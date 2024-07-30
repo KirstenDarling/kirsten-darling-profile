@@ -1,4 +1,4 @@
-import LinkSection from './LinkSection';
+import LinkSection from "./LinkSection";
 
 export const NavBarLinkSection = ({
   textColor,
@@ -12,7 +12,11 @@ export const NavBarLinkSection = ({
   links?: { title: string; URL: string }[];
 }) => {
   return (
-    <div className={`w-${isNavBar1 ? '334' : '307'} px-4 justify-start items-center gap-4 flex`}>
+    <div
+      className={`hidden sm:flex w-${
+        isNavBar1 ? "334" : "307"
+      } px-4 justify-start items-center gap-4`}
+    >
       {links &&
         links.map((link, index) => (
           <LinkSection

@@ -33,17 +33,19 @@ const CombinedHero = ({
             <div className={`self-stretch ${subTextStyle}`}>{subheading}</div>
           </div>
           {buttonText && (
-            <div
-              className={`self-stretch px-6 md:px-12 py-2 md:py-4 ${buttonStyle} justify-center items-center gap-1 inline-flex`}
-            >
-              <div className="px-1 justify-center items-center gap-2 flex">
-                <h1
-                  className={`text-center text-white font-normal leading-[27px] ${buttonTextStyle}`}
-                >
-                  {buttonText}
-                </h1>
+            <a href="/study-portal">
+              <div
+                className={`self-stretch px-6 md:px-12 py-2 md:py-4 ${buttonStyle} justify-center items-center gap-1 inline-flex`}
+              >
+                <div className="px-1 justify-center items-center gap-2 flex">
+                  <h1
+                    className={`text-center text-white font-normal leading-[27px] ${buttonTextStyle}`}
+                  >
+                    {buttonText}
+                  </h1>
+                </div>
               </div>
-            </div>
+            </a>
           )}
         </div>
       </div>

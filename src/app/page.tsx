@@ -41,6 +41,8 @@ import CertificationCards from "./components/CertificationCards";
 import dataCertCover from "../../public/dataCertCover.png";
 import backendCertCover from "../../public/backendCertCover.png";
 import frontendCertCover from "../../public/frontendCertCover.png";
+import ComingSoonImage from "../../public/Coming.png";
+import ComingSoonSection from "./components/ComingSoonSection";
 
 export default function Home() {
   const featuredLongCards = [
@@ -65,21 +67,6 @@ export default function Home() {
     CTAText: "Seize the Future",
   };
 
-  const links = [
-    { title: "Portal", URL: "/study-portal" },
-    { title: "Portfolio", URL: "/portfolio" },
-    { title: "Certifications", URL: "/certifications" },
-  ];
-
-  const additionalLinks = [
-    { title: "About Me", URL: "/about" },
-    {
-      title: "@kirstendarling",
-      URL: "https://www.linkedin.com/in/kirstendarling/",
-    },
-    { title: "Connect", URL: "/connect" },
-  ];
-
   const featuredCards = [
     {
       heading: "Front End Certifications",
@@ -103,18 +90,6 @@ export default function Home() {
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <CombinedNavBar
-        FAIcon={FaDatabase}
-        pageTitle="Kirsten Darling"
-        links={links}
-        additionalLinks={additionalLinks}
-        backgroundEdges="bg-black"
-        backgroundColor="bg-white"
-        textColor="text-black"
-        font=""
-        className="hidden sm:block"
-      />
-
       <CombinedHero
         heading="I'm Kirsten, Software Engineer and Data Explorer."
         subheading="Explore my coding journey and the resources that fueled it. "
@@ -126,12 +101,6 @@ export default function Home() {
         buttonStyle="bg-purple-500 max-h-[60px] max-w-[250px] md:max-w-[360px] mt-[10%] text-white font-normal font-['Open Sans'] leading-[27px]"
         buttonTextStyle="text-neutral-100 text-3xl md:text-4xl font-normal font-['Fugaz One'] leading-[40px] md:leading-[77.76px]"
       />
-      <div>
-        <h1 className="text-[25px] sm:text-[48px] text-center">
-          KIRSTEN DARLING&apos;s site is currently undergoing renovations. Check
-          back soon for updates!
-        </h1>
-      </div>
       <CertificationCards
         cards={featuredCards}
         heading="Certifications"
@@ -155,7 +124,7 @@ export default function Home() {
         image={NovaPerson2}
         bgColor="black"
       /> */}
-      <Image alt="" src={BuildingSVG} />
+      <ComingSoonSection />
     </div>
   );
 }
