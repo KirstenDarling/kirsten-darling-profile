@@ -23,21 +23,6 @@ import BuildingSVG from "../../../public/building.svg";
 import ComingSoonSection from "../components/ComingSoonSection";
 
 export default function Home() {
-  const featuredCards = [
-    {
-      eyebrowText: "Transcend Reality",
-      heading: "Reshape the Metropolis Skyline",
-      subheading: "Urban revolution begins",
-      CTAText: "Embark the Hype",
-    },
-    {
-      eyebrowText: "Hack the System",
-      heading: "Reimagine Cybernetic Life",
-      subheading: "AI rebellion starts now",
-      CTAText: "Lead the Change",
-    },
-  ];
-
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
       <ComingSoonSection />

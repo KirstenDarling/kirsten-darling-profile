@@ -28,20 +28,6 @@ import ProfessionalJourneyImage from "../../../public/professionalJourneyImage.p
 
 export default function Home() {
   // move below variables to Contenful
-  const featuredCards = [
-    {
-      eyebrowText: "Transcend Reality",
-      heading: "Reshape the Metropolis Skyline",
-      subheading: "Urban revolution begins",
-      CTAText: "Embark the Hype",
-    },
-    {
-      eyebrowText: "Hack the System",
-      heading: "Reimagine Cybernetic Life",
-      subheading: "AI rebellion starts now",
-      CTAText: "Lead the Change",
-    },
-  ];
 
   const featuredEvents = [
     {
