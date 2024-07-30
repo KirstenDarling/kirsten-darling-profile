@@ -1,5 +1,3 @@
-"use client";
-
 import CombinedHero from "./components/CombinedHero";
 import HeroGen1 from "../../public/heroGen1.jpg";
 import * as React from "react";
