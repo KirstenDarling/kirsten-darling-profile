@@ -38,13 +38,6 @@ export default function Home() {
     },
   ];
 
-  const featuredLongCard = {
-    eyebrowText: "Rebel With Cause",
-    heading: "Redefine Humanity's Fate",
-    subheading: "Cyber evolution awaits",
-    CTAText: "Seize the Future",
-  };
-
   const [value, setValue] = useState(0);
 
   return (
