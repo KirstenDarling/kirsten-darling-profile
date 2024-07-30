@@ -38,8 +38,6 @@ export default function Home() {
     },
   ];
 
-  const [value, setValue] = useState(0);
-
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
       <ComingSoonSection />
