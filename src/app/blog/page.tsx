@@ -21,6 +21,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { GitHub, LinkedIn } from "@mui/icons-material";
 import BuildingSVG from "../../../public/building.svg";
+import ComingSoonSection from "../components/ComingSoonSection";
 
 export default function Home() {
   const featuredCards = [
@@ -108,12 +109,7 @@ export default function Home() {
         font=""
         className="hidden sm:block"
       />
-      <div>
-        <h1 className="text-[25px] sm:text-[48px] text-center">
-          BLOG POSTS coming soon!
-        </h1>
-      </div>
-      <Image alt="" src={BuildingSVG} />
+      <ComingSoonSection />
     </div>
   );
 }

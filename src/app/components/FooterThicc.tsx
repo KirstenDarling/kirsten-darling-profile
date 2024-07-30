@@ -127,7 +127,7 @@ const FooterThicc = ({
         className={`block sm:hidden ${className} self-stretch h-[303px] p-2 flex-col justify-start items-start gap-2 flex`}
       >
         <div
-          className={`self-stretch h-[500px] sm:h-[287px] px-10 py-8 ${backgroundColor} rounded-3xl flex-col justify-start items-start gap-8 flex`}
+          className={`self-stretch h-[525px] sm:h-[287px] px-10 py-8 ${backgroundColor} rounded-3xl flex-col justify-start items-start gap-8 flex`}
         >
           <div className="flex-col self-stretch justify-between items-start inline-flex">
             <div className="grow shrink basis-0 h-[136px] justify-end items-start gap-10 flex">
@@ -140,16 +140,18 @@ const FooterThicc = ({
               ))}
             </div>
             <div className="mt-[10%] sm:mt-[0%] w-[100%] grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
-              <div className="mt-[50px] justify-center items-center gap-2 inline-flex">
-                <div className="w-8 h-8 relative">
-                  <Image alt="" src={icon} />
+              <a href="/">
+                <div className="mt-[50px] justify-center items-center gap-2 inline-flex">
+                  <div className="w-8 h-8 relative">
+                    <Image alt="" src={icon} />
+                  </div>
+                  <div
+                    className={`${textColor} text-sm font-normal font-['Open Sans'] leading-snug`}
+                  >
+                    {pageTitle}
+                  </div>
                 </div>
-                <div
-                  className={`${textColor} text-sm font-normal font-['Open Sans'] leading-snug`}
-                >
-                  {pageTitle}
-                </div>
-              </div>
+              </a>
               <div
                 className={`${textColor} text-lg font-normal font-['Open Sans'] leading-[27px]`}
               >
