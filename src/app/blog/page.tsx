@@ -98,17 +98,6 @@ export default function Home() {
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <CombinedNavBar
-        FAIcon={FaDatabase}
-        pageTitle="Kirsten Darling"
-        links={links}
-        additionalLinks={additionalLinks}
-        backgroundEdges="bg-black"
-        backgroundColor="bg-white"
-        textColor="text-black"
-        font=""
-        className="hidden sm:block"
-      />
       <ComingSoonSection />
     </div>
   );
