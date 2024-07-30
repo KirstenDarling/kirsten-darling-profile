@@ -51,15 +51,6 @@ export default function Home() {
     { title: "Certifications", URL: "/certifications" },
   ];
 
-  const additionalLinks = [
-    { title: "About Me", URL: "/about" },
-    {
-      title: "@kirstendarling",
-      URL: "https://www.linkedin.com/in/kirstendarling/",
-    },
-    { title: "Connect", URL: "/connect" },
-  ];
-
   const [value, setValue] = useState(0);
 
   return (
