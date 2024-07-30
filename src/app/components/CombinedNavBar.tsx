@@ -39,7 +39,7 @@ const CombinedNavBar = ({
       className={`z-[2] w-full ${className} ${backgroundEdges} ${textColor} h-[67px] p-2 justify-between items-center inline-flex`}
     >
       <div
-        className={`grow shrink basis-0 h-[51px] px-2 py-4 ${backgroundColor} rounded-[64px] justify-between items-center flex`}
+        className={`border-gray-600 border-solid border-[3px] s w-[100%] grow shrink basis-0 h-[51px] px-2 py-4 ${backgroundColor} rounded-[64px] justify-center sm:justify-between items-center flex`}
       >
         {linkSection && (
           <NavBarLinkSection
@@ -61,7 +61,7 @@ const CombinedNavBar = ({
                 {/* Fallback to SunIcon if no icon provided */}
               </div>
               <div
-                className={`${textColor} text-base font-normal font-['Open Sans'] leading-normal`}
+                className={`${textColor} text-base hover:text-purple-500 font-normal font-['Open Sans'] leading-normal`}
               >
                 {pageTitle}
               </div>

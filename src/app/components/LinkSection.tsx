@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export const LinkSection = ({
   title,
@@ -16,9 +16,15 @@ export const LinkSection = ({
   return (
     <Link href={URL}>
       <div
-        className={`w-${isNavBar1 ? '100' : '111'} self-stretch px-4 justify-start items-center gap-2 flex`}
+        className={` w-${
+          isNavBar1 ? "100" : "111"
+        } self-stretch px-4 justify-start items-center gap-2 flex `}
       >
-        <div className={`${textColor} text-xs font-normal ${font} leading-tight`}>{title}</div>
+        <div
+          className={`${textColor} text-xs font-normal ${font} leading-tight hover:text-purple-500`}
+        >
+          {title}
+        </div>
       </div>
     </Link>
   );
