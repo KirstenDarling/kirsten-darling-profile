@@ -46,12 +46,6 @@ export default function Home() {
     CTAText: "Seize the Future",
   };
 
-  const links = [
-    { title: "Portal", URL: "/study-portal" },
-    { title: "Portfolio", URL: "/portfolio" },
-    { title: "Certifications", URL: "/certifications" },
-  ];
-
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
       <ComingSoonSection />

@@ -45,12 +45,6 @@ export default function Home() {
     CTAText: "Seize the Future",
   };
 
-  const links = [
-    { title: "Portal", URL: "/study-portal" },
-    { title: "Portfolio", URL: "/portfolio" },
-    { title: "Certifications", URL: "/certifications" },
-  ];
-
   const [value, setValue] = useState(0);
 
   return (
