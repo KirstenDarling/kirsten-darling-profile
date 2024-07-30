@@ -1,47 +1,12 @@
 "use client";
 
-import { useState } from "react";
-
-import ArticleCards from "./components/ArticleCards";
 import CombinedHero from "./components/CombinedHero";
-import CombinedNavBar from "./components/CombinedNavBar";
-import FooterThicc from "./components/FooterThicc";
-import ProjectLargeImageAccordion3 from "./components/ProjectLargeImageAccordion3";
-import QuoteWithImage from "./components/QuoteWithImage";
-import TextBanner from "./components/TextBanner";
-import { FaAddressCard, FaDatabase } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa";
-import { FaHouseLaptop } from "react-icons/fa6";
-import { FaLaptopCode } from "react-icons/fa";
-import NovaPerson2 from "../../public/NovaPerson2.png";
-import HeartIcon from "../../public/heartIcon.svg";
 import HeroGen1 from "../../public/heroGen1.jpg";
-import Purple8 from "../../public/purple8.jpg";
 import * as React from "react";
-import Image from "next/image";
-import Box from "@mui/material/Box";
-import BottomNavigation from "@mui/material/BottomNavigation";
-import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { GitHub, LinkedIn } from "@mui/icons-material";
-import BuildingSVG from "../../public/building.svg";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import CardsDetailed from "./components/CardsDetailed";
-import CardsDetailedLong from "./components/CardsDetailedLong";
-import Image3 from "../../public/fourCard3.png";
-import Image6 from "../../public/fourCard6.png";
 import CertificationCards from "./components/CertificationCards";
 import dataCertCover from "../../public/dataCertCover.png";
 import backendCertCover from "../../public/backendCertCover.png";
 import frontendCertCover from "../../public/frontendCertCover.png";
-import ComingSoonImage from "../../public/Coming.png";
 import ComingSoonSection from "./components/ComingSoonSection";
 
 export default function Home() {
