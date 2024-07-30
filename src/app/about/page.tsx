@@ -1,5 +1,3 @@
-"use client";
-
 import * as React from "react";
 import Timeline from "../components/Timeline";
 import ProfileImage from "../../../public/profile.jpg";
