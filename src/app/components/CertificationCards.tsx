@@ -16,7 +16,7 @@ const CertificationCards = ({
   }[];
 }) => {
   return (
-    <div className="self-stretch h-[100%] px-4 py-40 bg-black flex flex-col justify-center items-center">
+    <div className="self-stretch h-[100%] px-4 py-20 bg-black flex flex-col justify-center items-center">
       <div className="mb-[15%] lg:mb-[5%] self-stretch h-[101px] flex flex-col justify-start items-center gap-3">
         <div className="self-stretch text-center text-neutral-100 text-[56px] font-normal font-['Fugaz One'] leading-[67.20px]">
           {heading}
