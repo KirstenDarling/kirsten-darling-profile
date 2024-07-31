@@ -6,6 +6,9 @@ import dataCertCover from "../../public/dataCertCover.png";
 import backendCertCover from "../../public/backendCertCover.png";
 import frontendCertCover from "../../public/frontendCertCover.png";
 import ComingSoonSection from "./components/ComingSoonSection";
+import BecksScreenshot from "../../public/becksScreenshot.png";
+import CIYScreenshot from "../../public/ciyScreenshot.png";
+import C2CScreenshot from "../../public/c2cScreenshot.png";
 
 export default function Home() {
   const featuredLongCards = [
@@ -29,6 +32,24 @@ export default function Home() {
     subheading: "Cyber evolution awaits",
     CTAText: "Seize the Future",
   };
+
+  const portfolioCards = [
+    {
+      heading: "Beck's Hybrids",
+      image: BecksScreenshot,
+      link: "https://www.beckshybrids.com/",
+    },
+    {
+      heading: "CIY",
+      image: CIYScreenshot,
+      link: "https://ciy.com/",
+    },
+    {
+      heading: "Connect2Culture",
+      image: C2CScreenshot,
+      link: "https://connect2culture.org/",
+    },
+  ];
 
   const featuredCards = [
     {
@@ -63,6 +84,11 @@ export default function Home() {
         subTextStyle="text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px] mt-[3%]"
         buttonStyle="bg-purple-500 max-h-[60px] max-w-[250px] md:max-w-[360px] mt-[10%] text-white font-normal font-['Open Sans'] leading-[27px]"
         buttonTextStyle="text-neutral-100 text-3xl md:text-4xl font-normal font-['Fugaz One'] leading-[40px] md:leading-[77.76px]"
+      />
+      <CertificationCards
+        cards={portfolioCards}
+        heading="Portfolio"
+        subheading="Click below to view websites that Kirsten has worked on over the years."
       />
       <CertificationCards
         cards={featuredCards}
