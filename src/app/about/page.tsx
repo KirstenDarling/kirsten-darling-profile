@@ -3,6 +3,7 @@ import Timeline from "../components/Timeline";
 import ProfileImage from "../../../public/profile.jpg";
 import HelpingImage from "../../../public/kirstenhelpingatmwi.png";
 import WorkplaceImage from "../../../public/MWI.jpg";
+import ComingSoonSection from "../components/ComingSoonSection";
 
 export default function Home() {
   // move below variables to Contenful
@@ -23,13 +24,13 @@ export default function Home() {
       text: "General Manager for Shoe Carnival specializing in Training & Development",
       subheading: "10 Years",
       subtext:
-        "Led multimillion-dollar retail stores across MO, TX, OK, and CO; Provided comprehensive training to managers and staff in key areas like financial analysis, profit and loss management, market trend identification, product optimization strategies, loss prevention tactics, and essential human resources procedures.",
+        "Kirsten led multimillion-dollar retail stores across MO, TX, OK, and CO. She provided comprehensive training to managers and staff in key areas like financial analysis, profit and loss management, market trend identification, product optimization strategies, loss prevention tactics, and essential human resources procedures.",
     },
     {
       startDate: "2019",
       text: "Front End Developer Bootcamp",
       subtext:
-        "Enrolled in Skillcrush's Front End Development bootcamp, which provided an inclusive and flexible learning environment that empowered me to break into the tech industry.",
+        "Kirsten enrolled in Skillcrush's Front End Development bootcamp, which provided an inclusive and flexible learning environment that empowered her to break into the tech industry.",
       subheading: "2 Years",
     },
     {
@@ -42,7 +43,7 @@ export default function Home() {
     {
       startDate: "2020",
       subtext:
-        "Worked as lead developer at Darling Web Development specializing in modernizing and optimizing websites for small businesses to enhance their mobile and desktop experiences.",
+        "Kirsten worked as lead developer at Darling Web Development specializing in modernizing and optimizing websites for small businesses to enhance their mobile and desktop experiences.",
       text: "Lead Developer at Darling Web Development",
       subheading: "8 Months",
     },
@@ -51,7 +52,7 @@ export default function Home() {
       endDate: "CURRENT",
       text: "Software Engineer at Midwestern Interactive",
       subtext:
-        "Currently employed as a full-time software engineer at Midwestern Interactive (MWI), where I am embedded with various client teams to develop and maintain their web applications.",
+        "Kirsten is currently employed as a full-time software engineer at Midwestern Interactive (MWI), where she is embedded with various client teams to develop and maintain their web applications.",
       subheading: "3+ Years",
       imageBelow: HelpingImage,
     },
@@ -59,7 +60,7 @@ export default function Home() {
       startDate: "2021",
       text: "Marketing Site Work (MWI Marketing Team)",
       subtext:
-        "As a part of MWI's Marketing Team I worked on projects for Connect2Culture, CIY, Jaguar Transport, Pro Guide Batteries, and Big M Marina.",
+        "As a part of MWI's Marketing Team Kirsten worked on projects for Connect2Culture, CIY, Jaguar Transport, Pro Guide Batteries, and Big M Marina.",
       subheading: "4 Months",
     },
     {
@@ -67,7 +68,7 @@ export default function Home() {
       endDate: "2022",
       text: "AgVoice (MWI Client)",
       subtext:
-        "Joined AgVoice as a full-time ETR through MWI, contributing to their mobile-based voice interaction service for agriculture.",
+        "Kirsten joined AgVoice as a full-time ETR through MWI, contributing to their mobile-based voice interaction service for agriculture.",
       subheading: "1 year",
     },
     {
@@ -75,7 +76,7 @@ export default function Home() {
       endDate: "2024",
       text: "Beck's Hybrids through Element Three (MWI Client)",
       subtext:
-        "Joined Element Three as a Full Time ETR. Collaborated with E3 to bring Figma designs to life for their redesign of Beck's Hybrids' website.",
+        "Kirsten joined Element Three as a Full Time ETR. She collaborated with E3 to bring Figma designs to life for their redesign of Beck's Hybrids' website.",
       subheading: "1 Year, 8 Months",
     },
     {
@@ -83,7 +84,7 @@ export default function Home() {
       endDate: "CURRENT",
       text: "DBA + Data Engineering Studies",
       subtext:
-        "Began focusing on Database Administration knowledge and data engineering in general. Studied Tableau as well to take on more of a data visualization role for a client as needed.",
+        "Kirsten began focusing on Database Administration knowledge and data engineering in general. She studied Tableau as well to take on more of a data visualization role for a client as needed.",
       subheading: "6 Months",
     },
     {
@@ -91,7 +92,7 @@ export default function Home() {
       endDate: "CURRENT",
       text: "You.com (MWI Client)",
       subtext:
-        "Joined You.com as a Full Time ETR. This is Kirsten's most recent client through MWI. She's expressed excitement over working with a modern, innovative company in the booming AI chat industry.",
+        "Kirsten joined You.com as a Full Time ETR. This is her most recent client through MWI. She has expressed excitement over working with a modern, innovative company in the booming AI chat industry.",
       subheading: "1 Month",
       imageBelow: WorkplaceImage,
     },
@@ -99,7 +100,8 @@ export default function Home() {
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <Timeline
+      <ComingSoonSection />
+      {/* <Timeline
         helpingImage={HelpingImage}
         profileImage={ProfileImage}
         workplaceImage={WorkplaceImage}
@@ -107,7 +109,7 @@ export default function Home() {
         subtitle="With a passion for coding and over a decade of professional experience, I've combined my business acumen with technical skills to excel as a software engineer."
         CTAButtonText="Contact Kirsten"
         events={featuredEvents}
-      />
+      /> */}
     </div>
   );
 }
