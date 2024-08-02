@@ -3,6 +3,7 @@ import Timeline from "../components/Timeline";
 import ProfileImage from "../../../public/profile.jpg";
 import HelpingImage from "../../../public/kirstenhelpingatmwi.png";
 import WorkplaceImage from "../../../public/MWI.jpg";
+import ComingSoonSection from "../components/ComingSoonSection";
 
 export default function Home() {
   // move below variables to Contenful
@@ -99,7 +100,8 @@ export default function Home() {
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <Timeline
+      <ComingSoonSection />
+      {/* <Timeline
         helpingImage={HelpingImage}
         profileImage={ProfileImage}
         workplaceImage={WorkplaceImage}
@@ -107,7 +109,7 @@ export default function Home() {
         subtitle="With a passion for coding and over a decade of professional experience, I've combined my business acumen with technical skills to excel as a software engineer."
         CTAButtonText="Contact Kirsten"
         events={featuredEvents}
-      />
+      /> */}
     </div>
   );
 }
