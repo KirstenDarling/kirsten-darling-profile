@@ -109,3 +109,11 @@ Removed unused photos and updated the banner image.
 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Removed unused photos. [PR-47](https://github.com/KirstenDarling/kirsten-darling-profile/pull/47)
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Banner Image. [PR-48](https://github.com/KirstenDarling/kirsten-darling-profile/pull/48)
+
+## [0.1.6] - 2024-07-26
+
+Add timeline section component to the about page. Updated footer date. Replaced mobile footer.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Add timeline section component to about page. [PR-49](https://github.com/KirstenDarling/kirsten-darling-profile/pull/49)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Updated footer date. [PR-50](https://github.com/KirstenDarling/kirsten-darling-profile/pull/50)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Replace mobile footer. [PR-51](https://github.com/KirstenDarling/kirsten-darling-profile/pull/51)
