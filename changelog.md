@@ -102,3 +102,10 @@ Caught up master with development.
 Removed old favicon.
 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Removed old favicon. [PR-45](https://github.com/KirstenDarling/kirsten-darling-profile/pull/45)
+
+## [0.1.6] - 2024-07-23
+
+Removed unused photos and updated the banner image.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Removed unused photos. [PR-47](https://github.com/KirstenDarling/kirsten-darling-profile/pull/47)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Banner Image. [PR-48](https://github.com/KirstenDarling/kirsten-darling-profile/pull/48)
