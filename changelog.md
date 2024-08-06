@@ -117,3 +117,15 @@ Add timeline section component to the about page. Updated footer date. Replaced 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Add timeline section component to about page. [PR-49](https://github.com/KirstenDarling/kirsten-darling-profile/pull/49)
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Updated footer date. [PR-50](https://github.com/KirstenDarling/kirsten-darling-profile/pull/50)
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Replace mobile footer. [PR-51](https://github.com/KirstenDarling/kirsten-darling-profile/pull/51)
+
+## [0.1.6] - 2024-07-27
+
+Caught up master with development. Worked on social icons on desktop and mobile footers. Updated certification cards component - updated copy, made responsive, and added glow on hover effects. Adjusted top margin on small mobile footer.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-46](https://github.com/KirstenDarling/kirsten-darling-profile/pull/46)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Social icons on desktop footer. [PR-52](https://github.com/KirstenDarling/kirsten-darling-profile/pull/52)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Social icons on mobile footer. [PR-53](https://github.com/KirstenDarling/kirsten-darling-profile/pull/53)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Make cert cards responsive. [PR-54](https://github.com/KirstenDarling/kirsten-darling-profile/pull/54)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Cert cards copy. [PR-55](https://github.com/KirstenDarling/kirsten-darling-profile/pull/55)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Glowy cert cards on hover. [PR-56](https://github.com/KirstenDarling/kirsten-darling-profile/pull/56)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Fix top margin on footer on old small iPhones. [PR-57](https://github.com/KirstenDarling/kirsten-darling-profile/pull/57)
