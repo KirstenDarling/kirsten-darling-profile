@@ -65,3 +65,14 @@ Added temporary initial data in json form for sql resources section of future re
 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Added temp initial json data for sql resources. [PR-33](https://github.com/KirstenDarling/kirsten-darling-profile/pull/33)
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Desktop footer. [PR-34](https://github.com/KirstenDarling/kirsten-darling-profile/pull/34)
+
+## [0.1.6] - 2024-06-28
+
+Updated desktop footer. Added temp initial json data for other resources other than just SQL resources like last time. Seperated text styles and button text styles on combined hero component. Merged in Development thrice to get caught up.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MERGE Development [PR-32](https://github.com/KirstenDarling/kirsten-darling-profile/pull/32)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Update desktop footer. [PR-35](https://github.com/KirstenDarling/kirsten-darling-profile/pull/35)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Added temp initial json data for other resource sections. [PR-36](https://github.com/KirstenDarling/kirsten-darling-profile/pull/36)
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-37](https://github.com/KirstenDarling/kirsten-darling-profile/pull/37)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Seperated text styles and button text styles on combined hero component. [PR-38](https://github.com/KirstenDarling/kirsten-darling-profile/pull/38)
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-39](https://github.com/KirstenDarling/kirsten-darling-profile/pull/39)
