@@ -83,3 +83,10 @@ Added in icons and caught up development.
 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Added icons. [PR-40](https://github.com/KirstenDarling/kirsten-darling-profile/pull/40)
 - [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-41](https://github.com/KirstenDarling/kirsten-darling-profile/pull/41)
+
+## [0.1.6] - 2024-07-01
+
+Renamed cards to article cards and pushed up cert card component which will be renamed and reused for portfolio card groupings as well later.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Renamed cards to article cards. [PR-42](https://github.com/KirstenDarling/kirsten-darling-profile/pull/42)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Certificate Cards component. [PR-43](https://github.com/KirstenDarling/kirsten-darling-profile/pull/43)
