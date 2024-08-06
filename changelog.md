@@ -155,3 +155,12 @@ Caught up master with development. Update the timeline components structure and 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Tech debt, removed duplicate use client. [PR-71](https://github.com/KirstenDarling/kirsten-darling-profile/pull/71)
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Added portfolio screenshots in card section. [PR-72](https://github.com/KirstenDarling/kirsten-darling-profile/pull/72)
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR OR MINOR Description. [PR-73](https://github.com/KirstenDarling/kirsten-darling-profile/pull/73)
+
+## [0.1.6] - 2024-08-01
+
+Caught up master with development. Fixed the tense used in copy on about page timeline component. Hid the timeline component on the about page for now. Updated the footer date to reflect an August date.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-74](https://github.com/KirstenDarling/kirsten-darling-profile/pull/74)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Fix tense used in copy on about page timeline. [PR-75](https://github.com/KirstenDarling/kirsten-darling-profile/pull/75)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Hide about page timeline. [PR-76](https://github.com/KirstenDarling/kirsten-darling-profile/pull/76)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Footer update aug. [PR-77](https://github.com/KirstenDarling/kirsten-darling-profile/pull/77)
