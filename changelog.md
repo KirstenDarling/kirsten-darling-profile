@@ -129,3 +129,9 @@ Caught up master with development. Worked on social icons on desktop and mobile 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Cert cards copy. [PR-55](https://github.com/KirstenDarling/kirsten-darling-profile/pull/55)
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Glowy cert cards on hover. [PR-56](https://github.com/KirstenDarling/kirsten-darling-profile/pull/56)
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Fix top margin on footer on old small iPhones. [PR-57](https://github.com/KirstenDarling/kirsten-darling-profile/pull/57)
+
+## [0.1.6] - 2024-07-28
+
+Caught up master with development.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-58](https://github.com/KirstenDarling/kirsten-darling-profile/pull/58)
