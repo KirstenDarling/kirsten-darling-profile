@@ -58,3 +58,10 @@ Using info from [this site](https://choosealicense.com/licenses/) and an episdoe
 - [SHORTCUT_TICKET-UNASSIGNED] MERGE Development [PR-29](https://github.com/KirstenDarling/kirsten-darling-profile/pull/29)
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Added in the GNU General Public License v3.0 to the project. [PR](https://github.com/KirstenDarling/kirsten-darling-profile/pull/30)
 - [SHORTCUT_TICKET-UNASSIGNED] MINOR Updated the changelog to reflect recent changes. [PR](https://github.com/KirstenDarling/kirsten-darling-profile/pull/31)
+
+## [0.1.6] - 2024-06-27
+
+Added temporary initial data in json form for sql resources section of future resources page. Pushed up the desktop footer.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Added temp initial json data for sql resources. [PR-33](https://github.com/KirstenDarling/kirsten-darling-profile/pull/33)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Desktop footer. [PR-34](https://github.com/KirstenDarling/kirsten-darling-profile/pull/34)
