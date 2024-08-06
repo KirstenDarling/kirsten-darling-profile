@@ -90,3 +90,9 @@ Renamed cards to article cards and pushed up cert card component which will be r
 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Renamed cards to article cards. [PR-42](https://github.com/KirstenDarling/kirsten-darling-profile/pull/42)
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Certificate Cards component. [PR-43](https://github.com/KirstenDarling/kirsten-darling-profile/pull/43)
+
+## [0.1.6] - 2024-07-02
+
+Caught up master with development.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-44](https://github.com/KirstenDarling/kirsten-darling-profile/pull/44)
