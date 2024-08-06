@@ -135,3 +135,23 @@ Caught up master with development. Worked on social icons on desktop and mobile 
 Caught up master with development.
 
 - [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-58](https://github.com/KirstenDarling/kirsten-darling-profile/pull/58)
+
+## [0.1.6] - 2024-07-30
+
+Caught up master with development. Update the timeline components structure and styles. Removed duplicate nav bars, const footerColumns, additional links, const links, featuredlongcard constants. Removed lots of unused code and duplicated. Tech debt: remove set value, delete duplicate featured cards, unused imports, and duplicate use client statements. Added portfolio screenshots into portfolio certificate cards component on home page.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Updated timeline component and styles. [PR-59](https://github.com/KirstenDarling/kirsten-darling-profile/pull/59)
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-60](https://github.com/KirstenDarling/kirsten-darling-profile/pull/60)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Remove duplicate nav bars. [PR-61](https://github.com/KirstenDarling/kirsten-darling-profile/pull/61)
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-62](https://github.com/KirstenDarling/kirsten-darling-profile/pull/62)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Tech debt remove duplicate const footerColumns. [PR-63](https://github.com/KirstenDarling/kirsten-darling-profile/pull/63)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Remove duplicate additional links. [PR-64](https://github.com/KirstenDarling/kirsten-darling-profile/pull/64)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Remove duplicate const links. [PR-65](https://github.com/KirstenDarling/kirsten-darling-profile/pull/65)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Delete duplicate featuredlongcard constants. [PR-66](https://github.com/KirstenDarling/kirsten-darling-profile/pull/66)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Tech debt, remove set value. [PR-67](https://github.com/KirstenDarling/kirsten-darling-profile/pull/67)
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-68](https://github.com/KirstenDarling/kirsten-darling-profile/pull/68)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Tech debt, delete duplicate featured cards. [PR-69](https://github.com/KirstenDarling/kirsten-darling-profile/pull/69)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Tech debt, delete unused imports. [PR-70](https://github.com/KirstenDarling/kirsten-darling-profile/pull/70)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Tech debt, removed duplicate use client. [PR-71](https://github.com/KirstenDarling/kirsten-darling-profile/pull/71)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Added portfolio screenshots in card section. [PR-72](https://github.com/KirstenDarling/kirsten-darling-profile/pull/72)
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR OR MINOR Description. [PR-73](https://github.com/KirstenDarling/kirsten-darling-profile/pull/73)
