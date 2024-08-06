@@ -76,3 +76,10 @@ Updated desktop footer. Added temp initial json data for other resources other t
 - [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-37](https://github.com/KirstenDarling/kirsten-darling-profile/pull/37)
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Seperated text styles and button text styles on combined hero component. [PR-38](https://github.com/KirstenDarling/kirsten-darling-profile/pull/38)
 - [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-39](https://github.com/KirstenDarling/kirsten-darling-profile/pull/39)
+
+## [0.1.6] - 2024-06-30
+
+Added in icons and caught up development.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Added icons. [PR-40](https://github.com/KirstenDarling/kirsten-darling-profile/pull/40)
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-41](https://github.com/KirstenDarling/kirsten-darling-profile/pull/41)
