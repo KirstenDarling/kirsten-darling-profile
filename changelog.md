@@ -96,3 +96,9 @@ Renamed cards to article cards and pushed up cert card component which will be r
 Caught up master with development.
 
 - [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-44](https://github.com/KirstenDarling/kirsten-darling-profile/pull/44)
+
+## [0.1.6] - 2024-07-18
+
+Removed old favicon.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Removed old favicon. [PR-45](https://github.com/KirstenDarling/kirsten-darling-profile/pull/45)
