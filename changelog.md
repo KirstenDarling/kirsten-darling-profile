@@ -170,3 +170,9 @@ Caught up master with development. Fixed the tense used in copy on about page ti
 Caught up change log for the rest of June, all of July, and the start of August. Updated the footer date to reflect today's changes.
 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Caught up the change log. [PR-78](https://github.com/KirstenDarling/kirsten-darling-profile/pull/78)
+
+## [0.1.6] - 2024-08-06
+
+Started setting up blog with Sanity. Updated footer.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Started setting up Sanity blog. [PR-79](https://github.com/KirstenDarling/kirsten-darling-profile/pull/70)
