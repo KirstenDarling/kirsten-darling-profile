@@ -1,13 +1,15 @@
-// app/blog/page.tsx 
-"use client"; // This is now a Client Component
+"use client";
 
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { client } from '../../sanity/lib/client'; // Adjust the path if needed
-import React from 'react';
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { client } from "../../sanity/lib/client";
+import React from "react";
+import ComingSoonSection from "../components/ComingSoonSection";
 
 const BlogIndex = () => {
-  const [posts, setPosts] = useState<{ _id: string; title: string; slug: { current: string } }[]>([]);
+  const [posts, setPosts] = useState<
+    { _id: string; title: string; slug: { current: string } }[]
+  >([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -17,20 +19,23 @@ const BlogIndex = () => {
     };
 
     fetchPosts();
-  }, []); 
+  }, []);
 
   return (
-    <div>
-      <h1>Blog</h1>
-      <ul>
+    <div className="w-full bg-white flex-col justify-start items-center inline-flex">
+      <ComingSoonSection />
+      <div>
+        {/* <h1>Blog</h1> */}
+        {/* <ul>
         {posts.map((post) => (
           <li key={post._id}>
-            <Link href={`/blog/${post.slug.current}`}> {/* Assuming your blog post detail page is at /blog/[slug] */}
+            <Link href={`/blog/${post.slug.current}`}>
               <a>{post.title}</a>
             </Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
+      </div>
     </div>
   );
 };
