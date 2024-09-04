@@ -27,8 +27,8 @@ const CombinedHero = ({
     >
       {/* Text Container */}
       <div className="order-2 md:order-none grow shrink basis-0 px-12 py-[36px] md:py-[120px] flex-col justify-center items-center gap-8 inline-flex">
-        <div className="self-stretch h-[302px] flex-col justify-center items-start gap-2 md:gap-10 flex">
-          <div className="self-stretch h-[203px] flex-col justify-center items-start gap-4 flex">
+        <div className="self-stretch h-full flex-col justify-center items-start gap-2 md:gap-10 flex">
+          <div className="self-stretch h-full flex-col justify-center items-start gap-4 flex">
             <div className={`self-stretch ${textStyle}`}>{heading}</div>
             <div className={`self-stretch ${subTextStyle}`}>{subheading}</div>
           </div>
