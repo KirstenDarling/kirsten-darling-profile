@@ -77,7 +77,7 @@ export default function Home() {
       <CombinedHero
         heading="I'm Kirsten, Software Engineer and Data Explorer."
         subheading="Explore my coding journey and the resources that fueled it. "
-        buttonText="Study With Me"
+        buttonText="Let's Study"
         image={HeroGen1}
         backgroundStyle="bg-black"
         textStyle="text-neutral-100 text-3xl md:text-7xl font-normal font-['Fugaz One'] leading-[40px] md:leading-[77.76px]"
