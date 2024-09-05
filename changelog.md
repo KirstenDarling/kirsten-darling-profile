@@ -197,6 +197,12 @@ Adjusted Home Page button copy and spacing. Updated types to resolve a build err
 - [SHORTCUT_TICKET-UNASSIGNED] MINOR Shorter button CTA. [PR-83](https://github.com/KirstenDarling/kirsten-darling-profile/pull/83)
 - - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Hide the blog pages. Updated footer date. [PR-84](https://github.com/KirstenDarling/kirsten-darling-profile/pull/84)
 
+## [0.2.0] - 2024-09-04
+
+Added content and copy to certifications page. Updated the footer date to reflect today's changes. Updated the changelog.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Certs page rough draft [PR-85](https://github.com/KirstenDarling/kirsten-darling-profile/pull/85)
+
 ## pending - 2024-09-03
 
 - [SHORTCUT_TICKET-UNASSIGNED] OPEN development. [PR-82](https://github.com/KirstenDarling/kirsten-darling-profile/pull/82)
