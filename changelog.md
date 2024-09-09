@@ -176,3 +176,39 @@ Caught up change log for the rest of June, all of July, and the start of August.
 Started setting up blog with Sanity. Updated footer.
 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Started setting up Sanity blog. [PR-79](https://github.com/KirstenDarling/kirsten-darling-profile/pull/70)
+
+## [0.1.7] - 2024-08-16
+
+Catching up master with development. Updated the footer date to reflect today's changes.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Development. [PR-79](https://github.com/KirstenDarling/kirsten-darling-profile/pull/79)
+
+## [0.1.8] - 2024-08-11
+
+Finished setting up Sanity blog. Setup /blog page and individual blog suppages. Updated the footer date to reflect today's changes.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR finished Sanity blog integration. [PR-80](https://github.com/KirstenDarling/kirsten-darling-profile/pull/80)
+
+## [0.1.9] - 2024-09-03
+
+Adjusted Home Page button copy and spacing. Updated types to resolve a build error. Updated the footer date to reflect today's changes. Shortened the homepage button cta. Hide the blog pages for now.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Home Page button copy and spacing. Updated types to resolve a build error [PR-81](https://github.com/KirstenDarling/kirsten-darling-profile/pull/81)
+- [SHORTCUT_TICKET-UNASSIGNED] MINOR Shorter button CTA. [PR-83](https://github.com/KirstenDarling/kirsten-darling-profile/pull/83)
+- - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Hide the blog pages. Updated footer date. [PR-84](https://github.com/KirstenDarling/kirsten-darling-profile/pull/84)
+
+## [0.2.0] - 2024-09-04
+
+Added content and copy to certifications page. Updated the footer date to reflect today's changes. Updated the changelog.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Certs page rough draft [PR-85](https://github.com/KirstenDarling/kirsten-darling-profile/pull/85)
+
+## [0.2.1] - 2024-09-08
+
+Adjusted spacing on the certifications page. Updated the footer date to reflect today's changes. Updated the changelog.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Continued on this open PR - Certs page rough draft [PR-85](https://github.com/KirstenDarling/kirsten-darling-profile/pull/85)
+
+## pending - 2024-09-03
+
+- [SHORTCUT_TICKET-UNASSIGNED] OPEN development. [PR-82](https://github.com/KirstenDarling/kirsten-darling-profile/pull/82)
