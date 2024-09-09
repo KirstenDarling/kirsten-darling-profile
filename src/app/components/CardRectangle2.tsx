@@ -14,13 +14,13 @@ const CardRectangle2 = ({
 }) => {
   return (
     <a href={link ? link : "/"}>
-      <div className="min-w-[340px] max-w-[375px] grow shrink basis-0 flex-col justify-center items-start gap-4 inline-flex">
+      <div className="grow shrink basis-0 flex-col justify-center items-start gap-4 inline-flex">
         <Image
-          className={`${styles.glowGreen} self-stretch h-56 rounded-[32px]`}
+          className={`max-h-[233px] self-stretch rounded-[16px] object-contain`}
           alt=""
           src={image}
         />
-        <div className="self-stretch h-[57px] flex-col justify-center items-center gap-2 flex">
+        <div className="self-stretch h-full flex-col justify-center items-center gap-2 flex">
           <div className="self-stretch text-center text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px]">
             {heading}
           </div>
