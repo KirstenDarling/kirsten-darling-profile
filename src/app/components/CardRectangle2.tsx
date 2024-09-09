@@ -13,7 +13,10 @@ const CardRectangle2 = ({
   link?: string;
 }) => {
   return (
-    <a href={link ? link : "/"}>
+    <a
+      href={link ? link : "/"}
+      target={link == "/certifications" ? "_self" : "_blank"}
+    >
       <div className="grow shrink basis-0 flex-col justify-center items-start gap-4 inline-flex">
         <Image
           className={`max-h-[233px] self-stretch rounded-[16px] object-contain`}

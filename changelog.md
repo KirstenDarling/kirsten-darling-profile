@@ -203,6 +203,12 @@ Added content and copy to certifications page. Updated the footer date to reflec
 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Certs page rough draft [PR-85](https://github.com/KirstenDarling/kirsten-darling-profile/pull/85)
 
+## [0.2.1] - 2024-09-08
+
+Adjusted spacing on the certifications page. Updated the footer date to reflect today's changes. Updated the changelog.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Continued on this open PR - Certs page rough draft [PR-85](https://github.com/KirstenDarling/kirsten-darling-profile/pull/85)
+
 ## pending - 2024-09-03
 
 - [SHORTCUT_TICKET-UNASSIGNED] OPEN development. [PR-82](https://github.com/KirstenDarling/kirsten-darling-profile/pull/82)
