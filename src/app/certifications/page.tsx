@@ -5,7 +5,7 @@ import backendCertCover from "../../../public/backendCertCover.png";
 import frontendCertCover from "../../../public/frontendCertCover.png";
 import CertificationCards from "../components/CertificationCards";
 import WebDevCert from "../../../public/webDevCert.png";
-import JavaScriptCert from "../../../public/javaScriptCert.png";
+import JavaScriptCert from "../../../public/javascriptCert.png";
 import CssCert from "../../../public/cssCerts.png";
 import DataCert from "../../../public/dataCert.png";
 import SQLCert from "../../../public/sqlCert.jpg";
