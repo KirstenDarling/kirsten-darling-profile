@@ -9,7 +9,7 @@ import JavaScriptCert from "../../../public/javaScriptCert.png";
 import CssCert from "../../../public/cssCerts.png";
 import DataCert from "../../../public/dataCert.png";
 import SQLCert from "../../../public/sqlCert.jpg";
-import TableauCert from "../../../public/tableauCert.jpeg";
+import TableauCert2 from "../../../public/tableauCert2.png";
 import CCert from "../../../public/cCert.png";
 import PHPCert from "../../../public/phpCert.png";
 
@@ -60,7 +60,7 @@ export default function Home() {
     },
     {
       heading: "Data Visualizations with Tableau",
-      image: TableauCert,
+      image: TableauCert2,
       subheading:
         "Kirsten learned how to create visualizations and dashboards with Tableau.",
       // come back to this and add a jump # to the specific section id once certifications page is up
