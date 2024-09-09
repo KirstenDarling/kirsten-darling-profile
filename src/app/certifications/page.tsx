@@ -96,12 +96,6 @@ export default function Home() {
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <ComingSoonSection />
-      <CertificationCards
-        cards={frontEndCerts}
-        heading="Front End Certifications"
-        subheading=""
-      />
       <CertificationCards
         cards={dataCerts}
         heading="Data Certifications"
@@ -110,6 +104,11 @@ export default function Home() {
       <CertificationCards
         cards={backEndCerts}
         heading="Back End Certifications"
+        subheading=""
+      />
+      <CertificationCards
+        cards={frontEndCerts}
+        heading="Front End Certifications"
         subheading=""
       />
     </div>

@@ -20,7 +20,7 @@ const CardRectangle2 = ({
           alt=""
           src={image}
         />
-        <div className="self-stretch h-full flex-col justify-center items-center gap-2 flex">
+        <div className="self-stretch px-[4rem] h-full flex-col justify-center items-center gap-2 flex">
           <div className="self-stretch text-center text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px]">
             {heading}
           </div>
