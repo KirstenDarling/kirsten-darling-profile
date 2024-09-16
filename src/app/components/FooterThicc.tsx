@@ -108,14 +108,14 @@ const FooterThicc = ({
           {additionalSection && (
             <div className="self-stretch justify-between items-center inline-flex">
               <div className="text-zinc-300 text-xs font-normal font-['Open Sans'] leading-tight">
-                Last Updated: September 08, 2024
+                Last Updated: September 16, 2024
               </div>
               <div className="h-[22px] justify-end items-center gap-4 flex">
                 <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
                   Legal Info
                 </div>
                 <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
-                  Privacy Policy
+                  <a href="/privacy">Privacy Policy</a>
                 </div>
               </div>
             </div>
@@ -213,7 +213,7 @@ const FooterThicc = ({
                   Legal Info
                 </div>
                 <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
-                  Privacy Policy
+                  <a href="/privacy">Privacy Policy</a>
                 </div>
               </div>
             </div>
