@@ -111,9 +111,11 @@ const FooterThicc = ({
                 Last Updated: September 16, 2024
               </div>
               <div className="h-[22px] justify-end items-center gap-4 flex">
-                <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
-                  Legal Info
-                </div>
+                <a href="/legal">
+                  <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
+                    Legal Info
+                  </div>
+                </a>
                 <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
                   <a href="/privacy">Privacy Policy</a>
                 </div>
@@ -209,9 +211,11 @@ const FooterThicc = ({
                 Last Updated: August 06, 2024
               </div>
               <div className="self-center h-[22px] justify-end items-center gap-4 flex">
-                <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
-                  Legal Info
-                </div>
+                <a href="/legal">
+                  <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
+                    Legal Info
+                  </div>
+                </a>
                 <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
                   <a href="/privacy">Privacy Policy</a>
                 </div>
