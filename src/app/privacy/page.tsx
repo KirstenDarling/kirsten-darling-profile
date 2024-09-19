@@ -4,8 +4,8 @@ import ComingSoonSection from "../components/ComingSoonSection";
 export default function Home() {
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <div className="privacy-policy-container self-stretch bg-white justify-center items-center inline-flex flex-col md:flex-col py-[120px] px-12">
-        <div className="order-2 md:order-none grow shrink basis-0 px-12 py-[36px] md:py-[0px] flex-col justify-center items-center gap-8 inline-flex">
+      <div className="privacy-policy-container bg-white justify-center items-center inline-flex flex-col md:flex-col py-[120px] px-12">
+        <div className="order-1 md:order-none grow shrink basis-0 px-12 py-[36px] md:py-[0px] flex-col justify-center items-center gap-8 inline-flex">
           <div className="self-stretch h-full flex-col justify-center items-start gap-2 md:gap-10 flex">
             <div className="self-stretch h-full flex-col justify-center items-start gap-4 flex">
               <div className={`self-stretch textStyle`}>
@@ -17,8 +17,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="order-1 md:order-none grow shrink basis-0 h-full justify-center items-center gap-2 flex flex-col">
-          <div className="self-stretch text-black font-normal leading-[27px] max-w-[70%] md:max-w-[100%] grow shrink basis-0 self-stretch">
+        <div className="order-2 md:order-none grow shrink basis-0 h-full justify-center items-center gap-2 flex flex-col">
+          <div className="text-black font-normal leading-[27px] sm:max-w-[70%] md:max-w-[100%] grow shrink basis-0 self-stretch">
             <div className="mb-[3rem]">
               <p className="text-xl mb-[0.5rem]">
                 <strong>Information We Collect</strong>
@@ -130,7 +130,7 @@ export default function Home() {
 
             <div className="mb-[3rem]">
               <p className="text-xl mb-[0.5rem]">
-                <strong>Contact Us:</strong>
+                <strong>Contact Us</strong>
               </p>
 
               <p>
