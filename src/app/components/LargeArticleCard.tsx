@@ -1,5 +1,4 @@
 import { StaticImageData } from "next/image";
-import SampleBlogImage from "../../../public/fourCard1.png";
 import Image from "next/image";
 
 const LargeArticleCard = ({
@@ -8,13 +7,13 @@ const LargeArticleCard = ({
   articleImage: StaticImageData;
 }) => {
   return (
-    <div className="blog-card-layout-left flex flex-col pl-[5rem] pr-[2.5rem] mt-[5rem] mb-[2rem] w-[75%]">
+    <div className="blog-card-layout-left flex flex-col pl-20 pr-10 mt-20 mb-8 w-full">
       <div className="blog-card-headling-article flex flex-col">
         <div className="headling-article-image">
           <Image
             src={articleImage}
             alt="sample blog image"
-            className="w-[90%]"
+            className="w-full"
           />
         </div>
         <div className="headling-article-title mt-[1rem] pl-[1rem] pr-[2rem]">

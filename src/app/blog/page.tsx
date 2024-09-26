@@ -72,13 +72,25 @@ const BlogIndex = () => {
       image: SampleBlogImage,
       link: "/",
     },
+    {
+      heading: "Article #4 Title",
+      subheading:
+        "Article #4 Subtitle. Blah blah blah. Maybe do an except instead of a subtitle.",
+      image: SampleBlogImage,
+      link: "/",
+    },
   ];
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <ComingSoonSection />
       <div>
-        {/* <h1>Blog</h1> */}
+        <div className="text-center text-[72px] pt-20 pb-10 bg-slate-200 border-b-[2rem] border-slate-100">
+          <h1 className="text-purple-500">
+            <span className="italic text-lg text-black ">the</span>
+            Blog
+          </h1>
+        </div>
+        <div className="h-8 bg-slate-50"></div>
         {/* <ul>
         {posts.map((post) => (
           <li key={post._id}>
@@ -88,9 +100,13 @@ const BlogIndex = () => {
           </li>
         ))}
       </ul> */}
-        <div className="blog-card-layout flex flex-row">
-          <LargeArticleCard articleImage={SampleBlogImage} />
-          <StackedArticleCards cards={stackedBlogCards} />
+        <div className="blog-card-layout flex flex-row w-[95%] m-auto">
+          <div className="w-full md:w-3/5">
+            <LargeArticleCard articleImage={SampleBlogImage} />
+          </div>
+          <div className="w-full md:w-2/5">
+            <StackedArticleCards cards={stackedBlogCards} />
+          </div>
         </div>
         <div className="blog-card-layout-right flex flex-col pl-[2.5rem] pr-[5rem]">
           <CertificationCards
