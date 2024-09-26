@@ -7,7 +7,7 @@ const LargeArticleCard = ({
   articleImage: StaticImageData;
 }) => {
   return (
-    <div className="blog-card-layout-left flex flex-col pl-20 pr-10 mt-20 mb-8 w-full">
+    <div className="blog-card-layout-left flex flex-col pl-[2rem] pr-[2rem] md:pl-20 md:pr-10 mt-20 mb-8 w-full">
       <div className="blog-card-headling-article flex flex-col">
         <div className="headling-article-image">
           <Image

@@ -16,7 +16,6 @@ export default function Home() {
       subtext:
         "Kirsten joined You.com as a Full Time ETR. This is her most recent client through MWI. She has expressed excitement over working with a modern, innovative company in the booming AI chat industry.",
       subheading: "3 Months",
-      imageBelow: WorkplaceImage,
       titleLink: "https://you.com",
     },
     {
@@ -34,6 +33,7 @@ export default function Home() {
       subtext:
         "Kirsten joined Element Three as a Full Time ETR. She collaborated with E3 to bring Figma designs to life for their redesign of Beck's Hybrids' website.",
       subheading: "1 Year, 8 Months",
+      imageAbove: ProfileImage,
       titleLink: "https://www.beckshybrids.com/",
     },
     {
@@ -52,6 +52,7 @@ export default function Home() {
       subtext:
         "As a part of MWI's Marketing Team Kirsten worked on projects for Connect2Culture, CIY, Jaguar Transport, Pro Guide Batteries, and Big M Marina.",
       subheading: "4 Months",
+      imageBelow: HelpingImage,
       titleLink: "https://ciy.com",
     },
     {
@@ -61,7 +62,6 @@ export default function Home() {
       subtext:
         "Kirsten is currently employed as a full-time software engineer at Midwestern Interactive (MWI), where she is embedded with various client teams to develop and maintain their web applications.",
       subheading: "3+ Years",
-      imageBelow: HelpingImage,
       titleLink: "https://www.buildmidwestern.com/",
     },
     {
@@ -104,7 +104,7 @@ export default function Home() {
       subtext:
         "Fueled by curiosity, Kirsten began coding as a hobby in her early teens, customizing MySpace and Tumblr layouts and eventually building custom WordPress templates with PHP.",
       subheading: "18 Years",
-      imageAbove: ProfileImage,
+      imageBelow: WorkplaceImage,
       titleLink:
         "https://www.codecademy.com/resources/blog/learning-to-code-myspace-neopets-html-css/",
     },
@@ -116,8 +116,8 @@ export default function Home() {
         helpingImage={HelpingImage}
         profileImage={ProfileImage}
         workplaceImage={WorkplaceImage}
-        title="My Coding Journey"
-        subtitle="With a passion for coding and over a decade of professional experience, I've combined my business acumen with technical skills to excel as a software engineer."
+        title="Coding Journey"
+        subtitle="With a passion for coding and over a decade of professional experience, Kirsten has combined her business acumen with technical skills to excel as a software engineer."
         // CTAButtonText="Contact Kirsten"
         events={featuredEvents}
       />

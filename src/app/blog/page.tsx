@@ -91,7 +91,7 @@ const BlogIndex = () => {
           </h1>
         </div>
         <div className="h-8 bg-slate-50"></div>
-        <ul>
+        {/* <ul>
           {posts.map((post) => (
             <li key={post._id}>
               <Link href={`/blog/${post.slug.current}`}>
@@ -99,8 +99,8 @@ const BlogIndex = () => {
               </Link>
             </li>
           ))}
-        </ul>
-        <div className="blog-card-layout flex flex-row w-[95%] m-auto">
+        </ul> */}
+        <div className="blog-card-layout flex flex-col md:flex-row w-[95%] m-auto">
           <div className="w-full md:w-3/5">
             <LargeArticleCard articleImage={SampleBlogImage} />
           </div>
@@ -108,7 +108,7 @@ const BlogIndex = () => {
             <StackedArticleCards cards={stackedBlogCards} />
           </div>
         </div>
-        <div className="blog-card-layout-right flex flex-col pl-[2.5rem] pr-[5rem]">
+        <div className="blog-card-layout-right flex flex-col pl-[2rem] pr-[2rem] md:pl-[2.5rem] md:pr-[5rem]">
           <CertificationCards
             cards={blogCards}
             backgroundColor="bg-white"

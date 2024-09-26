@@ -12,7 +12,7 @@ const StackedArticleCards = ({
   }[];
 }) => {
   return (
-    <div className="blog-card-layout-right flex flex-col pl-[2.5rem] pr-[5rem] mt-[5rem] mb-[2rem] w-full">
+    <div className="blog-card-layout-right flex flex-col pl-[2rem] pr-[2rem] md:pl-[2.5rem] md:pr-[5rem] mt-[5rem] mb-[2rem] w-full">
       {cards.map((card, index) => (
         <div key={index} className="article-in-list flex flex-row mb-4">
           <div className="headling-article-image mr-[1.5rem]">
