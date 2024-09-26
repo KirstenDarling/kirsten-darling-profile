@@ -235,3 +235,10 @@ Blog page layout and styling. Updated the footer date to reflect today's changes
 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Blog page layout and styling [PR-90](https://github.com/KirstenDarling/kirsten-darling-profile/pull/90)
 - [SHORTCUT_TICKET-UNASSIGNED] OPEN Development [PR-91](https://github.com/KirstenDarling/kirsten-darling-profile/pull/91)
+
+## [0.2.5] - 2024-09-25
+
+Blog link in footer renamed to 'blog' instead of 'blog posts'. Updated the footer date to reflect today's changes. Updated the changelog. Updated Blog page layout and styling.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Blog page layout and styling continued [PR-91](https://github.com/KirstenDarling/kirsten-darling-profile/pull/91)
+-
