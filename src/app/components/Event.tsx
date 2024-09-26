@@ -9,6 +9,7 @@ const Event = ({
   subheading,
   imageAbove,
   imageBelow,
+  titleLink,
 }: {
   startDate?: string;
   endDate?: string;
@@ -17,6 +18,7 @@ const Event = ({
   subheading?: string;
   imageAbove?: StaticImageData;
   imageBelow?: StaticImageData;
+  titleLink?: string;
 }) => {
   return (
     <>
@@ -40,7 +42,13 @@ const Event = ({
         </div>
         <div className="grow shrink basis-0 flex-col justify-center items-center gap-4 max-w-[90%] inline-flex">
           <div className="self-stretch text-white text-lg font-normal font-['Source Sans Pro'] leading-[27px]">
-            {text}
+            <a
+              href={titleLink ? titleLink : ""}
+              target={!titleLink ? "" : "_blank"}
+              className="hover:text-purple-400"
+            >
+              {text}
+            </a>
             <br />
             <span className="text-xs">{subtext}</span>
           </div>

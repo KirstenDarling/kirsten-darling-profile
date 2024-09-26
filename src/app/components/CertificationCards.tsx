@@ -23,27 +23,27 @@ const CertificationCards = ({
 }) => {
   return (
     <div
-      className={`self-stretch h-[100%] sm:px-[4rem] py-20 ${backgroundColor ? backgroundColor : "bg-black"} flex flex-col justify-center items-left`}
+      className={`self-stretch h-[100%] sm:px-[4rem] py-20 ${backgroundColor ? backgroundColor : "bg-black"} ${textColor ? textColor : "text-neutral-100"} flex flex-col justify-center items-left`}
     >
-      {heading ||
-        (subheading && (
-          <div className="mb-[15%] lg:mb-[5%] self-stretch h-[101px] flex flex-col justify-start gap-3">
-            {heading && (
-              <div
-                className={`self-stretch ${textColor ? textColor : "text-neutral-100"} text-[56px] font-normal font-['Fugaz One'] leading-[67.20px]`}
-              >
-                {heading}
-              </div>
-            )}
-            {subheading && (
-              <div
-                className={`self-stretch ${textColor ? textColor : "text-zinc-300"} text-sm font-normal font-['Open Sans'] leading-snug`}
-              >
-                {subheading}
-              </div>
-            )}
-          </div>
-        ))}
+      {heading && (
+        <div className="mb-[15%] lg:mb-[5%] self-stretch h-[101px] flex flex-col justify-start gap-3">
+          {heading && (
+            <div
+              className={`self-stretch ${textColor ? textColor : "text-neutral-100"} text-center text-[56px] font-normal font-['Fugaz One'] leading-[67.20px]`}
+            >
+              {heading}
+            </div>
+          )}
+
+          {subheading && (
+            <div
+              className={`self-stretch ${textColor ? textColor : "text-zinc-300"} text-sm font-normal font-['Open Sans'] leading-snug`}
+            >
+              {subheading}
+            </div>
+          )}
+        </div>
+      )}
 
       <div className="m-[auto] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 self-stretch">
         {cards.map((card, index) => (
