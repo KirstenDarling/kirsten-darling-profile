@@ -8,6 +8,8 @@ import ComingSoonSection from "../components/ComingSoonSection";
 import CertificationCards from "../components/CertificationCards";
 import SampleBlogImage from "../../../public/fourCard1.png";
 import Image from "next/image";
+import LargeArticleCard from "../components/LargeArticleCard";
+import StackedArticleCards from "../components/StackedArticleCards";
 
 const BlogIndex = () => {
   const [posts, setPosts] = useState<
@@ -48,6 +50,30 @@ const BlogIndex = () => {
     },
   ];
 
+  const stackedBlogCards = [
+    {
+      heading: "Article #1 Title",
+      subheading:
+        "Article #1 Subtitle. Blah blah blah. Maybe do an except instead of a subtitle.",
+      image: SampleBlogImage,
+      link: "/",
+    },
+    {
+      heading: "Article #2 Title",
+      subheading:
+        "Article #2 Subtitle. Blah blah blah. Maybe do an except instead of a subtitle.",
+      image: SampleBlogImage,
+      link: "/",
+    },
+    {
+      heading: "Article #3 Title",
+      subheading:
+        "Article #3 Subtitle. Blah blah blah. Maybe do an except instead of a subtitle.",
+      image: SampleBlogImage,
+      link: "/",
+    },
+  ];
+
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
       <ComingSoonSection />
@@ -63,60 +89,8 @@ const BlogIndex = () => {
         ))}
       </ul> */}
         <div className="blog-card-layout flex flex-row">
-          <div className="blog-card-layout-left flex flex-col pl-[5rem] pr-[2.5rem] mt-[5rem] mb-[2rem]">
-            <div className="blog-card-headling-article flex flex-col">
-              <div className="headling-article-image">
-                <Image src={SampleBlogImage} alt="sample blog image" />
-              </div>
-              <div className="headling-article-title mt-[1rem]">
-                <h1>Title</h1>
-              </div>
-              <div className="headling-article-excerpt">
-                article exceprt blah blah blah article exceprt blah blah blah
-                article exceprt blah blah blah
-              </div>
-            </div>
-          </div>
-          <div className="blog-card-layout-right flex flex-col pl-[2.5rem] pr-[5rem] mt-[5rem] mb-[2rem]">
-            <div className="blog-card-list-of-articles">
-              <div className="article-in-list flex flex-row mb-[1.5rem]">
-                <div className="headling-article-image mr-[1.5rem]">
-                  <Image src={SampleBlogImage} alt="sample blog image" />
-                </div>
-                <div className="headling-article-grouping flex flex-col">
-                  <div className="headling-article-title">article title</div>
-                  <div className="headling-article-excerpt">
-                    article exceprt blah blah blah article exceprt blah blah
-                    blah article exceprt blah blah blah
-                  </div>
-                </div>
-              </div>
-              <div className="article-in-list flex flex-row mb-[1.5rem]">
-                <div className="headling-article-image mr-[1.5rem]">
-                  <Image src={SampleBlogImage} alt="sample blog image" />
-                </div>
-                <div className="headling-article-grouping flex flex-col">
-                  <div className="headling-article-title">article title</div>
-                  <div className="headling-article-excerpt">
-                    article exceprt blah blah blah article exceprt blah blah
-                    blah article exceprt blah blah blah
-                  </div>
-                </div>
-              </div>
-              <div className="article-in-list flex flex-row mb-[1.5rem]">
-                <div className="headling-article-image mr-[1.5rem]">
-                  <Image src={SampleBlogImage} alt="sample blog image" />
-                </div>
-                <div className="headling-article-grouping flex flex-col">
-                  <div className="headling-article-title">article title</div>
-                  <div className="headling-article-excerpt">
-                    article exceprt blah blah blah article exceprt blah blah
-                    blah article exceprt blah blah blah
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <LargeArticleCard articleImage={SampleBlogImage} />
+          <StackedArticleCards cards={stackedBlogCards} />
         </div>
         <div className="blog-card-layout-right flex flex-col pl-[2.5rem] pr-[5rem]">
           <CertificationCards
