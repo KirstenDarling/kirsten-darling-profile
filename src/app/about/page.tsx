@@ -85,7 +85,7 @@ export default function Home() {
       text: "DBA + Data Engineering Studies",
       subtext:
         "Kirsten began focusing on Database Administration knowledge and data engineering in general. She studied Tableau as well to take on more of a data visualization role for a client as needed.",
-      subheading: "6 Months",
+      subheading: "9 Months",
     },
     {
       startDate: "2024",
@@ -93,15 +93,14 @@ export default function Home() {
       text: "You.com (MWI Client)",
       subtext:
         "Kirsten joined You.com as a Full Time ETR. This is her most recent client through MWI. She has expressed excitement over working with a modern, innovative company in the booming AI chat industry.",
-      subheading: "1 Month",
+      subheading: "3 Months",
       imageBelow: WorkplaceImage,
     },
   ];
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <ComingSoonSection />
-      {/* <Timeline
+      <Timeline
         helpingImage={HelpingImage}
         profileImage={ProfileImage}
         workplaceImage={WorkplaceImage}
@@ -109,7 +108,7 @@ export default function Home() {
         subtitle="With a passion for coding and over a decade of professional experience, I've combined my business acumen with technical skills to excel as a software engineer."
         CTAButtonText="Contact Kirsten"
         events={featuredEvents}
-      /> */}
+      />
     </div>
   );
 }

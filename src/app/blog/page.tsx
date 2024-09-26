@@ -91,15 +91,15 @@ const BlogIndex = () => {
           </h1>
         </div>
         <div className="h-8 bg-slate-50"></div>
-        {/* <ul>
-        {posts.map((post) => (
-          <li key={post._id}>
-            <Link href={`/blog/${post.slug.current}`}>
-              <a>{post.title}</a>
-            </Link>
-          </li>
-        ))}
-      </ul> */}
+        <ul>
+          {posts.map((post) => (
+            <li key={post._id}>
+              <Link href={`/blog/${post.slug.current}`}>
+                <p>{post.title}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
         <div className="blog-card-layout flex flex-row w-[95%] m-auto">
           <div className="w-full md:w-3/5">
             <LargeArticleCard articleImage={SampleBlogImage} />
