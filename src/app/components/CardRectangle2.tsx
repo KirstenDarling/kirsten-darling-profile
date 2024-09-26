@@ -6,11 +6,15 @@ const CardRectangle2 = ({
   subheading,
   image,
   link,
+  textColor,
+  textAlign,
 }: {
   heading?: string;
   subheading?: string;
   image: StaticImageData;
   link?: string;
+  textColor?: string;
+  textAlign?: string;
 }) => {
   return (
     <a
@@ -24,10 +28,14 @@ const CardRectangle2 = ({
           src={image}
         />
         <div className="self-stretch px-[4rem] h-full flex-col justify-center items-center gap-2 flex">
-          <div className="self-stretch text-center text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px]">
+          <div
+            className={`self-stretch ${textAlign ? textAlign : "text-center"} ${textColor ? textColor : "text-neutral-100"} text-lg font-normal font-['Open Sans'] leading-[27px]`}
+          >
             {heading}
           </div>
-          <div className="self-stretch text-zinc-300 text-sm font-normal font-['Open Sans'] leading-snug">
+          <div
+            className={`self-stretch ${textColor ? textColor : "text-zinc-300"} text-sm font-normal font-['Open Sans'] leading-snug`}
+          >
             {subheading}
           </div>
         </div>
