@@ -26,7 +26,7 @@ const StackedArticleCards = ({
                 alt={card.heading || "sample blog image"}
               />
             </div>
-            <div className="headling-article-grouping flex flex-col">
+            <div className="headling-article-grouping flex flex-col mt-[0.5rem]">
               <div className="headling-article-title">
                 {card.heading || "article title"}
               </div>
