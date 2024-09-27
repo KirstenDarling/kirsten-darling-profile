@@ -208,7 +208,37 @@ Added content and copy to certifications page. Updated the footer date to reflec
 Adjusted spacing on the certifications page. Updated the footer date to reflect today's changes. Updated the changelog.
 
 - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Continued on this open PR - Certs page rough draft [PR-85](https://github.com/KirstenDarling/kirsten-darling-profile/pull/85)
-
-## pending - 2024-09-03
-
 - [SHORTCUT_TICKET-UNASSIGNED] OPEN development. [PR-82](https://github.com/KirstenDarling/kirsten-darling-profile/pull/82)
+
+## [0.2.2] - 2024-09-16
+
+Added Privacy Policy.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Added Privacy Policy page and link in footer [PR-86](https://github.com/KirstenDarling/kirsten-darling-profile/pull/86)
+
+## [0.2.3] - 2024-09-18
+
+Updated Legal Disclaimer. Cleaned up styles on Privacy Policy and Legal pages.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Updated legal disclaimer [PR-87](https://github.com/KirstenDarling/kirsten-darling-profile/pull/87)
+- - [SHORTCUT_TICKET-UNASSIGNED] MAJOR Quick styles clean up on Privacy Policy and Legal pages [PR-88](https://github.com/KirstenDarling/kirsten-darling-profile/pull/88)
+
+## [0.2.4] - 2024-09-20
+
+Caught up master with development.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Development [PR-89](https://github.com/KirstenDarling/kirsten-darling-profile/pull/89)
+
+## [0.2.4] - 2024-09-24
+
+Blog page layout and styling. Updated the footer date to reflect today's changes. Caught up the changelog. Opened a fresh development branch.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Blog page layout and styling [PR-90](https://github.com/KirstenDarling/kirsten-darling-profile/pull/90)
+- [SHORTCUT_TICKET-UNASSIGNED] OPEN Development [PR-91](https://github.com/KirstenDarling/kirsten-darling-profile/pull/91)
+
+## [0.2.5] - 2024-09-25
+
+Blog link in footer renamed to 'blog' instead of 'blog posts'. Updated the footer date to reflect today's changes. Updated the changelog. Updated Blog page layout and styling.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Blog page layout and styling continued [PR-91](https://github.com/KirstenDarling/kirsten-darling-profile/pull/91)
+-

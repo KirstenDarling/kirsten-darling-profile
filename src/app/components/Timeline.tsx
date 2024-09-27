@@ -24,6 +24,7 @@ const Timeline = ({
     subheading?: string;
     imageAbove?: StaticImageData;
     imageBelow?: StaticImageData;
+    titleLink?: string;
   }[];
 }) => {
   return (
@@ -36,18 +37,20 @@ const Timeline = ({
         <div className="py-[10px] sm:max-w-[40%] text-wrap self-stretch text-zinc-100 text-sm font-normal font-['Manrope'] leading-[21px]">
           {subtitle}
         </div>
-        <div className="self-stretch justify-start items-center gap-10 inline-flex mt-5">
-          <button className="px-12 py-4 bg-teal-600 rounded-lg text-white text-lg font-normal font-['Source Sans Pro'] leading-[27px]">
-            {CTAButtonText}
-          </button>
-        </div>
+        {CTAButtonText && (
+          <div className="self-stretch justify-start items-center gap-10 inline-flex mt-5">
+            <button className="px-12 py-4 bg-teal-600 rounded-lg text-white text-lg font-normal font-['Source Sans Pro'] leading-[27px]">
+              {CTAButtonText}
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Main Content Section */}
       <div className="w-[100vw] self-stretch h-[100%] px-4 py-[0] bg-gray-800 flex flex-col sm:flex-row items-start gap-10 pt-[5%] pb-[5%]">
         {/* Image Column */}
         <div className="w-full sm:w-1/2 h-full flex flex-col items-center gap-10">
-          <div className="rounded-[32px] flex flex-col gap-2 sm:gap-36">
+          <div className="rounded-[32px] flex flex-col gap-2 sm:gap-36 mt-10">
             <Image
               className="hidden sm:block max-w-[450px] grow shrink basis-0 self-stretch rounded-[32px]"
               src={profileImage}

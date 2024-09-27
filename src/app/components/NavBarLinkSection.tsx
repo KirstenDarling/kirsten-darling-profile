@@ -23,7 +23,9 @@ export const NavBarLinkSection = ({
             key={index}
             title={link.title}
             URL={link.URL}
-            textColor={textColor}
+            textColor={
+              link.title === "Study Portal" ? "text-green-500" : textColor
+            }
             font={font}
             isNavBar1={isNavBar1}
           />

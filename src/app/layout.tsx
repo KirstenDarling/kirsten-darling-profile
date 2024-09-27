@@ -32,7 +32,7 @@ export default function RootLayout({
         { link: "Study Portal", URL: "/study-portal" },
         { link: "Coding Resources", URL: "/coding-resources" },
         { link: "Flash Cards", URL: "/flash-cards" },
-        { link: "Blog Posts", URL: "/blog" },
+        { link: "Blog", URL: "/blog" },
       ],
     },
     {
@@ -40,7 +40,6 @@ export default function RootLayout({
         { link: "Portfolio", URL: "/portfolio" },
         { link: "Certifications", URL: "/certifications" },
         { link: "About Me", URL: "/about" },
-        { link: "Connect", URL: "/connect" },
       ],
     },
     {
@@ -65,18 +64,18 @@ export default function RootLayout({
     },
   ];
   const links = [
-    { title: "Portal", URL: "/study-portal" },
+    { title: "Study Portal", URL: "/study-portal" },
+    { title: "Blog", URL: "/blog" },
     { title: "Portfolio", URL: "/portfolio" },
-    { title: "Certifications", URL: "/certifications" },
   ];
 
   const additionalLinks = [
     { title: "About Me", URL: "/about" },
+    { title: "Certifications", URL: "/certifications" },
     {
       title: "@kirstendarling",
       URL: "https://www.linkedin.com/in/kirstendarling/",
     },
-    { title: "Connect", URL: "/connect" },
   ];
   return (
     <html lang="en">
