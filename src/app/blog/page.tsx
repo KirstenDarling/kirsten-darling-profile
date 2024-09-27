@@ -83,15 +83,14 @@ const BlogIndex = () => {
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
-      <div>
-        <div className="text-center text-[72px] pt-20 pb-10 bg-slate-200 border-b-[2rem] border-slate-100">
-          <h1 className="text-purple-500">
-            <span className="italic text-lg text-black ">the</span>
-            Blog
-          </h1>
-        </div>
-        <div className="h-8 bg-slate-50"></div>
-        {/* <ul>
+      <div className="text-center w-[100%] text-[72px] pt-20 pb-10 bg-slate-200 border-b-[2rem] border-slate-100">
+        <h1 className="text-purple-500">
+          <span className="italic text-lg text-black ">the</span>
+          Blog
+        </h1>
+      </div>
+      <ComingSoonSection />
+      {/* <ul>
           {posts.map((post) => (
             <li key={post._id}>
               <Link href={`/blog/${post.slug.current}`}>
@@ -100,7 +99,7 @@ const BlogIndex = () => {
             </li>
           ))}
         </ul> */}
-        <div className="blog-card-layout flex flex-col md:flex-row w-[95%] m-auto">
+      {/* <div className="blog-card-layout flex flex-col md:flex-row w-[95%] m-auto">
           <div className="w-full md:w-3/5">
             <LargeArticleCard articleImage={SampleBlogImage} />
           </div>
@@ -115,8 +114,7 @@ const BlogIndex = () => {
             textColor="text-black"
             textAlign="text-left"
           />
-        </div>
-      </div>
+        </div> */}
     </div>
   );
 };
