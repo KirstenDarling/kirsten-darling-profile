@@ -240,5 +240,35 @@ Blog page layout and styling. Updated the footer date to reflect today's changes
 
 Blog link in footer renamed to 'blog' instead of 'blog posts'. Updated the footer date to reflect today's changes. Updated the changelog. Updated Blog page layout and styling.
 
-- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Blog page layout and styling continued [PR-91](https://github.com/KirstenDarling/kirsten-darling-profile/pull/91)
--
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Blog page layout and styling continued [PR-92](https://github.com/KirstenDarling/kirsten-darling-profile/pull/92)
+
+## [0.2.6] - 2024-09-26
+
+Split up blog page elements into components. Commented in the about page timeline component. Updated the footer date to reflect today's changes. Updated the changelog.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR Split up blog page elements into components [PR-93](https://github.com/KirstenDarling/kirsten-darling-profile/pull/93)
+
+## [0.2.7] - 2024-09-27
+
+Hid blog page for now.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MINOR Hid blog page for now [PR-94](https://github.com/KirstenDarling/kirsten-darling-profile/pull/94)
+
+## [0.2.8] - 2024-09-29
+
+rough draft take 2 study portal resources page layout. Opened new Development branch.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MAJOR rough draft take 2 study portal resources page layout [PR-95](https://github.com/KirstenDarling/kirsten-darling-profile/pull/95)
+- [SHORTCUT_TICKET-UNASSIGNED] OPEN development [PR-96](https://github.com/KirstenDarling/kirsten-darling-profile/pull/96)
+
+## [0.2.9] - 2024-09-30
+
+Playing around with study room styles.
+
+- [SHORTCUT_TICKET-UNASSIGNED] OPEN Playing around with study room styles [PR-97](https://github.com/KirstenDarling/kirsten-darling-profile/pull/97)
+
+## [0.3.0] - 2024-10-03
+
+Fixed error in the deployment in vercel. Updated the footer date to reflect today's changes. Caught up the changelog.
+
+- [SHORTCUT_TICKET-UNASSIGNED] OPEN Playing around with study room styles [PR-98](https://github.com/KirstenDarling/kirsten-darling-profile/pull/98)
