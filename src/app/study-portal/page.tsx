@@ -30,6 +30,8 @@ export default function Home() {
   ];
 
   const [matchingVerb, setMatchingVerb] = React.useState("Play");
+  const [isShown, setIsShown] = React.useState(false);
+  const [iframePosition, setIframePosition] = React.useState({ x: 0, y: 0 });
 
   const flashCardLink = {
     name: `${matchingVerb} Matching Game`,
@@ -48,9 +50,6 @@ export default function Home() {
     name: "Roadmap",
     url: "https://www.example-style-guide.com",
   };
-
-  const [isShown, setIsShown] = React.useState(false);
-  const [iframePosition, setIframePosition] = React.useState({ x: 0, y: 0 });
 
   const handleDragStart = (e: React.DragEvent<HTMLIFrameElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -85,15 +84,17 @@ export default function Home() {
       <Pill link={roadmapLink} />
       <div className="flex flex-row bg-red-200"> */}
 
-      <iframe
-        className={`${isShown ? `absolute ${window.innerWidth <= 768 ? "top-[8%]" : "top-[15%]"} z-[1]` : "hidden"}`}
-        src="https://quizlet.com/950214239/match/embed?i=1rmz5e&x=1jj1"
-        height="110%"
-        width={window.innerWidth <= 768 ? "100%" : "500"}
-        style={{ border: 0 }}
-        draggable="true"
-        onDragStart={handleDragStart}
-      ></iframe>
+      {typeof window !== "undefined" && (
+        <iframe
+          className={`${isShown ? `absolute ${window.innerWidth <= 768 ? "top-[8%]" : "top-[15%]"} z-[1]` : "hidden"}`}
+          src="https://quizlet.com/950214239/match/embed?i=1rmz5e&x=1jj1"
+          height="110%"
+          width={window.innerWidth <= 768 ? "100%" : "500"}
+          style={{ border: 0 }}
+          draggable="true"
+          onDragStart={handleDragStart}
+        ></iframe>
+      )}
 
       <Pill link={flashCardLink} />
       <iframe
