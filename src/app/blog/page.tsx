@@ -144,10 +144,10 @@ const BlogIndex = () => {
           )}
         </div>
       </div>
-      <div className="bg-[#000035] blog-card-layout-right flex flex-col pl-[2rem] pr-[2rem] md:pl-[2.5rem] md:pr-[5rem]">
+      <div className="bg-[#000035] sm:bg-white blog-card-layout-right flex flex-col pl-[2rem] pr-[2rem] md:pl-[2.5rem] md:pr-[5rem]">
         <CertificationCards
           cards={blogCards}
-          backgroundColor="bg-[#000035]"
+          backgroundColor="bg-[#000035] sm:bg-white"
           textColor="text-white sm:text-black"
           textAlign="text-left"
         />
