@@ -52,7 +52,7 @@ const StackedArticleCards = ({
     <div className="blog-card-layout-right flex flex-col pl-[1rem] pr-[1rem] sm:pl-[2rem] sm:pr-[2rem] md:pl-[2.5rem] md:pr-[5rem] mt-[1rem] sm:mt-[5rem] mb-[2rem] w-[100%] bg-[blueviolet] sm:bg-white pt-[1rem] sm:pt-0 text-white sm:text-black">
       {posts.map((post, index) => (
         <>
-          <Link key={index} href={`/blog/${post.slug.current}`}>
+          <Link key={index} href={`/blog/${post.slug}`}>
             <div className="article-in-list flex flex-row items-center mb-4">
               <div className="headling-article-image mr-[1.5rem]">
                 {post.mainImage && (
