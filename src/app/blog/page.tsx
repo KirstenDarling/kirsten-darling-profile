@@ -114,6 +114,7 @@ const BlogIndex = () => {
           Blog
         </h1>
       </div>
+      {/* 
       <div className="blog-card-layout flex flex-col md:flex-row sm:w-[95%] m-auto">
         <div className="w-full md:w-3/5">
           {mainPost ? ( // Conditionally render LargeArticleCard
@@ -137,7 +138,7 @@ const BlogIndex = () => {
           textColor="text-white sm:text-black"
           textAlign="text-left"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
