@@ -272,3 +272,9 @@ Playing around with study room styles.
 Fixed error in the deployment in vercel. Updated the footer date to reflect today's changes. Caught up the changelog.
 
 - [SHORTCUT_TICKET-UNASSIGNED] OPEN Playing around with study room styles [PR-98](https://github.com/KirstenDarling/kirsten-darling-profile/pull/98)
+
+## [0.3.1] - 2024-10-09
+
+Made changes to the study-portal page. Added the background study image and initial highlighted sections. OnClick of the highlight sections, the study portal modals open. Updated the footer date to reflect today's changes. Updated the changelog. Made a few more slight style tweaks to the blog parent page.
+
+- [SHORTCUT_TICKET-UNASSIGNED] MERGED Playing around with study room styles [PR-98](https://github.com/KirstenDarling/kirsten-darling-profile/pull/98)

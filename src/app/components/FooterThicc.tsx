@@ -108,7 +108,7 @@ const FooterThicc = ({
           {additionalSection && (
             <div className="self-stretch justify-between items-center inline-flex">
               <div className="text-zinc-300 text-xs font-normal font-['Open Sans'] leading-tight">
-                Last Updated: October 03, 2024
+                Last Updated: October 09, 2024
               </div>
               <div className="h-[22px] justify-end items-center gap-4 flex">
                 <a href="/legal">
@@ -208,7 +208,7 @@ const FooterThicc = ({
           {additionalSection && (
             <div className="flex-col self-stretch items-baseline inline-flex">
               <div className="self-center text-zinc-300 text-xs font-normal font-['Open Sans'] leading-tight">
-                Last Updated: October 03, 2024
+                Last Updated: October 09, 2024
               </div>
               <div className="self-center h-[22px] justify-end items-center gap-4 flex">
                 <a href="/legal">
