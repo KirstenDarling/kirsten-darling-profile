@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/footerThicc.module.css";
+import PlaceholderImage from "../../../public/placeholder.jpg";
 
 const BlogPostRectangle = ({
   title,
@@ -22,11 +23,19 @@ const BlogPostRectangle = ({
       target={link == "/certifications" ? "_self" : "_blank"}
     >
       <div className="grow shrink basis-0 flex-col justify-center items-start gap-4 inline-flex">
-        {mainImage && (
+        {mainImage ? (
           <Image
             className={`max-h-[233px] self-stretch rounded-[16px] object-contain`}
             alt=""
             src={mainImage}
+            width={350}
+            height={233}
+          />
+        ) : (
+          <Image
+            className={`max-h-[233px] self-stretch rounded-[16px] object-contain`}
+            alt=""
+            src={PlaceholderImage}
             width={350}
             height={233}
           />
