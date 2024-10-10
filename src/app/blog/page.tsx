@@ -11,6 +11,7 @@ import Image from "next/image";
 import LargeArticleCard from "../components/LargeArticleCard";
 import StackedArticleCards from "../components/StackedArticleCards";
 import PurpleTechUnsplash from "../../../public/purpleTechUnsplash.jpg";
+import StandardBlogCards from "../components/StandardBlogCards";
 
 const BlogIndex = () => {
   const [posts, setPosts] = useState<
@@ -154,8 +155,8 @@ const BlogIndex = () => {
         </div>
       </div>
       <div className="bg-[#000035] sm:bg-white blog-card-layout-right flex flex-col pl-[2rem] pr-[2rem] md:pl-[2.5rem] md:pr-[5rem]">
-        <CertificationCards
-          cards={blogCards}
+        <StandardBlogCards
+          cards={posts}
           backgroundColor="bg-[#000035] sm:bg-white"
           textColor="text-white sm:text-black"
           textAlign="text-left"
