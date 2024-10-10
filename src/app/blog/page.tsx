@@ -50,7 +50,16 @@ const BlogIndex = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const query = `*[_type == "post"]{_id, title, slug, body, publishedAt, _updatedAt, subtitle, 'mainImage': mainImage.asset->url}`;
+      const query = `*[_type == "post" && !(_id in *[_type == "mainPost"].post._ref) && !(_id in *[_type == "featuredPost"].posts[]._ref)]{
+          _id,
+          title,
+          slug,
+          body,
+          publishedAt,
+          _updatedAt,
+          subtitle,
+          'mainImage': mainImage.asset->url
+        }`;
       const postsData = await client.fetch(query);
       setPosts(postsData);
     };
