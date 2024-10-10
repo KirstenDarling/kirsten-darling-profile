@@ -95,30 +95,6 @@ const BlogIndex = () => {
     fetchFeaturedPosts();
   }, []);
 
-  const blogCards = [
-    {
-      heading: "Article #1 Title",
-      subheading:
-        "Article #1 Subtitle. Blah blah blah. Maybe do an except instead of a subtitle.",
-      image: SampleBlogImage,
-      link: "/",
-    },
-    {
-      heading: "Article #2 Title",
-      subheading:
-        "Article #2 Subtitle. Blah blah blah. Maybe do an except instead of a subtitle.",
-      image: SampleBlogImage,
-      link: "/",
-    },
-    {
-      heading: "Article #3 Title",
-      subheading:
-        "Article #3 Subtitle. Blah blah blah. Maybe do an except instead of a subtitle.",
-      image: SampleBlogImage,
-      link: "/",
-    },
-  ];
-
   return (
     <div className="w-full bg-black sm:bg-white flex-col justify-start items-center inline-flex">
       <div
