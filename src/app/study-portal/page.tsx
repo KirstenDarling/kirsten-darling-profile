@@ -1,108 +1,242 @@
 "use client";
 
 import * as React from "react";
-import ComingSoonSection from "../components/ComingSoonSection";
-import StudyBuddy from "../components/StudyBuddyCircle";
-import Pill from "../components/Pill";
+import styled from "styled-components";
+import Modal from "react-modal"; // Make sure to install react-modal
+import { useState } from "react";
+
+const Container = styled.div`
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+const HighlightArea = styled.div`
+  position: absolute;
+  top: 10%; // Adjust these values to match the computer's position
+  left: 25%;
+  width: 50%;
+  height: 60%;
+  cursor: pointer;
+
+  &:hover {
+    outline: 3px solid #00ff00; // Glowy purple border
+    box-shadow: 0 0 10px #00ff00;
+  }
+`;
+
+const BookHighlightArea = styled.svg`
+  position: absolute;
+  top: 38%; // Adjust this value for vertical positioning
+  left: 8%; // Adjust this value for horizontal positioning
+  width: 15%; // Adjust this value to scale the SVG
+  height: 20%; // Adjust this value to scale the SVG
+  cursor: pointer;
+
+  path {
+    transition:
+      fill 0.3s,
+      stroke 0.3s;
+  }
+
+  &:hover {
+    outline: 3px solid #00ff00; // Glowy purple border
+    box-shadow: 0 0 10px #00ff00;
+  }
+`;
+
+const KeyboardHighlightArea = styled.svg`
+  position: absolute;
+  bottom: 10%; // Adjusted vertical position (increased to lower it)
+  left: 11%;
+  width: 40%;
+  height: 10%;
+  cursor: pointer;
+
+  path {
+    transition:
+      fill 0.3s,
+      stroke 0.3s;
+  }
+
+  &:hover {
+    outline: 3px solid #00ff00; // Glowy purple border
+    box-shadow: 0 0 10px #00ff00;
+  }
+`;
+
+const customStyles = {
+  content: {
+    top: "40%", // Adjusted vertical position
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    border: "none", // Removed default border
+    background: "transparent", // Transparent background
+    overflow: "hidden", // Hide content that overflows
+  },
+  overlay: {
+    // Added styles for the overlay
+    backgroundColor: "rgba(0, 0, 0, 0.3)", // More transparent overlay
+  },
+};
+
+const ModalContent = styled.div`
+  background-color: #e0d0f0;
+  width: 800px;
+  height: 500px;
+  position: relative;
+  border: 20px solid #9966cc;
+  border-image-slice: 20;
+  border-image-source: url("border-image.png");
+  border-image-repeat: round;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  padding: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; // Removed spacing from the top
+    left: 0; // Removed spacing from the left
+    right: 0; // Removed spacing from the right
+    bottom: 0; // Removed spacing from the bottom
+    border-radius: 1rem;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3); // Adjusted inset box-shadow
+    z-index: 1;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  h2 {
+    // Styles for the h2 heading
+    text-align: center; // Center the heading
+    margin: 20px; // Even spacing around the heading
+  }
+
+  p {
+    // Styles for the p element
+    margin: 20px; // Even spacing around the paragraph
+    text-align: left; // Keep the text left-aligned
+  }
+`;
 
 export default function Home() {
-  const resources = [
-    {
-      name: "Coding Bootcamp Notes",
-      url: "https://www.example-bootcamp-notes.com",
-    },
-    {
-      name: "Math Flashcards",
-      url: "https://www.example-flashcard-site.com/math",
-    },
-    {
-      name: "History Study Guide",
-      url: "https://www.example-study-guides.com/history",
-    },
-    {
-      name: "Science Textbook Online",
-      url: "https://www.example-textbook-site.com/science",
-    },
-    {
-      name: "Language Learning App",
-      url: "https://www.example-language-app.com",
-    },
-  ];
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [booksModalIsOpen, setBooksModalIsOpen] = useState(false); // New state for books modal
+  const [keyboardModalIsOpen, setKeyboardModalIsOpen] = useState(false); // New state for keyboard modal
 
-  const [matchingVerb, setMatchingVerb] = React.useState("Play");
-  const [isShown, setIsShown] = React.useState(false);
-  const [iframePosition, setIframePosition] = React.useState({ x: 0, y: 0 });
-
-  const flashCardLink = {
-    name: `${matchingVerb} Matching Game`,
-    onClick: () => {
-      setIsShown(!isShown);
-      setMatchingVerb("Close");
-    },
+  const openModal = () => {
+    setIsOpen(true);
   };
 
-  const cheatSheetLink = {
-    name: "Cheat Sheet",
-    url: "https://www.example-style-guide.com",
+  const closeModal = () => {
+    setIsOpen(false);
   };
 
-  const roadmapLink = {
-    name: "Roadmap",
-    url: "https://www.example-style-guide.com",
+  const openBooksModal = () => {
+    // New function to open books modal
+    setBooksModalIsOpen(true);
   };
 
-  const handleDragStart = (e: React.DragEvent<HTMLIFrameElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    e.dataTransfer.setData(
-      "text/plain",
-      JSON.stringify({
-        offsetX: e.clientX - rect.left,
-        offsetY: e.clientY - rect.top,
-      })
-    );
+  const closeBooksModal = () => {
+    // New function to close books modal
+    setBooksModalIsOpen(false);
   };
 
-  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
+  const openKeyboardModal = () => {
+    // New function to open keyboard modal
+    setKeyboardModalIsOpen(true);
   };
 
-  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    const data = JSON.parse(e.dataTransfer.getData("text/plain"));
-    setIframePosition({
-      x: e.clientX - data.offsetX,
-      y: e.clientY - data.offsetY,
-    });
+  const closeKeyboardModal = () => {
+    // New function to close keyboard modal
+    setKeyboardModalIsOpen(false);
   };
 
   return (
-    <div className="w-full h-[100vh] bg-purple-500 flex-col justify-start items-center inline-flex">
-      {/* <StudyBuddy resources={resources} />
+    <div className="w-full bg-white flex-col justify-start items-center inline-flex">
+      <Container>
+        <Image src="bubbleMac.png" alt="Desk setup" />
+        <HighlightArea onClick={openModal} />
 
-      <Pill link={flashCardLink} />
-      <Pill link={cheatSheetLink} />
-      <Pill link={roadmapLink} />
-      <div className="flex flex-row bg-red-200"> */}
+        <BookHighlightArea onClick={openBooksModal}>
+          {" "}
+          {/* New highlight area for books */}
+          <rect
+            x="0"
+            y="0"
+            width="100%"
+            height="100%"
+            fill="transparent"
+            stroke="none"
+          />
+        </BookHighlightArea>
 
-      {typeof window !== "undefined" && (
-        <iframe
-          className={`${isShown ? `absolute ${window.innerWidth <= 768 ? "top-[8%]" : "top-[15%]"} z-[1]` : "hidden"}`}
-          src="https://quizlet.com/950214239/match/embed?i=1rmz5e&x=1jj1"
-          height="110%"
-          width={window.innerWidth <= 768 ? "100%" : "500"}
-          style={{ border: 0 }}
-          draggable="true"
-          onDragStart={handleDragStart}
-        ></iframe>
-      )}
+        <KeyboardHighlightArea onClick={openKeyboardModal}>
+          {" "}
+          {/* New highlight area for keyboard */}
+          <rect
+            x="0"
+            y="0"
+            width="100%"
+            height="100%"
+            fill="transparent"
+            stroke="none"
+          />
+        </KeyboardHighlightArea>
 
-      <Pill link={flashCardLink} />
-      <iframe
-        src="https://roadmap.sh/r/embed?id=66fb3c7ce52a9bf4762b6115"
-        width="100%"
-        height="100%"
-        frameBorder="0"
-      ></iframe>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          style={customStyles}
+          contentLabel="Computer Modal"
+        >
+          <ModalContent className="border-r-[3rem]">
+            {/* ... (ContentTabs) */}
+
+            {/* Add your main modal content here */}
+            <h2>Computer Section</h2>
+            <p>This is the computer section of the image.</p>
+          </ModalContent>
+          <button onClick={closeModal}>Close</button>
+        </Modal>
+
+        <Modal
+          isOpen={booksModalIsOpen}
+          onRequestClose={closeBooksModal}
+          style={customStyles}
+          contentLabel="Books Modal"
+        >
+          <h2>Books Section</h2>
+          <p>This is the books section of the image.</p>
+          <button onClick={closeBooksModal}>Close</button>
+        </Modal>
+
+        <Modal
+          isOpen={keyboardModalIsOpen}
+          onRequestClose={closeKeyboardModal}
+          style={customStyles}
+          contentLabel="Keyboard Modal"
+        >
+          <h2>Keyboard Section</h2>{" "}
+          {/* Add your content for the keyboard modal */}
+          <button onClick={closeKeyboardModal}>Close</button>
+        </Modal>
+      </Container>
     </div>
   );
 }
