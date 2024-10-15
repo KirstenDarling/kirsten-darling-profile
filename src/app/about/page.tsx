@@ -3,7 +3,6 @@ import Timeline from "../components/Timeline";
 import ProfileImage from "../../../public/profile.jpg";
 import HelpingImage from "../../../public/kirstenhelpingatmwi.png";
 import WorkplaceImage from "../../../public/MWI.jpg";
-import ComingSoonSection from "../components/ComingSoonSection";
 
 export default function Home() {
   // move below variables to Contenful

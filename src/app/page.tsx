@@ -113,7 +113,7 @@ export default function Home() {
         image={NovaPerson2}
         bgColor="black"
       /> */}
-      <ComingSoonSection />
+      <ComingSoonSection showTopImage={true} />
     </div>
   );
 }

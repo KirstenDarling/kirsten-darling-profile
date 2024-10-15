@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { client } from "../../sanity/lib/client";
 import React from "react";
-import ComingSoonSection from "../components/ComingSoonSection";
 import CertificationCards from "../components/CertificationCards";
 import SampleBlogImage from "../../../public/fourCard1.png";
 import Image from "next/image";
