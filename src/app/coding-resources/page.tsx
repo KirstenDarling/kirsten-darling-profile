@@ -35,8 +35,8 @@ const Sidebar: React.FC<SidebarProps> = ({ onFilterChange, resources }) => {
 
   useEffect(() => {
     // Check screen size and update showFilters on client-side
-    if (window.innerWidth >= 768) {
-      setShowFilters(true);
+    if (typeof window !== "undefined") {
+      setShowFilters(window.innerWidth >= 768);
     }
   }, []);
 
@@ -64,11 +64,13 @@ const Sidebar: React.FC<SidebarProps> = ({ onFilterChange, resources }) => {
   return (
     <aside className="bg-purple-300 md:bg-gray-100 p-4 min-w-[15rem]">
       {/* Conditionally render the toggle button */}
-      {showFilters && window.innerWidth > 768 && (
-        <h3 className="text-lg font-bold">Filters</h3>
-      )}
+      {showFilters &&
+        typeof window !== "undefined" &&
+        window.innerWidth > 768 && (
+          <h3 className="text-lg font-bold">Filters</h3>
+        )}
 
-      {window.innerWidth < 768 && (
+      {typeof window !== "undefined" && window.innerWidth < 768 && (
         <div
           className="flex items-center justify-between pointer-events-auto cursor-pointer"
           onClick={() => setShowFilters(!showFilters)}
@@ -80,7 +82,8 @@ const Sidebar: React.FC<SidebarProps> = ({ onFilterChange, resources }) => {
         </div>
       )}
       {/* Conditionally render filter options based on screen size and showFilters state */}
-      {window.innerWidth >= 768 || showFilters ? (
+      {(typeof window !== "undefined" && window.innerWidth >= 768) ||
+      showFilters ? (
         <div>
           <div className="mt-5">
             <h4>Language/Framework</h4>
