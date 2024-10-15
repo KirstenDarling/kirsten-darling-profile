@@ -9,6 +9,7 @@ const BlogPostRectangle = ({
   link,
   textColor,
   textAlign,
+  slug,
 }: {
   title?: string;
   subtitle?: string;
@@ -16,10 +17,11 @@ const BlogPostRectangle = ({
   link?: string;
   textColor?: string;
   textAlign?: string;
+  slug: string;
 }) => {
   return (
     <a
-      href={link ? link : "/"}
+      href={`/blog/${slug}`}
       target={link == "/certifications" ? "_self" : "_blank"}
     >
       <div className="grow shrink basis-0 flex-col justify-center items-start gap-4 inline-flex">

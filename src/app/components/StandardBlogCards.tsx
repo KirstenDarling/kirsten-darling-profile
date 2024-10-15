@@ -12,6 +12,7 @@ const StandardBlogCards = ({
   title?: string;
   subtitle?: string;
   cards: {
+    slug: { current: string };
     title?: string;
     subtitle?: string;
     mainImage: string;
@@ -55,6 +56,7 @@ const StandardBlogCards = ({
             link={card.link}
             textColor={textColor}
             textAlign={textAlign}
+            slug={card.slug.current}
           />
         ))}
       </div>
