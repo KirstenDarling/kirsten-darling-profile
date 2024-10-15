@@ -1,5 +1,4 @@
 import * as React from "react";
-import ComingSoonSection from "../components/ComingSoonSection";
 
 export default function Home() {
   return (

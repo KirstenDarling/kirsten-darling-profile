@@ -10,7 +10,7 @@ export default function Home() {
           Portfolio
         </h1>
       </div>
-      <ComingSoonSection />
+      <ComingSoonSection showTopImage={true} />
     </div>
   );
 }

@@ -13,7 +13,7 @@ interface Post {
 const LargeArticleCard = ({ post }: { post: Post }) => {
   return (
     <Link href={`/blog/${post.slug.current}`}>
-      <div className="blog-card-container bg-[blueviolet] sm:bg-white p-4 md:p-0 m-4 rounded-lg shadow-md sm:shadow-none hover:shadow-lg sm:hover:shadow-none transition-shadow duration-200 mt-[7rem]">
+      <div className="blog-card-container bg-[blueviolet] sm:bg-white p-4 md:p-0 m-4 rounded-lg shadow-md sm:shadow-none hover:shadow-lg sm:hover:shadow-none transition-shadow duration-200 mt-[2rem]">
         <div className="blog-card-layout-left flex flex-col pl-[2rem] pr-[2rem] md:pl-20 md:pr-10 mt-8 mb-8 w-full">
           <div className="blog-card-headling-article flex flex-col text-white sm:text-black">
             <div className="headling-article-image">
@@ -21,9 +21,13 @@ const LargeArticleCard = ({ post }: { post: Post }) => {
                 <Image
                   src={post.mainImage}
                   alt={post.title}
-                  width={800}
-                  height={500}
-                  style={{ borderRadius: "1rem" }}
+                  width={500}
+                  height={600}
+                  style={{
+                    borderRadius: "1rem",
+                    maxHeight: "500px",
+                    minWidth: "600px",
+                  }}
                 />
               )}
             </div>
