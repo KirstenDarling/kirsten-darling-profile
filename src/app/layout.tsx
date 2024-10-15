@@ -66,7 +66,7 @@ export default function RootLayout({
   const links = [
     { title: "Study Portal", URL: "/study-portal" },
     { title: "Blog", URL: "/blog" },
-    { title: "Portfolio", URL: "/portfolio" },
+    { title: "Coding Resources", URL: "/coding-resources" },
   ];
 
   const additionalLinks = [
