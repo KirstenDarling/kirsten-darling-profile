@@ -23,7 +23,7 @@ const StandardBlogCards = ({
 }) => {
   return (
     <div
-      className={`self-stretch h-[100%] sm:px-[4rem] py-20 ${backgroundColor ? backgroundColor : "bg-black"} ${textColor ? textColor : "text-neutral-100"} flex flex-col justify-center items-left`}
+      className={`self-stretch h-[100%] sm:px-[4rem] py-[2rem] ${backgroundColor ? backgroundColor : "bg-black"} ${textColor ? textColor : "text-neutral-100"} flex flex-col justify-center items-left`}
     >
       {title && (
         <div className="mb-[15%] lg:mb-[5%] self-stretch h-[101px] flex flex-col justify-start gap-3">

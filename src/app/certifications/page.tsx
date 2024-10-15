@@ -1,5 +1,4 @@
 import * as React from "react";
-import ComingSoonSection from "../components/ComingSoonSection";
 import dataCertCover from "../../../public/dataCertCover.png";
 import backendCertCover from "../../../public/backendCertCover.png";
 import frontendCertCover from "../../../public/frontendCertCover.png";

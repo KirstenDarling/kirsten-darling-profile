@@ -4,6 +4,7 @@ import * as React from "react";
 import styled from "styled-components";
 import Modal from "react-modal"; // Make sure to install react-modal
 import { useState } from "react";
+import ComingSoonSection from "../components/ComingSoonSection";
 
 const Container = styled.div`
   position: relative;
@@ -206,11 +207,8 @@ export default function Home() {
           contentLabel="Computer Modal"
         >
           <ModalContent className="border-r-[3rem]">
-            {/* ... (ContentTabs) */}
-
-            {/* Add your main modal content here */}
-            <h2>Computer Section</h2>
-            <p>This is the computer section of the image.</p>
+            <h2>Coming Soon</h2>
+            <ComingSoonSection showTopImage={false} />
           </ModalContent>
           <button onClick={closeModal}>Close</button>
         </Modal>
@@ -221,8 +219,10 @@ export default function Home() {
           style={customStyles}
           contentLabel="Books Modal"
         >
-          <h2>Books Section</h2>
-          <p>This is the books section of the image.</p>
+          <ModalContent className="border-r-[3rem]">
+            <h2>Coming Soon</h2>
+            <ComingSoonSection showTopImage={false} />
+          </ModalContent>
           <button onClick={closeBooksModal}>Close</button>
         </Modal>
 
@@ -232,8 +232,10 @@ export default function Home() {
           style={customStyles}
           contentLabel="Keyboard Modal"
         >
-          <h2>Keyboard Section</h2>{" "}
-          {/* Add your content for the keyboard modal */}
+          <ModalContent className="border-r-[3rem]">
+            <h2>Coming Soon</h2>
+            <ComingSoonSection showTopImage={false} />
+          </ModalContent>
           <button onClick={closeKeyboardModal}>Close</button>
         </Modal>
       </Container>

@@ -3,14 +3,16 @@ import Image from "next/image";
 import BuildingSVG from "../../../public/building.svg";
 import ComingSoonImage from "../../../public/Coming.png";
 
-const ComingSoonSection = () => {
+const ComingSoonSection = ({ showTopImage }: { showTopImage: boolean }) => {
   return (
     <>
-      <Image
-        alt=""
-        src={ComingSoonImage}
-        className="max-w-full sm:max-w-[50%]"
-      />
+      {showTopImage && (
+        <Image
+          alt=""
+          src={ComingSoonImage}
+          className="max-w-full sm:max-w-[50%]"
+        />
+      )}
       <Image alt="" src={BuildingSVG} />
     </>
   );
