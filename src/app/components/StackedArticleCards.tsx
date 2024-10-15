@@ -49,11 +49,11 @@ const StackedArticleCards = ({
   }
 
   return (
-    <div className="blog-card-layout-right flex flex-col pl-[1rem] pr-[1rem] sm:pl-[2rem] sm:pr-[2rem] md:pl-[2.5rem] md:pr-[5rem] mt-[1rem] sm:mt-[5rem] mb-[2rem] w-[100%] bg-[blueviolet] sm:bg-white pt-[1rem] sm:pt-0 text-white sm:text-black">
+    <div className="blog-card-layout-right flex flex-col pl-[1rem] pr-[1rem] sm:pl-[2rem] sm:pr-[2rem] md:pl-[2.5rem] md:pr-[5rem] mt-[1rem] sm:mt-[2rem] mb-[2rem] w-[100%] bg-[blueviolet] sm:bg-white pt-[1rem] sm:pt-0 text-white sm:text-black">
       {posts.map((post, index) => (
         <>
           <Link key={index} href={`/blog/${post.slug}`}>
-            <div className="article-in-list flex flex-row items-center mb-4">
+            <div className="article-in-list flex flex-row items-center mb-4 mt-[0.5rem]">
               <div className="headling-article-image mr-[1.5rem]">
                 {post.mainImage && (
                   <Image
@@ -61,16 +61,16 @@ const StackedArticleCards = ({
                     alt={post.title}
                     width={320}
                     height={200}
-                    style={{ borderRadius: "1rem" }}
+                    style={{ borderRadius: "1rem", minWidth: "220px" }}
                   />
                 )}
               </div>
               <div className="headling-article-grouping flex flex-col mt-[0.5rem]">
                 <div className="headling-article-title">{post.title}</div>
                 <div className="headling-article-excerpt">{post.subtitle}</div>
-                <p className="hidden sm:block">
-                  {post.body && getPreviewText(post.body, 75)}
-                </p>
+                {/* <p className="hidden sm:block">
+                 {post.body && getPreviewText(post.body, 75)}
+               </p> */}
               </div>
             </div>
           </Link>

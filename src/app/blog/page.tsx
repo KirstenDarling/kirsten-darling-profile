@@ -105,19 +105,18 @@ const BlogIndex = () => {
         }}
       >
         <h1 className="text-white">
-          <span
+          {/* <span
             className="italic text-lg text-white"
             style={{ outline: "1px solid rgba(255, 255, 255, 0.5)" }}
           >
             the
-          </span>
-          Blog
+          </span> */}
+          &nbsp; Blog
         </h1>
       </div>
-      {/* 
       <div className="blog-card-layout flex flex-col md:flex-row sm:w-[95%] m-auto">
         <div className="w-full md:w-3/5">
-          {mainPost ? ( // Conditionally render LargeArticleCard
+          {mainPost ? (
             <LargeArticleCard post={mainPost} />
           ) : (
             <div>Loading main post...</div>
@@ -138,7 +137,7 @@ const BlogIndex = () => {
           textColor="text-white sm:text-black"
           textAlign="text-left"
         />
-      </div> */}
+      </div>
     </div>
   );
 };

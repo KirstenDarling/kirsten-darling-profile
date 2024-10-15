@@ -31,7 +31,6 @@ export default function RootLayout({
       links: [
         { link: "Study Portal", URL: "/study-portal" },
         { link: "Coding Resources", URL: "/coding-resources" },
-        { link: "Flash Cards", URL: "/flash-cards" },
         { link: "Blog", URL: "/blog" },
       ],
     },
