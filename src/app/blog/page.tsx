@@ -1,15 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { client } from "../../sanity/lib/client";
 import React from "react";
-import CertificationCards from "../components/CertificationCards";
-import SampleBlogImage from "../../../public/fourCard1.png";
-import Image from "next/image";
 import LargeArticleCard from "../components/LargeArticleCard";
 import StackedArticleCards from "../components/StackedArticleCards";
-import PurpleTechUnsplash from "../../../public/purpleTechUnsplash.jpg";
 import StandardBlogCards from "../components/StandardBlogCards";
 
 const BlogIndex = () => {
@@ -32,7 +27,7 @@ const BlogIndex = () => {
     subtitle: string;
     mainImage: string;
     slug: { current: string };
-    body: any[]; // Adjust type as needed
+    body: any[];
   } | null>(null);
 
   const [featuredPosts, setFeaturedPosts] = useState<
@@ -78,7 +73,7 @@ const BlogIndex = () => {
         } 
       }`;
       const featuredPostData = await client.fetch(query);
-      setFeaturedPosts(featuredPostData.posts || []); // Access the "posts" array directly
+      setFeaturedPosts(featuredPostData.posts || []);
     };
 
     const fetchMainPost = async () => {
@@ -86,7 +81,7 @@ const BlogIndex = () => {
         post->{_id, title, slug, body, publishedAt, _updatedAt, subtitle, 'mainImage': mainImage.asset->url} 
       }`;
       const mainPostData = await client.fetch(query);
-      setMainPost(mainPostData?.post || null); // Handle case where no featured post is set
+      setMainPost(mainPostData?.post || null);
     };
 
     fetchPosts();
@@ -99,19 +94,11 @@ const BlogIndex = () => {
       <div
         className="text-center w-[100%] text-[72px] pt-20 pb-10 border-b-[2rem] border-[#000035]"
         style={{
-          backgroundImage: "url('/purpleTechUnsplash.jpg')", // Directly use the URL
+          backgroundImage: "url('/purpleTechUnsplash.jpg')",
           backgroundSize: "cover",
         }}
       >
-        <h1 className="text-white">
-          {/* <span
-            className="italic text-lg text-white"
-            style={{ outline: "1px solid rgba(255, 255, 255, 0.5)" }}
-          >
-            the
-          </span> */}
-          &nbsp; Blog
-        </h1>
+        <h1 className="text-white">&nbsp; Blog</h1>
       </div>
       <div className="blog-card-layout flex flex-col md:flex-row sm:w-[95%] m-auto">
         <div className="w-full md:w-3/5">

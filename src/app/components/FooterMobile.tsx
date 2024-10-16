@@ -1,9 +1,8 @@
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import { useState } from "react";
 import { FaLaptopCode } from "react-icons/fa";
-import { FaAddressCard, FaDatabase } from "react-icons/fa";
+import { FaAddressCard } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { useRecoilState } from "recoil";
 import { activeNavItemPersistState } from "../recoil/navigationAtom.ts";
@@ -11,7 +10,7 @@ import { activeNavItemPersistState } from "../recoil/navigationAtom.ts";
 const FooterMobile = () => {
   const [activeNavItem, setActiveNavItem] = useRecoilState(
     activeNavItemPersistState
-  ); // Use the selector  console.log(activeNavItem);
+  );
 
   return (
     <Box sx={{ width: "100%", bottom: "0" }} className="fixed sm:hidden">
@@ -26,7 +25,7 @@ const FooterMobile = () => {
           href="/study-portal"
           icon={<FaLaptopCode size={25} />}
           sx={{
-            "&.Mui-selected": { color: "#A855F7" }, // Apply purple when selected
+            "&.Mui-selected": { color: "#A855F7" },
             color: "darkgrey",
           }}
         />
@@ -35,7 +34,7 @@ const FooterMobile = () => {
           href="/"
           icon={<FaHeart size={25} />}
           sx={{
-            "&.Mui-selected": { color: "#A855F7" }, // Apply purple when selected
+            "&.Mui-selected": { color: "#A855F7" },
             color: "darkgrey",
           }}
         />
@@ -44,7 +43,7 @@ const FooterMobile = () => {
           href="/about"
           icon={<FaAddressCard size={25} />}
           sx={{
-            "&.Mui-selected": { color: "#A855F7" }, // Apply purple when selected
+            "&.Mui-selected": { color: "#A855F7" },
             color: "darkgrey",
           }}
         />

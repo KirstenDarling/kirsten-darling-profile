@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import BlogPostRectangle from "./BlogPostRectangle";
 
 const StandardBlogCards = ({

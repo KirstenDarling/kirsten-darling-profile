@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import styles from "../styles/footerThicc.module.css";
 
 const CardRectangle2 = ({
   heading,

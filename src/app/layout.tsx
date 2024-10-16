@@ -5,12 +5,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import GoogleAnalytics from "../app/components/GoogleAnalytics";
-import FooterMobile from "./components/FooterMobile";
 import { RecoilRoot } from "recoil";
 import FooterThicc from "./components/FooterThicc";
 import HeartIcon from "../../public/heartIcon.svg";
-import { FaAddressCard, FaDatabase } from "react-icons/fa";
-import GirlIcon from "../app/favicon.ico";
+import { FaDatabase } from "react-icons/fa";
 import CombinedNavBar from "./components/CombinedNavBar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,16 +27,16 @@ export default function RootLayout({
   const footerColumns = [
     {
       links: [
-        { link: "Study Portal", URL: "/study-portal" },
         { link: "Coding Resources", URL: "/coding-resources" },
+        { link: "Study Portal", URL: "/study-portal" },
         { link: "Blog", URL: "/blog" },
       ],
     },
     {
       links: [
-        { link: "Portfolio", URL: "/portfolio" },
-        { link: "Certifications", URL: "/certifications" },
         { link: "About Me", URL: "/about" },
+        { link: "Certifications", URL: "/certifications" },
+        { link: "Portfolio", URL: "/portfolio" },
       ],
     },
     {
@@ -55,7 +53,7 @@ export default function RootLayout({
         },
         {
           link: "Google Dev",
-          URL: "https://developers.google.com/profile/u/kirsten_darling",
+          URL: "https://g.dev/kirsten_darling",
           target: "_blank",
         },
         { link: "Dev.to", URL: "https://dev.to/kdarling93", target: "_blank" },
