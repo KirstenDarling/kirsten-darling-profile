@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from "next/image";
 
 const TextBanner = ({
   heading,
@@ -21,32 +21,35 @@ const TextBanner = ({
   const hasSplitStyle = eyebrowText && heading && splitText;
 
   return (
-    <div className={`w-full max-h-[400px] relative min-h-[9%] ${!withBackground && 'bg-rose-500'}`}>
+    <div className={`w-full relative ${!withBackground && "bg-rose-500"}`}>
       {withBackground && image && (
         <Image
-          alt=''
+          alt=""
           src={image}
-          className='z-[3]'
-          sizes='100vw'
-          style={{ width: '100%', maxHeight: '400px' }}
+          className="z-[3]"
+          sizes="100vw"
+          style={{
+            width: "100%",
+            maxHeight: "400px",
+            objectFit: "cover",
+          }}
         />
       )}
       <div
-        className={`absolute ${!hasSplitStyle ? 'w-[100vw]' : 'w-[50%]'} top-0 z-[5] text-center self-stretch px-4 py-[184px] justify-center items-center gap-12 inline-flex ${
-          withBackground ? 'bg-black bg-opacity-20' : 'bg-black text-black'
-        }`}
+        className={`absolute max-h-[400px] ${!hasSplitStyle ? "w-[100vw]" : "w-[50%]"} top-0 z-[5] text-center self-stretch px-4 py-[184px] justify-center items-center gap-12 inline-flex 
+          ${withBackground ? "bg-black bg-opacity-60 text-white" : "bg-black text-white"}`}
       >
-        <div className='grow shrink basis-0 flex-col justify-start items-center gap-2 inline-flex'>
+        <div className="grow shrink basis-0 flex-col justify-start items-center gap-2 inline-flex">
           {hasSplitStyle ? (
             <>
               <div className="text-[28px] font-bold font-['Syne'] leading-[33.60px] text-purple-500">
                 {eyebrowText}
               </div>
-              <div className='justify-start items-start gap-8 inline-flex'>
-                <div className="max-w-[45%] text-[56px] font-extrabold font-['Alegreya'] leading-[67.20px] text-neutral-100">
+              <div className="justify-start items-start gap-8 inline-flex">
+                <div className="max-w-[45%] text-[56px] font-extrabold font-['Alegreya'] leading-[67.20px] text-white">
                   {heading}
                 </div>
-                <div className="h-[93px] text-[22px] font-normal font-['Alegreya'] leading-[30.80px] text-zinc-300">
+                <div className="h-[93px] text-[22px] font-normal font-['Alegreya'] leading-[30.80px] text-white">
                   {text}
                 </div>
               </div>

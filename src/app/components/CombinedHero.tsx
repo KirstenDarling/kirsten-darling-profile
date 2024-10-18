@@ -25,7 +25,6 @@ const CombinedHero = ({
     <div
       className={`self-stretch ${backgroundStyle} justify-center items-center inline-flex flex-col md:flex-row`}
     >
-      {/* Text Container */}
       <div className="order-2 md:order-none grow shrink basis-0 px-12 py-[36px] md:py-[120px] flex-col justify-center items-center gap-8 inline-flex">
         <div className="self-stretch h-full flex-col justify-center items-start gap-2 md:gap-10 flex">
           <div className="self-stretch h-full flex-col justify-center items-start gap-4 flex">
@@ -49,7 +48,6 @@ const CombinedHero = ({
           )}
         </div>
       </div>
-      {/* Image Container */}
       <div className="order-1 md:order-none grow shrink basis-0 h-[725px] justify-center items-center gap-2 flex">
         {image && (
           <Image

@@ -9,6 +9,9 @@ import ComingSoonSection from "./components/ComingSoonSection";
 import BecksScreenshot from "../../public/becksScreenshot.png";
 import CIYScreenshot from "../../public/ciyScreenshot.png";
 import C2CScreenshot from "../../public/c2cScreenshot.png";
+import BlogPreviewSection from "./components/BlogPreviewSection";
+import TextBanner from "./components/TextBanner";
+import Purple8 from "../../public/purpleTechUnsplash.jpg";
 
 export default function Home() {
   const featuredLongCards = [
@@ -95,11 +98,12 @@ export default function Home() {
         heading="Certifications"
         subheading="Click below to view certifications that Kirsten has earned from web dev and software development courses over the years."
       />
-      {/* <TextBanner
-        heading="From Dream to Deployment"
-        subheading="Let's transform your Figma designs into reality"
+      <TextBanner
+        heading="From the Blog"
+        subheading="Stay informed and inspired with Kirsten's take on the latest tech industry news and trends, covering everything from AI and software development to business strategy and leadership."
         image={Purple8}
-      /> */}
+      />
+      <BlogPreviewSection />
       {/* <ArticleCards
         heading="Neon Dreams Unveiled"
         subheading="Immersive Reality Awaits"

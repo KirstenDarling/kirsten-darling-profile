@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import Image from "next/image";
 import BuildingSVG from "../../../public/building.svg";
 import ComingSoonImage from "../../../public/Coming.png";

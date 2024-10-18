@@ -12,14 +12,14 @@ interface Resource {
   title: string;
   type: string;
   imageSrc: string;
-  language?: string[]; // Language is now an array of strings
+  language?: string[];
   description: string;
   url: string;
 }
 
 interface SidebarProps {
   onFilterChange: (filters: { language: string[]; type: string[] }) => void;
-  resources: Resource[]; // Add resources prop
+  resources: Resource[];
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ onFilterChange, resources }) => {
@@ -31,10 +31,9 @@ const Sidebar: React.FC<SidebarProps> = ({ onFilterChange, resources }) => {
     type: [],
   });
 
-  const [showFilters, setShowFilters] = React.useState(false); // Initially hide on all screens
+  const [showFilters, setShowFilters] = React.useState(false);
 
   useEffect(() => {
-    // Check screen size and update showFilters on client-side
     if (typeof window !== "undefined") {
       setShowFilters(window.innerWidth >= 768);
     }
@@ -63,7 +62,6 @@ const Sidebar: React.FC<SidebarProps> = ({ onFilterChange, resources }) => {
 
   return (
     <aside className="bg-purple-300 md:bg-gray-100 p-4 min-w-[15rem]">
-      {/* Conditionally render the toggle button */}
       {showFilters &&
         typeof window !== "undefined" &&
         window.innerWidth > 768 && (
@@ -81,7 +79,6 @@ const Sidebar: React.FC<SidebarProps> = ({ onFilterChange, resources }) => {
           </div>
         </div>
       )}
-      {/* Conditionally render filter options based on screen size and showFilters state */}
       {(typeof window !== "undefined" && window.innerWidth >= 768) ||
       showFilters ? (
         <div>

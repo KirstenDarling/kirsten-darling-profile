@@ -1,5 +1,3 @@
-// ./frontend/pages/post/[slug].tsx
-
 import { client } from "../../sanity/lib/client";
 
 interface Post {
@@ -30,7 +28,6 @@ export async function getStaticPaths() {
 export async function getStaticProps(context: {
   params: { slug?: "" | undefined };
 }) {
-  // It's important to default the slug so that it doesn't return "undefined"
   const { slug = "" } = context.params;
   const post = await client.fetch(
     `
