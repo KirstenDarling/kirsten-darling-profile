@@ -20,16 +20,18 @@ import { useEffect } from "react";
 export default function Home() {
   const [posts, setPosts] = React.useState<
     {
-      publishedAt: string;
-      _updatedAt: string;
-      subtitle: string;
-      _id: string;
-      body: string;
       title: string;
-      slug: { current: string };
-      mainImage: string;
+      publishedAt: string;
+      body: string;
+      subtitle: string;
+      mainImage?: any;
     }[]
   >([]);
+
+  // _id: string;
+  // subtitle: string;
+  // _updatedAt: string;
+  // slug: { current: string };
 
   const featuredLongCards = [
     {
@@ -94,43 +96,23 @@ export default function Home() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const query = `*[_type == "post"]{
-          _id,
-          title,
-          slug,
-          body,
-          publishedAt,
-          _updatedAt,
-          subtitle,
-          'mainImage': mainImage.asset->url
+      const query = `*[_type == "post"]| order(publishedAt desc)[0...3]{
+        title,
+        publishedAt,
+        body,
+        subtitle,
+        'mainImage': mainImage.asset->url
         }`;
       const postsData = await client.fetch(query);
       setPosts(postsData);
     };
 
+    // _id,
+    // slug,
+    // _updatedAt,
+
     fetchPosts();
   }, []);
-
-  const blogPosts = [
-    {
-      title: "How To Overcome Fear Of Rejection & Be Happy All The Time",
-      publishedAt: "November 4, 2020",
-      categories: ["Coach", "Career"],
-      body: "There's a growing community of digital world who live a location independent lifestyle. We're software developers, designers, writers, journalists, engineers, and all sorts of people who share a passion for...",
-    },
-    {
-      title: "10 Online Careers You Can Start Today With Basically No Money",
-      publishedAt: "November 4, 2020",
-      categories: ["Business", "Impact"],
-      body: "This in itself makes you feel worse about yourself, creating a vicious cycle of fear and low self-esteem. Sometimes, you probably feel like you've tried everything to feel better and...",
-    },
-    {
-      title: "5 Ways to make More Money as a Coach or Consultant",
-      publishedAt: "November 4, 2020",
-      categories: ["Career", "Business"],
-      body: "You may feel undesirable, uninteresting, and pessimistic about the prospect of finding love. Feeling rejected hurts. It undermines your confidence and makes you doubt your worth. Trapped by a horrible...",
-    },
-  ];
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
@@ -160,7 +142,7 @@ export default function Home() {
         subheading="Stay informed and inspired with Kirsten's take on the latest tech industry news and trends, covering everything from AI and software development to business strategy and leadership."
         image={Purple8}
       />
-      <BlogPreviewSection cards={blogPosts} />
+      <BlogPreviewSection cards={posts} />
       {/* <ArticleCards
         heading="Neon Dreams Unveiled"
         subheading="Immersive Reality Awaits"

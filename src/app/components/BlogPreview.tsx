@@ -8,6 +8,8 @@ interface BlogPost {
   publishedAt: string;
   categories?: string[];
   body: string | any[];
+  subtitle?: string;
+  mainImage?: any;
 }
 
 const BlogPreview: React.FC<BlogPost> = ({
@@ -15,16 +17,31 @@ const BlogPreview: React.FC<BlogPost> = ({
   publishedAt,
   categories,
   body,
+  subtitle,
+  mainImage,
 }) => {
   return (
     <div className="bg-white rounded-lg mt-[5%] min-w-[325px] w-[30%] shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden">
       <div className="p-6 pb-4">
-        <Image src={SampleImage} alt="Sample Image" width={350} height={75} />
+        <Image
+          src={mainImage ? mainImage : SampleImage}
+          alt="Sample Image"
+          width={350}
+          height={75}
+        />
         <div className="bg-purple-200 relative z-2 inline-block mt-2 px-2 py-1 text-xs font-medium text-gray-700">
-          {publishedAt}
+          <span>
+            {new Date(publishedAt).toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}{" "}
+          </span>
         </div>
         <hr className="w-[130%] relative z-0 color-red border-purple-200 top-[-22px] left-[-15%] border-[2px]" />
-        <h2 className="text-lg font-bold text-gray-900">{title}</h2>
+        <h2 className="text-lg font-bold text-gray-900">
+          {title}: {subtitle}
+        </h2>
         <div className="mt-3">
           <ul className="mt-2 text-sm text-gray-600 flex items-center">
             {" "}
@@ -51,8 +68,8 @@ const BlogPreview: React.FC<BlogPost> = ({
       </div>
       <div className="p-6 pt-4">
         <p className="text-gray-700">
-          {body}
-          {/* {getPreviewText(body, 275)} */}
+          {/* {body} */}
+          {getPreviewText(body, 275)}
         </p>
       </div>
       <div className="p-6 pt-0 flex justify-end">
