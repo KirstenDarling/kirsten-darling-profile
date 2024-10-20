@@ -21,7 +21,9 @@ const TextBanner = ({
   const hasSplitStyle = eyebrowText && heading && splitText;
 
   return (
-    <div className={`w-full relative ${!withBackground && "bg-rose-500"}`}>
+    <div
+      className={`w-full relative min-h-[400px] ${!withBackground && "bg-rose-500"}`}
+    >
       {withBackground && image && (
         <Image
           alt=""
@@ -32,11 +34,12 @@ const TextBanner = ({
             width: "100%",
             maxHeight: "400px",
             objectFit: "cover",
+            minHeight: "400px",
           }}
         />
       )}
       <div
-        className={`absolute max-h-[400px] ${!hasSplitStyle ? "w-[100vw]" : "w-[50%]"} top-0 z-[5] text-center self-stretch px-4 py-[184px] justify-center items-center gap-12 inline-flex 
+        className={`absolute min-h-[400px] max-h-[400px] ${!hasSplitStyle ? "w-[100vw]" : "w-[50%]"} top-0 z-[5] text-center self-stretch px-4 py-[184px] justify-center items-center gap-12 inline-flex 
           ${withBackground ? "bg-black bg-opacity-60 text-white" : "bg-black text-white"}`}
       >
         <div className="grow shrink basis-0 flex-col justify-start items-center gap-2 inline-flex">
