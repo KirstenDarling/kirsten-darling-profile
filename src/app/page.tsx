@@ -25,6 +25,7 @@ export default function Home() {
       body: string;
       subtitle: string;
       mainImage?: any;
+      type?: string;
     }[]
   >([]);
 
@@ -94,14 +95,15 @@ export default function Home() {
     },
   ];
 
-  useEffect(() => {
+  React.useEffect(() => {
     const fetchPosts = async () => {
-      const query = `*[_type == "post"]| order(publishedAt desc)[0...3]{
+      const query = `*[_type == "post" && type == "BLOG"]| order(publishedAt desc)[0...3]{
         title,
         publishedAt,
         body,
         subtitle,
-        'mainImage': mainImage.asset->url
+        'mainImage': mainImage.asset->url,
+        type
         }`;
       const postsData = await client.fetch(query);
       setPosts(postsData);
