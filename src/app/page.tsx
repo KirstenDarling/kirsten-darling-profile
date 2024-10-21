@@ -1,3 +1,5 @@
+"use client";
+
 import CombinedHero from "./components/CombinedHero";
 import HeroGen1 from "../../public/heroGen1.jpg";
 import * as React from "react";
@@ -12,8 +14,25 @@ import C2CScreenshot from "../../public/c2cScreenshot.png";
 import BlogPreviewSection from "./components/BlogPreviewSection";
 import TextBanner from "./components/TextBanner";
 import Purple8 from "../../public/purpleTechUnsplash.jpg";
+import { client } from "@/sanity/lib/client";
+import { useEffect } from "react";
 
 export default function Home() {
+  const [posts, setPosts] = React.useState<
+    {
+      title: string;
+      publishedAt: string;
+      body: string;
+      subtitle: string;
+      mainImage?: any;
+    }[]
+  >([]);
+
+  // _id: string;
+  // subtitle: string;
+  // _updatedAt: string;
+  // slug: { current: string };
+
   const featuredLongCards = [
     {
       eyebrowText: "Transcend Reality",
@@ -75,6 +94,26 @@ export default function Home() {
     },
   ];
 
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const query = `*[_type == "post"]| order(publishedAt desc)[0...3]{
+        title,
+        publishedAt,
+        body,
+        subtitle,
+        'mainImage': mainImage.asset->url
+        }`;
+      const postsData = await client.fetch(query);
+      setPosts(postsData);
+    };
+
+    // _id,
+    // slug,
+    // _updatedAt,
+
+    fetchPosts();
+  }, []);
+
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
       <CombinedHero
@@ -103,7 +142,7 @@ export default function Home() {
         subheading="Stay informed and inspired with Kirsten's take on the latest tech industry news and trends, covering everything from AI and software development to business strategy and leadership."
         image={Purple8}
       />
-      <BlogPreviewSection />
+      <BlogPreviewSection cards={posts} />
       {/* <ArticleCards
         heading="Neon Dreams Unveiled"
         subheading="Immersive Reality Awaits"
