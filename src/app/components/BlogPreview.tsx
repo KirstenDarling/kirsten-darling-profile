@@ -10,6 +10,7 @@ interface BlogPost {
   body: string | any[];
   subtitle?: string;
   mainImage?: any;
+  slug: { current: string };
 }
 
 const BlogPreview: React.FC<BlogPost> = ({
@@ -19,9 +20,10 @@ const BlogPreview: React.FC<BlogPost> = ({
   body,
   subtitle,
   mainImage,
+  slug,
 }) => {
   return (
-    <div className="bg-white rounded-lg min-h-[590px] mt-[5%] min-w-[325px] w-[30%] shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden">
+    <div className="bg-white rounded-lg min-h-[650px] mt-[5%] min-w-[325px] w-[30%] shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden">
       <div className="flex flex-col flex-grow">
         <div className="p-6 pb-4">
           <Image
@@ -76,7 +78,7 @@ const BlogPreview: React.FC<BlogPost> = ({
         </div>
       </div>
       <div className="pl-6 pr-6 pt-0 pb-0 flex justify-end relative">
-        <a href="#" className="text-purple-500 hover:underline">
+        <a href={`/blog/${slug}`} className="text-purple-500 hover:underline">
           Read More
         </a>
       </div>

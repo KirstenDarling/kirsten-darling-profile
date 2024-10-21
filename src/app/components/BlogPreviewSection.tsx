@@ -10,6 +10,7 @@ const BlogPreviewSection = ({
     body: string | any[];
     subtitle?: string;
     mainImage?: any;
+    slug: { current: string };
   }[];
 }) => {
   console.log(cards);

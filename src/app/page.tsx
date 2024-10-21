@@ -26,13 +26,13 @@ export default function Home() {
       subtitle: string;
       mainImage?: any;
       type?: string;
+      slug: { current: string };
     }[]
   >([]);
 
   // _id: string;
   // subtitle: string;
   // _updatedAt: string;
-  // slug: { current: string };
 
   const featuredLongCards = [
     {
@@ -103,14 +103,14 @@ export default function Home() {
         body,
         subtitle,
         'mainImage': mainImage.asset->url,
-        type
+        type,
+        'slug': slug.current,
         }`;
       const postsData = await client.fetch(query);
       setPosts(postsData);
     };
 
     // _id,
-    // slug,
     // _updatedAt,
 
     fetchPosts();
