@@ -2,25 +2,22 @@ import { atom, selector } from "recoil";
 
 const LOCAL_STORAGE_KEY = "activeNavItem";
 
-// Helper function to get activeNavItem from local storage or default to 1
 const getActiveNavItemFromLocalStorageOrDefault = () => {
   try {
     const storedValue = localStorage.getItem(LOCAL_STORAGE_KEY);
-    // Parse the value, ensuring it's a number and within the valid range
     const parsedValue = storedValue ? parseInt(storedValue, 10) : null;
-    return parsedValue !== null && parsedValue >= 0 ? parsedValue : 1; // Default to 1 if invalid
+    return parsedValue !== null && parsedValue >= 0 ? parsedValue : 1;
   } catch (error) {
     console.error("Error retrieving from localStorage:", error);
-    return 1; // Default to 1 on error
+    return 1;
   }
 };
 
 export const activeNavItemState = atom({
   key: "activeNavItem",
-  default: getActiveNavItemFromLocalStorageOrDefault(), // Use the helper function
+  default: getActiveNavItemFromLocalStorageOrDefault(),
 });
 
-// Selector for persistence (unchanged)
 export const activeNavItemPersistState = selector({
   key: "activeNavItemPersist",
   get: ({ get }) => get(activeNavItemState),

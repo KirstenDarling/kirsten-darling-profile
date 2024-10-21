@@ -1,5 +1,3 @@
-import { preloadStyle } from "next/dist/server/app-render/entry-base";
-import { StaticImageData } from "next/image";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,7 +18,6 @@ const StackedArticleCards = ({
 
     for (let i = 0; i < postBody.length; i++) {
       const block = postBody[i];
-      // Check if the block has children (for nested structures)
       if (
         block._type === "block" &&
         block.children &&
@@ -29,7 +26,6 @@ const StackedArticleCards = ({
         block.children.forEach(
           (child: { _type: string; text: string | any[] }) => {
             if (child._type === "span" && child.text) {
-              // Extract text from spans
               text += child.text + " ";
               length += child.text.length;
             }
@@ -69,7 +65,7 @@ const StackedArticleCards = ({
                 <div className="headling-article-title">{post.title}</div>
                 <div className="headling-article-excerpt">{post.subtitle}</div>
                 {/* <p className="hidden sm:block">
-                 {post.body && getPreviewText(post.body, 75)}
+                {post.body && getPreviewText(post.body, 75)}
                </p> */}
               </div>
             </div>

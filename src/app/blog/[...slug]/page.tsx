@@ -51,7 +51,6 @@ const serializers = {
           return <h1 className="my-6 text-3xl font-bold">{props.children}</h1>;
         case "h2":
           return <h2 className="my-5 text-2xl font-bold">{props.children}</h2>;
-        // ... add more styles as needed
         default:
           return <p className="my-4">{props.children}</p>;
       }
@@ -109,35 +108,31 @@ const BlogPost = () => {
     <div className="container mx-auto p-6">
       <h1 className="text-4xl font-bold leading-tight mb-2 text-left max-w-[65%]">
         {" "}
-        {/* Increased font size, adjusted line height, reduced margin */}
         {post.title}: {post.subtitle}
       </h1>
 
       <div className="flex items-center mb-4 text-gray-500">
         {" "}
-        {/* Adjusted text color */}
-        {author.image && ( // Conditionally render the avatar if the image exists
+        {author.image && (
           <div className="w-8 h-8 rounded-full overflow-hidden mr-[0.5rem]">
             <Image
               src={author.image}
               alt={author.name}
-              width={32} // Set width and height for the avatar
+              width={32}
               height={32}
-              className="object-cover" // Ensure the image covers the circle
+              className="object-cover"
             />
           </div>
         )}
         <span className="text-sm mr-4">By {author.name}</span>
         <span className="text-sm mr-4">
           {" "}
-          {/* Reduced font size, increased margin */}
           Published on{" "}
           {new Date(post.publishedAt).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
             day: "numeric",
           })}{" "}
-          {/* Formatted date */}
         </span>
       </div>
 

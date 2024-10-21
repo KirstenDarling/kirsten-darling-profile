@@ -5,8 +5,6 @@ import HelpingImage from "../../../public/kirstenhelpingatmwi.png";
 import WorkplaceImage from "../../../public/MWI.jpg";
 
 export default function Home() {
-  // move below variables to Contenful
-
   const featuredEvents = [
     {
       startDate: "2024",

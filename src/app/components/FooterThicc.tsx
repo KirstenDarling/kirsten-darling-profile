@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import FooterColumn from "./FooterColumn";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/footerThicc.module.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";

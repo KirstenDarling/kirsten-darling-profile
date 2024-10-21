@@ -1,4 +1,3 @@
-// sanity-block-content-to-react.d.ts
 declare module "@sanity/block-content-to-react" {
   import * as React from "react";
 

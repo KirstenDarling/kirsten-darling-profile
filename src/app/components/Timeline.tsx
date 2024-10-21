@@ -29,7 +29,6 @@ const Timeline = ({
 }) => {
   return (
     <div>
-      {/* Title, Subtitle, CTA Section */}
       <div className="w-[100vw] self-stretch h-[100%] px-4 pl-[2rem] sm:pl-[8rem] pt-[10%] bg-gray-800 flex flex-col justify-start items-start gap-2">
         <div className="self-stretch text-zinc-100 text-[65px] sm:text-[90px] font-black font-['Playfair Display'] leading-[70px] sm:leading-[118.80px]">
           {title}
@@ -46,9 +45,7 @@ const Timeline = ({
         )}
       </div>
 
-      {/* Main Content Section */}
       <div className="w-[100vw] self-stretch h-[100%] px-4 py-[0] bg-gray-800 flex flex-col sm:flex-row items-start gap-10 pt-[5%] pb-[5%]">
-        {/* Image Column */}
         <div className="w-full sm:w-1/2 h-full flex flex-col items-center gap-10">
           <div className="rounded-[32px] flex flex-col gap-2 sm:gap-36 mt-10">
             <Image
@@ -69,7 +66,6 @@ const Timeline = ({
           </div>
         </div>
 
-        {/* Timeline Column */}
         <div className="w-full sm:w-1/2 flex flex-col items-start gap-10 pr-[5%]">
           {events.map((event, index) => (
             <Event key={index} {...event} />

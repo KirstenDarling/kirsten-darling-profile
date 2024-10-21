@@ -57,8 +57,6 @@ const CombinedNavBar = ({
                 {FAIcon && (
                   <FAIcon className="text-purple-500 h-[22px] w-[22px] mr-[20px]" />
                 )}
-                {/* {!icon && <Image alt='' src={SunIcon} />}{' '} */}
-                {/* Fallback to SunIcon if no icon provided */}
               </div>
               <div
                 className={`${textColor} text-base hover:text-purple-500 font-normal font-['Open Sans'] leading-normal`}

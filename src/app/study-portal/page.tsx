@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import styled from "styled-components";
-import Modal from "react-modal"; // Make sure to install react-modal
+import Modal from "react-modal";
 import { useState } from "react";
 import ComingSoonSection from "../components/ComingSoonSection";
 
@@ -75,19 +75,18 @@ const KeyboardHighlightArea = styled.svg`
 
 const customStyles = {
   content: {
-    top: "40%", // Adjusted vertical position
+    top: "40%",
     left: "50%",
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    border: "none", // Removed default border
-    background: "transparent", // Transparent background
-    overflow: "hidden", // Hide content that overflows
+    border: "none",
+    background: "transparent",
+    overflow: "hidden",
   },
   overlay: {
-    // Added styles for the overlay
-    backgroundColor: "rgba(0, 0, 0, 0.3)", // More transparent overlay
+    backgroundColor: "rgba(0, 0, 0, 0.3)",
   },
 };
 
@@ -137,8 +136,8 @@ const ModalContent = styled.div`
 
 export default function Home() {
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [booksModalIsOpen, setBooksModalIsOpen] = useState(false); // New state for books modal
-  const [keyboardModalIsOpen, setKeyboardModalIsOpen] = useState(false); // New state for keyboard modal
+  const [booksModalIsOpen, setBooksModalIsOpen] = useState(false);
+  const [keyboardModalIsOpen, setKeyboardModalIsOpen] = useState(false);
 
   const openModal = () => {
     setIsOpen(true);
@@ -149,22 +148,18 @@ export default function Home() {
   };
 
   const openBooksModal = () => {
-    // New function to open books modal
     setBooksModalIsOpen(true);
   };
 
   const closeBooksModal = () => {
-    // New function to close books modal
     setBooksModalIsOpen(false);
   };
 
   const openKeyboardModal = () => {
-    // New function to open keyboard modal
     setKeyboardModalIsOpen(true);
   };
 
   const closeKeyboardModal = () => {
-    // New function to close keyboard modal
     setKeyboardModalIsOpen(false);
   };
 
@@ -176,7 +171,6 @@ export default function Home() {
 
         <BookHighlightArea onClick={openBooksModal}>
           {" "}
-          {/* New highlight area for books */}
           <rect
             x="0"
             y="0"
@@ -189,7 +183,6 @@ export default function Home() {
 
         <KeyboardHighlightArea onClick={openKeyboardModal}>
           {" "}
-          {/* New highlight area for keyboard */}
           <rect
             x="0"
             y="0"
