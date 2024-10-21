@@ -21,13 +21,14 @@ const BlogPreview: React.FC<BlogPost> = ({
   mainImage,
 }) => {
   return (
-    <div className="bg-white rounded-lg mt-[5%] min-w-[325px] w-[30%] shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden">
+    <div className="bg-white rounded-lg min-h-[680px] mt-[5%] min-w-[325px] w-[30%] shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden">
       <div className="p-6 pb-4">
         <Image
           src={mainImage ? mainImage : SampleImage}
           alt="Sample Image"
           width={350}
-          height={75}
+          height={220}
+          className="min-h-[220px] max-h-[220px]"
         />
         <div className="bg-purple-200 relative z-2 inline-block mt-2 px-2 py-1 text-xs font-medium text-gray-700">
           <span>
@@ -39,7 +40,7 @@ const BlogPreview: React.FC<BlogPost> = ({
           </span>
         </div>
         <hr className="w-[130%] relative z-0 color-red border-purple-200 top-[-22px] left-[-15%] border-[2px]" />
-        <h2 className="text-lg font-bold text-gray-900">
+        <h2 className="mt-4 text-lg font-bold text-gray-900">
           {title}: {subtitle}
         </h2>
         <div className="mt-3">
@@ -66,13 +67,13 @@ const BlogPreview: React.FC<BlogPost> = ({
           </ul>
         </div>
       </div>
-      <div className="p-6 pt-4">
+      <div className="p-6 pt-0">
         <p className="text-gray-700">
           {/* {body} */}
           {getPreviewText(body, 275)}
         </p>
       </div>
-      <div className="p-6 pt-0 flex justify-end">
+      <div className="pl-6 pr-6 pt-0 pb-0 flex justify-end relative top-5">
         <a href="#" className="text-purple-500 hover:underline">
           Read More
         </a>
