@@ -103,6 +103,22 @@ const Sidebar: React.FC<SidebarProps> = ({ onFilterChange, resources }) => {
             <label className="block">
               <input
                 type="checkbox"
+                value="CSharp"
+                onChange={() => handleFilterChange("language", "CSharp")}
+              />{" "}
+              C#
+            </label>
+            <label className="block">
+              <input
+                type="checkbox"
+                value="Dotnet"
+                onChange={() => handleFilterChange("language", "Dotnet")}
+              />{" "}
+              .NET
+            </label>
+            <label className="block">
+              <input
+                type="checkbox"
                 value="Regex"
                 onChange={() => handleFilterChange("language", "Regex")}
               />{" "}
@@ -206,6 +222,22 @@ const Sidebar: React.FC<SidebarProps> = ({ onFilterChange, resources }) => {
                 onChange={() => handleFilterChange("type", "Video")}
               />{" "}
               Video
+            </label>
+            <label className="block">
+              <input
+                type="checkbox"
+                value="LearningPath"
+                onChange={() => handleFilterChange("type", "LearningPath")}
+              />{" "}
+              Learning Path
+            </label>
+            <label className="block">
+              <input
+                type="checkbox"
+                value="Class"
+                onChange={() => handleFilterChange("type", "Class")}
+              />{" "}
+              Class
             </label>
           </div>
         </div>
