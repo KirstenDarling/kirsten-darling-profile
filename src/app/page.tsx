@@ -17,6 +17,7 @@ import Purple8 from "../../public/purpleTechUnsplash.jpg";
 import { client } from "@/sanity/lib/client";
 import { useEffect } from "react";
 import AboutHeroSection from "./components/AboutHeroSection";
+import RecentResources from "./components/RecentResources";
 
 export default function Home() {
   const [posts, setPosts] = React.useState<
@@ -130,16 +131,7 @@ export default function Home() {
         buttonStyle="bg-purple-500 max-h-[60px] max-w-[250px] md:max-w-[360px] mt-[10%] text-white font-normal font-['Open Sans'] leading-[27px]"
         buttonTextStyle="text-neutral-100 text-3xl md:text-4xl font-normal font-['Fugaz One'] leading-[40px] md:leading-[77.76px]"
       />
-      <CertificationCards
-        cards={portfolioCards}
-        heading="Portfolio"
-        subheading="Click below to view websites that Kirsten has worked on over the years."
-      />
-      <CertificationCards
-        cards={featuredCards}
-        heading="Certifications"
-        subheading="Click below to view certifications that Kirsten has earned from web dev and software development courses over the years."
-      />
+      <RecentResources />
       <TextBanner
         heading="From the Blog"
         subheading="Stay informed and inspired with Kirsten's take on the latest tech industry news and trends, covering everything from AI and software development to business strategy and leadership."
@@ -160,6 +152,16 @@ export default function Home() {
         bgColor="black"
       /> */}
       <ComingSoonSection showTopImage={true} />
+      <CertificationCards
+        cards={portfolioCards}
+        heading="Portfolio"
+        subheading="Click below to view websites that Kirsten has worked on over the years."
+      />
+      <CertificationCards
+        cards={featuredCards}
+        heading="Certifications"
+        subheading="Click below to view certifications that Kirsten has earned from web dev and software development courses over the years."
+      />
       <AboutHeroSection />
     </div>
   );
