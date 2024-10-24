@@ -5,6 +5,7 @@
 
 .glow:focus {
   border: 2px solid #dadada;
+  appearance: none !important;
   -webkit-appearance: none !important;
   -webkit-box-shadow: 0 0 10px #9ecaed !important;
   -moz-box-shadow: 0 0 10px #9ecaed;
@@ -13,6 +14,7 @@
 
 .glow:hover {
   border: 2px solid #dadada;
+  appearance: none !important;
   -webkit-appearance: none !important;
   -webkit-box-shadow: 0 0 10px #9ecaed !important;
   -moz-box-shadow: 0 0 10px #9ecaed;
@@ -21,6 +23,7 @@
 
 .glowGreen:focus {
   border: 2px solid #1be718;
+  appearance: none !important;
   -webkit-appearance: none !important;
   -webkit-box-shadow: 0 0 10px #9ecaed !important;
   -moz-box-shadow: 0 0 10px #9ecaed;
@@ -29,6 +32,7 @@
 
 .glowGreen:hover {
   border: 2px solid #1be718;
+  appearance: none !important;
   -webkit-appearance: none !important;
   -webkit-box-shadow: 0 0 10px #9ecaed !important;
   -moz-box-shadow: 0 0 10px #9ecaed;

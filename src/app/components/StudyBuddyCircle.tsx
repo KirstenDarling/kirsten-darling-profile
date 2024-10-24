@@ -50,7 +50,6 @@ const StudyBuddy: React.FC<StudyBuddyProps> = ({ resources }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    // Initialize position on component mount (optional)
     const initialX = window.innerWidth / 2;
     const initialY = window.innerHeight / 2;
     setPosition({ x: initialX, y: initialY });

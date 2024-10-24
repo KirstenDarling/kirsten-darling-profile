@@ -3,10 +3,9 @@ import Timeline from "../components/Timeline";
 import ProfileImage from "../../../public/profile.jpg";
 import HelpingImage from "../../../public/kirstenhelpingatmwi.png";
 import WorkplaceImage from "../../../public/MWI.jpg";
+import AboutHeroSection from "../components/AboutHeroSection";
 
 export default function Home() {
-  // move below variables to Contenful
-
   const featuredEvents = [
     {
       startDate: "2024",
@@ -111,6 +110,7 @@ export default function Home() {
 
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
+      <AboutHeroSection />
       <Timeline
         helpingImage={HelpingImage}
         profileImage={ProfileImage}

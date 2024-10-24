@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "../styles/footerThicc.module.css";
 import PlaceholderImage from "../../../public/placeholder.jpg";
 
 const BlogPostRectangle = ({

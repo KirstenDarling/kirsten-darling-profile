@@ -1,3 +1,5 @@
+"use client";
+
 import CombinedHero from "./components/CombinedHero";
 import HeroGen1 from "../../public/heroGen1.jpg";
 import * as React from "react";
@@ -9,8 +11,31 @@ import ComingSoonSection from "./components/ComingSoonSection";
 import BecksScreenshot from "../../public/becksScreenshot.png";
 import CIYScreenshot from "../../public/ciyScreenshot.png";
 import C2CScreenshot from "../../public/c2cScreenshot.png";
+import BlogPreviewSection from "./components/BlogPreviewSection";
+import TextBanner from "./components/TextBanner";
+import Purple8 from "../../public/purpleTechUnsplash.jpg";
+import { client } from "@/sanity/lib/client";
+import { useEffect } from "react";
+import AboutHeroSection from "./components/AboutHeroSection";
+import RecentResources from "./components/RecentResources";
 
 export default function Home() {
+  const [posts, setPosts] = React.useState<
+    {
+      title: string;
+      publishedAt: string;
+      body: string;
+      subtitle: string;
+      mainImage?: any;
+      type?: string;
+      slug: { current: string };
+    }[]
+  >([]);
+
+  // _id: string;
+  // subtitle: string;
+  // _updatedAt: string;
+
   const featuredLongCards = [
     {
       eyebrowText: "Transcend Reality",
@@ -72,6 +97,27 @@ export default function Home() {
     },
   ];
 
+  React.useEffect(() => {
+    const fetchPosts = async () => {
+      const query = `*[_type == "post" && type == "BLOG"]| order(publishedAt desc)[0...3]{
+        title,
+        publishedAt,
+        body,
+        subtitle,
+        'mainImage': mainImage.asset->url,
+        type,
+        'slug': slug.current,
+        }`;
+      const postsData = await client.fetch(query);
+      setPosts(postsData);
+    };
+
+    // _id,
+    // _updatedAt,
+
+    fetchPosts();
+  }, []);
+
   return (
     <div className="w-full bg-white flex-col justify-start items-center inline-flex">
       <CombinedHero
@@ -85,21 +131,13 @@ export default function Home() {
         buttonStyle="bg-purple-500 max-h-[60px] max-w-[250px] md:max-w-[360px] mt-[10%] text-white font-normal font-['Open Sans'] leading-[27px]"
         buttonTextStyle="text-neutral-100 text-3xl md:text-4xl font-normal font-['Fugaz One'] leading-[40px] md:leading-[77.76px]"
       />
-      <CertificationCards
-        cards={portfolioCards}
-        heading="Portfolio"
-        subheading="Click below to view websites that Kirsten has worked on over the years."
-      />
-      <CertificationCards
-        cards={featuredCards}
-        heading="Certifications"
-        subheading="Click below to view certifications that Kirsten has earned from web dev and software development courses over the years."
-      />
-      {/* <TextBanner
-        heading="From Dream to Deployment"
-        subheading="Let's transform your Figma designs into reality"
+      <RecentResources />
+      <TextBanner
+        heading="From the Blog"
+        subheading="Stay informed and inspired with Kirsten's take on the latest tech industry news and trends, covering everything from AI and software development to business strategy and leadership."
         image={Purple8}
-      /> */}
+      />
+      <BlogPreviewSection cards={posts} />
       {/* <ArticleCards
         heading="Neon Dreams Unveiled"
         subheading="Immersive Reality Awaits"
@@ -114,6 +152,17 @@ export default function Home() {
         bgColor="black"
       /> */}
       <ComingSoonSection showTopImage={true} />
+      <CertificationCards
+        cards={portfolioCards}
+        heading="Portfolio"
+        subheading="Click below to view websites that Kirsten has worked on over the years."
+      />
+      <CertificationCards
+        cards={featuredCards}
+        heading="Certifications"
+        subheading="Click below to view certifications that Kirsten has earned from web dev and software development courses over the years."
+      />
+      <AboutHeroSection />
     </div>
   );
 }
