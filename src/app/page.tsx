@@ -16,6 +16,7 @@ import TextBanner from "./components/TextBanner";
 import Purple8 from "../../public/purpleTechUnsplash.jpg";
 import { client } from "@/sanity/lib/client";
 import { useEffect } from "react";
+import AboutHeroSection from "./components/AboutHeroSection";
 
 export default function Home() {
   const [posts, setPosts] = React.useState<
@@ -159,6 +160,7 @@ export default function Home() {
         bgColor="black"
       /> */}
       <ComingSoonSection showTopImage={true} />
+      <AboutHeroSection />
     </div>
   );
 }
