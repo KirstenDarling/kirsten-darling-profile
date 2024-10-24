@@ -46,8 +46,8 @@ const skillsData: Skill[] = [
 
 const AboutHeroSection: React.FC = () => {
   return (
-    <section className="w-full h-[62.5vh] flex flex-row">
-      <div className="w-1/2 flex flex-col items-center justify-center p-8">
+    <section className="w-full h-full md:h-[62.5vh] flex flex-col md:flex-row">
+      <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-8">
         <h1 className="text-3xl font-bold mb-4 text-#1F2937">
           Kirsten Bachert Darling
         </h1>
@@ -94,7 +94,7 @@ const AboutHeroSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-1/2 relative">
+      <div className="w-full md:w-1/2 relative">
         <img
           src="/redheadUnsplash.jpg"
           alt="Kirsten Bachert Darling"
