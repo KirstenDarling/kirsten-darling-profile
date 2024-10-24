@@ -223,6 +223,22 @@ const Sidebar: React.FC<SidebarProps> = ({ onFilterChange, resources }) => {
               />{" "}
               Video
             </label>
+            <label className="block">
+              <input
+                type="checkbox"
+                value="LearningPath"
+                onChange={() => handleFilterChange("type", "LearningPath")}
+              />{" "}
+              Learning Path
+            </label>
+            <label className="block">
+              <input
+                type="checkbox"
+                value="Class"
+                onChange={() => handleFilterChange("type", "Class")}
+              />{" "}
+              Class
+            </label>
           </div>
         </div>
       ) : null}

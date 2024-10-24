@@ -26,6 +26,8 @@ export const resourceType = defineType({
           { title: "Social Media", value: "Social Media" },
           { title: "App", value: "App" },
           { title: "Video", value: "Video" },
+          { title: "Learning Path", value: "LearningPath" },
+          { title: "Class", value: "Class" },
           // Add other resource types as needed
         ],
       },
