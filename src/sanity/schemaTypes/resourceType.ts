@@ -44,6 +44,8 @@ export const resourceType = defineType({
           { title: "React", value: "React" },
           { title: "Regex", value: "Regex" },
           { title: "Git", value: "Git" },
+          { title: "C#", value: "CSharp" },
+          { title: ".NET", value: "Dotnet" },
           // Add other languages as needed
         ],
       },
